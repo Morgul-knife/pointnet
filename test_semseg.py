@@ -19,8 +19,11 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT_DIR = BASE_DIR
 sys.path.append(os.path.join(ROOT_DIR, 'models'))
 
-classes = ['ceiling', 'floor', 'wall', 'beam', 'column', 'window', 'door', 'table', 'chair', 'sofa', 'bookcase',
-           'board', 'clutter']
+# classes = [
+#     'ceiling', 'floor', 'wall', 'beam', 'column', 'window', 'door', 'table', 'chair', 'sofa',
+#     'bookcase', 'board', 'clutter'
+#     ]
+classes = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14']
 class2label = {cls: i for i, cls in enumerate(classes)}
 seg_classes = class2label
 seg_label_to_cat = {}
@@ -41,15 +44,24 @@ def parse_args():
     return parser.parse_args()
 
 
-def add_vote(vote_label_pool, point_idx, pred_label, weight):
-    B = pred_label.shape[0]
-    N = pred_label.shape[1]
-    for b in range(B):
-        for n in range(N):
-            if weight[b, n] != 0 and not np.isinf(weight[b, n]):
-                vote_label_pool[int(point_idx[b, n]), int(pred_label[b, n])] += 1
-    return vote_label_pool
+# def add_vote(vote_label_pool, point_idx, pred_label, weight):
+#     B = pred_label.shape[0]
+#     N = pred_label.shape[1]
+#     for b in range(B):
+#         for n in range(N):
+#             if weight[b, n] != 0 and not np.isinf(weight[b, n]):
+#                 vote_label_pool[int(point_idx[b, n]), int(pred_label[b, n])] += 1
+#     return vote_label_pool
 
+def add_vote(vote_label_pool, point_idx, pred_label, weight):
+    point_idx = np.squeeze(point_idx)
+    pred_label = np.squeeze(pred_label)
+    weight = np.squeeze(weight)
+    N = pred_label.shape[0]
+    for i in range(N):
+        if weight[i] != 0 and not np.isinf(weight[i]):
+            vote_label_pool[int(point_idx[i]), int(pred_label[i])] += 1
+    return vote_label_pool
 
 def main(args):
     def log_string(str):
@@ -75,13 +87,17 @@ def main(args):
     log_string('PARAMETER ...')
     log_string(args)
 
-    NUM_CLASSES = 13
-    BATCH_SIZE = args.batch_size
+    NUM_CLASSES = 15
+    # BATCH_SIZE = args.batch_size
     NUM_POINT = args.num_point
-
     root = 'data/s3dis/stanford_indoor3d/'
 
-    TEST_DATASET_WHOLE_SCENE = ScannetDatasetWholeScene(root, split='test', test_area=args.test_area, block_points=NUM_POINT)
+    TEST_DATASET_WHOLE_SCENE = ScannetDatasetWholeScene(
+                                    root,
+                                    split='test',
+                                    test_area=args.test_area,
+                                    block_points=NUM_POINT
+                                    )
     log_string("The number of test data is: %d" % len(TEST_DATASET_WHOLE_SCENE))
 
     '''MODEL LOADING'''
@@ -94,7 +110,7 @@ def main(args):
 
     with torch.no_grad():
         scene_id = TEST_DATASET_WHOLE_SCENE.file_list
-        scene_id = [x[:-4] for x in scene_id]
+        scene_id = [x[:-4] for x in scene_id] # Отсекает расширение файла.
         num_batches = len(TEST_DATASET_WHOLE_SCENE)
 
         total_seen_class = [0 for _ in range(NUM_CLASSES)]
@@ -105,47 +121,71 @@ def main(args):
 
         for batch_idx in range(num_batches):
             print("Inference [%d/%d] %s ..." % (batch_idx + 1, num_batches, scene_id[batch_idx]))
+            
             total_seen_class_tmp = [0 for _ in range(NUM_CLASSES)]
             total_correct_class_tmp = [0 for _ in range(NUM_CLASSES)]
             total_iou_deno_class_tmp = [0 for _ in range(NUM_CLASSES)]
+            
             if args.visual:
                 fout = open(os.path.join(visual_dir, scene_id[batch_idx] + '_pred.obj'), 'w')
                 fout_gt = open(os.path.join(visual_dir, scene_id[batch_idx] + '_gt.obj'), 'w')
-
-            whole_scene_data = TEST_DATASET_WHOLE_SCENE.scene_points_list[batch_idx]
-            whole_scene_label = TEST_DATASET_WHOLE_SCENE.semantic_labels_list[batch_idx]
-            vote_label_pool = np.zeros((whole_scene_label.shape[0], NUM_CLASSES))
+            
+            whole_scene_data = TEST_DATASET_WHOLE_SCENE.scene_points_list[batch_idx] # -> xyzrgb
+            whole_scene_label = TEST_DATASET_WHOLE_SCENE.semantic_labels_list[batch_idx] # -> labels
+            vote_label_pool = np.zeros(
+                (whole_scene_label.shape[0], NUM_CLASSES)) # -> [NUM_POINT, NUM_CLASSES]
+            
             for _ in tqdm(range(args.num_votes), total=args.num_votes):
-                scene_data, scene_label, scene_smpw, scene_point_index = TEST_DATASET_WHOLE_SCENE[batch_idx]
-                num_blocks = scene_data.shape[0]
-                s_batch_num = (num_blocks + BATCH_SIZE - 1) // BATCH_SIZE
-                batch_data = np.zeros((BATCH_SIZE, NUM_POINT, 9))
+                (
+                scene_data,
+                scene_label,
+                scene_smpw,
+                scene_point_index) = TEST_DATASET_WHOLE_SCENE[batch_idx]
 
-                batch_label = np.zeros((BATCH_SIZE, NUM_POINT))
-                batch_point_index = np.zeros((BATCH_SIZE, NUM_POINT))
-                batch_smpw = np.zeros((BATCH_SIZE, NUM_POINT))
+                torch_data = torch.Tensor(scene_data).unsqueeze(0).float().cuda().transpose(2, 1)
+                seg_pred, _ = classifier(torch_data)
+                pred_label = seg_pred.contiguous().cpu().data.max(2)[1].numpy()
 
-                for sbatch in range(s_batch_num):
-                    start_idx = sbatch * BATCH_SIZE
-                    end_idx = min((sbatch + 1) * BATCH_SIZE, num_blocks)
-                    real_batch_size = end_idx - start_idx
-                    batch_data[0:real_batch_size, ...] = scene_data[start_idx:end_idx, ...]
-                    batch_label[0:real_batch_size, ...] = scene_label[start_idx:end_idx, ...]
-                    batch_point_index[0:real_batch_size, ...] = scene_point_index[start_idx:end_idx, ...]
-                    batch_smpw[0:real_batch_size, ...] = scene_smpw[start_idx:end_idx, ...]
-                    batch_data[:, :, 3:6] /= 1.0
+                vote_label_pool = add_vote(
+                                    vote_label_pool,
+                                    scene_point_index,
+                                    pred_label,
+                                    scene_smpw
+                                    )
+                # num_blocks = scene_data.shape[0]
+                # s_batch_num = (num_blocks + BATCH_SIZE - 1) // BATCH_SIZE
+                # batch_data = np.zeros((BATCH_SIZE, NUM_POINT, 9))
 
-                    torch_data = torch.Tensor(batch_data)
-                    torch_data = torch_data.float().cuda()
-                    torch_data = torch_data.transpose(2, 1)
-                    seg_pred, _ = classifier(torch_data)
-                    batch_pred_label = seg_pred.contiguous().cpu().data.max(2)[1].numpy()
+                # batch_label = np.zeros((BATCH_SIZE, NUM_POINT))
+                # batch_point_index = np.zeros((BATCH_SIZE, NUM_POINT))
+                # batch_smpw = np.zeros((BATCH_SIZE, NUM_POINT))
 
-                    vote_label_pool = add_vote(vote_label_pool, batch_point_index[0:real_batch_size, ...],
-                                               batch_pred_label[0:real_batch_size, ...],
-                                               batch_smpw[0:real_batch_size, ...])
+                # for sbatch in range(s_batch_num):
+                #     start_idx = sbatch * BATCH_SIZE
+                #     end_idx = min((sbatch + 1) * BATCH_SIZE, num_blocks)
+                #     real_batch_size = end_idx - start_idx
+                #     batch_data[0:real_batch_size, ...] = scene_data[start_idx:end_idx, ...]
+                #     batch_label[0:real_batch_size, ...] = scene_label[start_idx:end_idx, ...]
+                #     batch_point_index[0:real_batch_size, ...] = scene_point_index[start_idx:end_idx, ...]
+                #     batch_smpw[0:real_batch_size, ...] = scene_smpw[start_idx:end_idx, ...]
+                #     batch_data[:, :, 3:6] /= 1.0
+
+                #     torch_data = torch.Tensor(batch_data)
+                #     torch_data = torch_data.float().cuda()
+                #     torch_data = torch_data.transpose(2, 1)
+                    
+                #     seg_pred, _ = classifier(torch_data)
+                #     batch_pred_label = seg_pred.contiguous().cpu().data.max(2)[1].numpy()
+
+                #     vote_label_pool = add_vote(vote_label_pool, batch_point_index[0:real_batch_size, ...],
+                #                                batch_pred_label[0:real_batch_size, ...],
+                #                                batch_smpw[0:real_batch_size, ...])
 
             pred_label = np.argmax(vote_label_pool, 1)
+
+            total_seen_class_tmp = [0] * NUM_CLASSES
+            total_correct_class_tmp = [0] * NUM_CLASSES
+            total_iou_deno_class_tmp = [0] * NUM_CLASSES
 
             for l in range(NUM_CLASSES):
                 total_seen_class_tmp[l] += np.sum((whole_scene_label == l))
@@ -155,7 +195,7 @@ def main(args):
                 total_correct_class[l] += total_correct_class_tmp[l]
                 total_iou_deno_class[l] += total_iou_deno_class_tmp[l]
 
-            iou_map = np.array(total_correct_class_tmp) / (np.array(total_iou_deno_class_tmp, dtype=np.float) + 1e-6)
+            iou_map = np.array(total_correct_class_tmp) / (np.array(total_iou_deno_class_tmp, dtype=np.float64) + 1e-6)
             print(iou_map)
             arr = np.array(total_seen_class_tmp)
             tmp_iou = np.mean(iou_map[arr != 0])
@@ -167,31 +207,43 @@ def main(args):
                 for i in pred_label:
                     pl_save.write(str(int(i)) + '\n')
                 pl_save.close()
+            # Сохраняем результат в .obj.
             for i in range(whole_scene_label.shape[0]):
                 color = g_label2color[pred_label[i]]
                 color_gt = g_label2color[whole_scene_label[i]]
                 if args.visual:
                     fout.write('v %f %f %f %d %d %d\n' % (
-                        whole_scene_data[i, 0], whole_scene_data[i, 1], whole_scene_data[i, 2], color[0], color[1],
-                        color[2]))
-                    fout_gt.write(
-                        'v %f %f %f %d %d %d\n' % (
-                            whole_scene_data[i, 0], whole_scene_data[i, 1], whole_scene_data[i, 2], color_gt[0],
-                            color_gt[1], color_gt[2]))
+                        whole_scene_data[i, 0],
+                        whole_scene_data[i, 1],
+                        whole_scene_data[i, 2],
+                        color[0],
+                        color[1],
+                        color[2])
+                        )
+                    fout_gt.write('v %f %f %f %d %d %d\n' % (
+                        whole_scene_data[i, 0],
+                        whole_scene_data[i, 1],
+                        whole_scene_data[i, 2],
+                        color_gt[0],
+                        color_gt[1],
+                        color_gt[2])
+                        )
+            
             if args.visual:
                 fout.close()
                 fout_gt.close()
 
-        IoU = np.array(total_correct_class) / (np.array(total_iou_deno_class, dtype=np.float) + 1e-6)
+        IoU = np.array(total_correct_class) / (np.array(total_iou_deno_class, dtype=np.float64) + 1e-6)
         iou_per_class_str = '------- IoU --------\n'
         for l in range(NUM_CLASSES):
             iou_per_class_str += 'class %s, IoU: %.3f \n' % (
                 seg_label_to_cat[l] + ' ' * (14 - len(seg_label_to_cat[l])),
-                total_correct_class[l] / float(total_iou_deno_class[l]))
+                total_correct_class[l] / float(total_iou_deno_class[l])
+                )
         log_string(iou_per_class_str)
         log_string('eval point avg class IoU: %f' % np.mean(IoU))
         log_string('eval whole scene point avg class acc: %f' % (
-            np.mean(np.array(total_correct_class) / (np.array(total_seen_class, dtype=np.float) + 1e-6))))
+            np.mean(np.array(total_correct_class) / (np.array(total_seen_class, dtype=np.float64) + 1e-6))))
         log_string('eval whole scene point accuracy: %f' % (
                 np.sum(total_correct_class) / float(np.sum(total_seen_class) + 1e-6)))
 

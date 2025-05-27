@@ -21,8 +21,9 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT_DIR = BASE_DIR
 sys.path.append(os.path.join(ROOT_DIR, 'models'))
 
-classes = ['ceiling', 'floor', 'wall', 'beam', 'column', 'window', 'door', 'table', 'chair', 'sofa', 'bookcase',
-           'board', 'clutter']
+# classes = ['ceiling', 'floor', 'wall', 'beam', 'column', 'window', 'door', 'table', 'chair', 'sofa', 'bookcase',
+#            'board', 'clutter']
+classes = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14']
 class2label = {cls: i for i, cls in enumerate(classes)}
 seg_classes = class2label
 seg_label_to_cat = {}
@@ -51,6 +52,8 @@ def parse_args():
 
     return parser.parse_args()
 
+def worker_init_fn(worker_id):
+        np.random.seed(worker_id + int(time.time()))
 
 def main(args):
     def log_string(str):
@@ -89,20 +92,49 @@ def main(args):
     log_string(args)
 
     root = 'data/stanford_indoor3d/'
-    NUM_CLASSES = 13
+    NUM_CLASSES = 15
     NUM_POINT = args.npoint
     BATCH_SIZE = args.batch_size
 
     print("start loading training data ...")
-    TRAIN_DATASET = S3DISDataset(split='train', data_root=root, num_point=NUM_POINT, test_area=args.test_area, block_size=1.0, sample_rate=1.0, transform=None)
-    print("start loading test data ...")
-    TEST_DATASET = S3DISDataset(split='test', data_root=root, num_point=NUM_POINT, test_area=args.test_area, block_size=1.0, sample_rate=1.0, transform=None)
+    TRAIN_DATASET = S3DISDataset(
+                        split='train',
+                        data_root=root,
+                        num_point=NUM_POINT,
+                        test_area=args.test_area,
+                        block_size=0.01,
+                        sample_rate=1.0,
+                        transform=None)
+    points, target = TRAIN_DATASET[0]
+    print(points.shape, target.shape)
 
-    trainDataLoader = torch.utils.data.DataLoader(TRAIN_DATASET, batch_size=BATCH_SIZE, shuffle=True, num_workers=10,
-                                                  pin_memory=True, drop_last=True,
-                                                  worker_init_fn=lambda x: np.random.seed(x + int(time.time())))
-    testDataLoader = torch.utils.data.DataLoader(TEST_DATASET, batch_size=BATCH_SIZE, shuffle=False, num_workers=10,
-                                                 pin_memory=True, drop_last=True)
+    print("start loading test data ...")
+    TEST_DATASET = S3DISDataset(
+                        split='test',
+                        data_root=root,
+                        num_point=NUM_POINT,
+                        test_area=args.test_area,
+                        block_size=0.01,
+                        sample_rate=1.0,
+                        transform=None)
+    
+    trainDataLoader = torch.utils.data.DataLoader(
+                        TRAIN_DATASET,
+                        batch_size=BATCH_SIZE,
+                        shuffle=True,
+                        num_workers=0,
+                        pin_memory=False,
+                        drop_last=True,
+                        # worker_init_fn=worker_init_fn
+                        # worker_init_fn=lambda x: np.random.seed(x + int(time.time()))
+                        )
+    testDataLoader = torch.utils.data.DataLoader(
+                        TEST_DATASET,
+                        batch_size=BATCH_SIZE,
+                        shuffle=False,
+                        num_workers=0,
+                        pin_memory=False,
+                        drop_last=True)
     weights = torch.Tensor(TRAIN_DATASET.labelweights).cuda()
 
     log_string("The number of training data is: %d" % len(TRAIN_DATASET))
@@ -125,17 +157,19 @@ def main(args):
         elif classname.find('Linear') != -1:
             torch.nn.init.xavier_normal_(m.weight.data)
             torch.nn.init.constant_(m.bias.data, 0.0)
-
+    # Дообучение модели при наличии best_model.pth.
     try:
         checkpoint = torch.load(str(experiment_dir) + '/checkpoints/best_model.pth')
         start_epoch = checkpoint['epoch']
         classifier.load_state_dict(checkpoint['model_state_dict'])
         log_string('Use pretrain model')
+    # Инициализация весов при помощи weights_init, если best_model.pth отсутсвует.
     except:
         log_string('No existing model, starting training from scratch...')
         start_epoch = 0
         classifier = classifier.apply(weights_init)
-
+    
+    # Выбор опитимизатора (Adam или SGD). 
     if args.optimizer == 'Adam':
         optimizer = torch.optim.Adam(
             classifier.parameters(),
@@ -150,7 +184,8 @@ def main(args):
     def bn_momentum_adjust(m, momentum):
         if isinstance(m, torch.nn.BatchNorm2d) or isinstance(m, torch.nn.BatchNorm1d):
             m.momentum = momentum
-
+    
+    # Гиперпараметры.
     LEARNING_RATE_CLIP = 1e-5
     MOMENTUM_ORIGINAL = 0.1
     MOMENTUM_DECCAY = 0.5
@@ -177,9 +212,10 @@ def main(args):
         loss_sum = 0
         classifier = classifier.train()
 
-        for i, (points, target) in tqdm(enumerate(trainDataLoader), total=len(trainDataLoader), smoothing=0.9):
+        for i, (points, target) in tqdm(
+            enumerate(trainDataLoader), total=len(trainDataLoader), smoothing=0.9):
+            
             optimizer.zero_grad()
-
             points = points.data.numpy()
             points[:, :, :3] = provider.rotate_point_cloud_z(points[:, :, :3])
             points = torch.Tensor(points)
@@ -226,9 +262,12 @@ def main(args):
             total_correct_class = [0 for _ in range(NUM_CLASSES)]
             total_iou_deno_class = [0 for _ in range(NUM_CLASSES)]
             classifier = classifier.eval()
-
+            
+            # Тестирование на валидационной выборке.
             log_string('---- EPOCH %03d EVALUATION ----' % (global_epoch + 1))
-            for i, (points, target) in tqdm(enumerate(testDataLoader), total=len(testDataLoader), smoothing=0.9):
+            for i, (points, target) in tqdm(
+                enumerate(testDataLoader), total=len(testDataLoader), smoothing=0.9):
+                
                 points = points.data.numpy()
                 points = torch.Tensor(points)
                 points, target = points.float().cuda(), target.long().cuda()
@@ -255,12 +294,12 @@ def main(args):
                     total_iou_deno_class[l] += np.sum(((pred_val == l) | (batch_label == l)))
 
             labelweights = labelweights.astype(np.float32) / np.sum(labelweights.astype(np.float32))
-            mIoU = np.mean(np.array(total_correct_class) / (np.array(total_iou_deno_class, dtype=np.float) + 1e-6))
+            mIoU = np.mean(np.array(total_correct_class) / (np.array(total_iou_deno_class, dtype=np.float64) + 1e-6))
             log_string('eval mean loss: %f' % (loss_sum / float(num_batches)))
             log_string('eval point avg class IoU: %f' % (mIoU))
             log_string('eval point accuracy: %f' % (total_correct / float(total_seen)))
             log_string('eval point avg class acc: %f' % (
-                np.mean(np.array(total_correct_class) / (np.array(total_seen_class, dtype=np.float) + 1e-6))))
+                np.mean(np.array(total_correct_class) / (np.array(total_seen_class, dtype=np.float64) + 1e-6))))
 
             iou_per_class_str = '------- IoU --------\n'
             for l in range(NUM_CLASSES):

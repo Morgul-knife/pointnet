@@ -88,3 +88,389 @@ class clutter       , IoU: 0.362
 2021-03-23 04:31:24,296 - Model - INFO - eval point avg class IoU: 0.436565
 2021-03-23 04:31:24,296 - Model - INFO - eval whole scene point avg class acc: 0.526288
 2021-03-23 04:31:24,296 - Model - INFO - eval whole scene point accuracy: 0.789107
+2025-05-19 15:59:48,604 - Model - INFO - PARAMETER ...
+2025-05-19 15:59:48,604 - Model - INFO - Namespace(batch_size=32, gpu='0', num_point=4096, log_dir='pointnet_sem_seg', visual=True, test_area=1, num_votes=3)
+2025-05-19 16:00:48,297 - Model - INFO - PARAMETER ...
+2025-05-19 16:00:48,297 - Model - INFO - PARAMETER ...
+2025-05-19 16:00:48,297 - Model - INFO - Namespace(batch_size=32, gpu='0', num_point=4096, log_dir='pointnet_sem_seg', visual=True, test_area=1, num_votes=3)
+2025-05-19 16:00:48,297 - Model - INFO - Namespace(batch_size=32, gpu='0', num_point=4096, log_dir='pointnet_sem_seg', visual=True, test_area=1, num_votes=3)
+2025-05-19 16:00:51,344 - Model - INFO - The number of test data is: 406
+2025-05-19 16:00:51,344 - Model - INFO - The number of test data is: 406
+2025-05-19 16:15:57,667 - Model - INFO - PARAMETER ...
+2025-05-19 16:15:57,667 - Model - INFO - PARAMETER ...
+2025-05-19 16:15:57,667 - Model - INFO - PARAMETER ...
+2025-05-19 16:15:57,667 - Model - INFO - Namespace(batch_size=32, gpu='0', num_point=4096, log_dir='pointnet_sem_seg', visual=True, test_area=1, num_votes=3)
+2025-05-19 16:15:57,667 - Model - INFO - Namespace(batch_size=32, gpu='0', num_point=4096, log_dir='pointnet_sem_seg', visual=True, test_area=1, num_votes=3)
+2025-05-19 16:15:57,667 - Model - INFO - Namespace(batch_size=32, gpu='0', num_point=4096, log_dir='pointnet_sem_seg', visual=True, test_area=1, num_votes=3)
+2025-05-19 16:16:00,134 - Model - INFO - The number of test data is: 341
+2025-05-19 16:16:00,134 - Model - INFO - The number of test data is: 341
+2025-05-19 16:16:00,134 - Model - INFO - The number of test data is: 341
+2025-05-19 16:21:43,743 - Model - INFO - PARAMETER ...
+2025-05-19 16:21:43,743 - Model - INFO - PARAMETER ...
+2025-05-19 16:21:43,743 - Model - INFO - PARAMETER ...
+2025-05-19 16:21:43,743 - Model - INFO - PARAMETER ...
+2025-05-19 16:21:43,744 - Model - INFO - Namespace(batch_size=32, gpu='0', num_point=4096, log_dir='pointnet_sem_seg', visual=True, test_area=1, num_votes=3)
+2025-05-19 16:21:43,744 - Model - INFO - Namespace(batch_size=32, gpu='0', num_point=4096, log_dir='pointnet_sem_seg', visual=True, test_area=1, num_votes=3)
+2025-05-19 16:21:43,744 - Model - INFO - Namespace(batch_size=32, gpu='0', num_point=4096, log_dir='pointnet_sem_seg', visual=True, test_area=1, num_votes=3)
+2025-05-19 16:21:43,744 - Model - INFO - Namespace(batch_size=32, gpu='0', num_point=4096, log_dir='pointnet_sem_seg', visual=True, test_area=1, num_votes=3)
+2025-05-19 16:21:43,998 - Model - INFO - The number of test data is: 341
+2025-05-19 16:21:43,998 - Model - INFO - The number of test data is: 341
+2025-05-19 16:21:43,998 - Model - INFO - The number of test data is: 341
+2025-05-19 16:21:43,998 - Model - INFO - The number of test data is: 341
+2025-05-19 16:22:00,793 - Model - INFO - PARAMETER ...
+2025-05-19 16:22:00,793 - Model - INFO - PARAMETER ...
+2025-05-19 16:22:00,793 - Model - INFO - PARAMETER ...
+2025-05-19 16:22:00,793 - Model - INFO - PARAMETER ...
+2025-05-19 16:22:00,793 - Model - INFO - PARAMETER ...
+2025-05-19 16:22:00,793 - Model - INFO - Namespace(batch_size=32, gpu='0', num_point=4096, log_dir='pointnet_sem_seg', visual=True, test_area=0, num_votes=3)
+2025-05-19 16:22:00,793 - Model - INFO - Namespace(batch_size=32, gpu='0', num_point=4096, log_dir='pointnet_sem_seg', visual=True, test_area=0, num_votes=3)
+2025-05-19 16:22:00,793 - Model - INFO - Namespace(batch_size=32, gpu='0', num_point=4096, log_dir='pointnet_sem_seg', visual=True, test_area=0, num_votes=3)
+2025-05-19 16:22:00,793 - Model - INFO - Namespace(batch_size=32, gpu='0', num_point=4096, log_dir='pointnet_sem_seg', visual=True, test_area=0, num_votes=3)
+2025-05-19 16:22:00,793 - Model - INFO - Namespace(batch_size=32, gpu='0', num_point=4096, log_dir='pointnet_sem_seg', visual=True, test_area=0, num_votes=3)
+2025-05-19 16:22:03,616 - Model - INFO - The number of test data is: 352
+2025-05-19 16:22:03,616 - Model - INFO - The number of test data is: 352
+2025-05-19 16:22:03,616 - Model - INFO - The number of test data is: 352
+2025-05-19 16:22:03,616 - Model - INFO - The number of test data is: 352
+2025-05-19 16:22:03,616 - Model - INFO - The number of test data is: 352
+2025-05-19 16:47:50,927 - Model - INFO - PARAMETER ...
+2025-05-19 16:47:50,927 - Model - INFO - PARAMETER ...
+2025-05-19 16:47:50,927 - Model - INFO - PARAMETER ...
+2025-05-19 16:47:50,927 - Model - INFO - PARAMETER ...
+2025-05-19 16:47:50,927 - Model - INFO - PARAMETER ...
+2025-05-19 16:47:50,927 - Model - INFO - Namespace(model='pointnet_sem_seg', batch_size=16, epoch=32, learning_rate=0.001, gpu='0', optimizer='Adam', log_dir='pointnet_sem_seg', decay_rate=0.0001, npoint=4096, step_size=10, lr_decay=0.7, test_area=5)
+2025-05-19 16:47:50,927 - Model - INFO - Namespace(model='pointnet_sem_seg', batch_size=16, epoch=32, learning_rate=0.001, gpu='0', optimizer='Adam', log_dir='pointnet_sem_seg', decay_rate=0.0001, npoint=4096, step_size=10, lr_decay=0.7, test_area=5)
+2025-05-19 16:47:50,927 - Model - INFO - Namespace(model='pointnet_sem_seg', batch_size=16, epoch=32, learning_rate=0.001, gpu='0', optimizer='Adam', log_dir='pointnet_sem_seg', decay_rate=0.0001, npoint=4096, step_size=10, lr_decay=0.7, test_area=5)
+2025-05-19 16:47:50,927 - Model - INFO - Namespace(model='pointnet_sem_seg', batch_size=16, epoch=32, learning_rate=0.001, gpu='0', optimizer='Adam', log_dir='pointnet_sem_seg', decay_rate=0.0001, npoint=4096, step_size=10, lr_decay=0.7, test_area=5)
+2025-05-19 16:47:50,927 - Model - INFO - Namespace(model='pointnet_sem_seg', batch_size=16, epoch=32, learning_rate=0.001, gpu='0', optimizer='Adam', log_dir='pointnet_sem_seg', decay_rate=0.0001, npoint=4096, step_size=10, lr_decay=0.7, test_area=5)
+2025-05-19 16:49:27,289 - Model - INFO - PARAMETER ...
+2025-05-19 16:49:27,289 - Model - INFO - PARAMETER ...
+2025-05-19 16:49:27,289 - Model - INFO - PARAMETER ...
+2025-05-19 16:49:27,289 - Model - INFO - PARAMETER ...
+2025-05-19 16:49:27,289 - Model - INFO - PARAMETER ...
+2025-05-19 16:49:27,289 - Model - INFO - Namespace(model='pointnet_sem_seg', batch_size=16, epoch=32, learning_rate=0.001, gpu='0', optimizer='Adam', log_dir='pointnet_sem_seg', decay_rate=0.0001, npoint=4096, step_size=10, lr_decay=0.7, test_area=5)
+2025-05-19 16:49:27,289 - Model - INFO - Namespace(model='pointnet_sem_seg', batch_size=16, epoch=32, learning_rate=0.001, gpu='0', optimizer='Adam', log_dir='pointnet_sem_seg', decay_rate=0.0001, npoint=4096, step_size=10, lr_decay=0.7, test_area=5)
+2025-05-19 16:49:27,289 - Model - INFO - Namespace(model='pointnet_sem_seg', batch_size=16, epoch=32, learning_rate=0.001, gpu='0', optimizer='Adam', log_dir='pointnet_sem_seg', decay_rate=0.0001, npoint=4096, step_size=10, lr_decay=0.7, test_area=5)
+2025-05-19 16:49:27,289 - Model - INFO - Namespace(model='pointnet_sem_seg', batch_size=16, epoch=32, learning_rate=0.001, gpu='0', optimizer='Adam', log_dir='pointnet_sem_seg', decay_rate=0.0001, npoint=4096, step_size=10, lr_decay=0.7, test_area=5)
+2025-05-19 16:49:27,289 - Model - INFO - Namespace(model='pointnet_sem_seg', batch_size=16, epoch=32, learning_rate=0.001, gpu='0', optimizer='Adam', log_dir='pointnet_sem_seg', decay_rate=0.0001, npoint=4096, step_size=10, lr_decay=0.7, test_area=5)
+2025-05-19 16:49:56,397 - Model - INFO - The number of training data is: 1588
+2025-05-19 16:49:56,397 - Model - INFO - The number of training data is: 1588
+2025-05-19 16:49:56,397 - Model - INFO - The number of training data is: 1588
+2025-05-19 16:49:56,397 - Model - INFO - The number of training data is: 1588
+2025-05-19 16:49:56,397 - Model - INFO - The number of training data is: 1588
+2025-05-19 16:49:56,398 - Model - INFO - The number of test data is: 411
+2025-05-19 16:49:56,398 - Model - INFO - The number of test data is: 411
+2025-05-19 16:49:56,398 - Model - INFO - The number of test data is: 411
+2025-05-19 16:49:56,398 - Model - INFO - The number of test data is: 411
+2025-05-19 16:49:56,398 - Model - INFO - The number of test data is: 411
+2025-05-19 16:49:56,513 - Model - INFO - No existing model, starting training from scratch...
+2025-05-19 16:49:56,513 - Model - INFO - No existing model, starting training from scratch...
+2025-05-19 16:49:56,513 - Model - INFO - No existing model, starting training from scratch...
+2025-05-19 16:49:56,513 - Model - INFO - No existing model, starting training from scratch...
+2025-05-19 16:49:56,513 - Model - INFO - No existing model, starting training from scratch...
+2025-05-19 16:49:58,864 - Model - INFO - **** Epoch 1 (1/32) ****
+2025-05-19 16:49:58,864 - Model - INFO - **** Epoch 1 (1/32) ****
+2025-05-19 16:49:58,864 - Model - INFO - **** Epoch 1 (1/32) ****
+2025-05-19 16:49:58,864 - Model - INFO - **** Epoch 1 (1/32) ****
+2025-05-19 16:49:58,864 - Model - INFO - **** Epoch 1 (1/32) ****
+2025-05-19 16:49:58,865 - Model - INFO - Learning rate:0.001000
+2025-05-19 16:49:58,865 - Model - INFO - Learning rate:0.001000
+2025-05-19 16:49:58,865 - Model - INFO - Learning rate:0.001000
+2025-05-19 16:49:58,865 - Model - INFO - Learning rate:0.001000
+2025-05-19 16:49:58,865 - Model - INFO - Learning rate:0.001000
+2025-05-19 18:17:27,398 - Model - INFO - PARAMETER ...
+2025-05-19 18:17:27,398 - Model - INFO - PARAMETER ...
+2025-05-19 18:17:27,398 - Model - INFO - PARAMETER ...
+2025-05-19 18:17:27,398 - Model - INFO - PARAMETER ...
+2025-05-19 18:17:27,398 - Model - INFO - PARAMETER ...
+2025-05-19 18:17:27,398 - Model - INFO - Namespace(model='pointnet_sem_seg', batch_size=16, epoch=32, learning_rate=0.001, gpu='0', optimizer='Adam', log_dir='pointnet_sem_seg', decay_rate=0.0001, npoint=4096, step_size=10, lr_decay=0.7, test_area=5)
+2025-05-19 18:17:27,398 - Model - INFO - Namespace(model='pointnet_sem_seg', batch_size=16, epoch=32, learning_rate=0.001, gpu='0', optimizer='Adam', log_dir='pointnet_sem_seg', decay_rate=0.0001, npoint=4096, step_size=10, lr_decay=0.7, test_area=5)
+2025-05-19 18:17:27,398 - Model - INFO - Namespace(model='pointnet_sem_seg', batch_size=16, epoch=32, learning_rate=0.001, gpu='0', optimizer='Adam', log_dir='pointnet_sem_seg', decay_rate=0.0001, npoint=4096, step_size=10, lr_decay=0.7, test_area=5)
+2025-05-19 18:17:27,398 - Model - INFO - Namespace(model='pointnet_sem_seg', batch_size=16, epoch=32, learning_rate=0.001, gpu='0', optimizer='Adam', log_dir='pointnet_sem_seg', decay_rate=0.0001, npoint=4096, step_size=10, lr_decay=0.7, test_area=5)
+2025-05-19 18:17:27,398 - Model - INFO - Namespace(model='pointnet_sem_seg', batch_size=16, epoch=32, learning_rate=0.001, gpu='0', optimizer='Adam', log_dir='pointnet_sem_seg', decay_rate=0.0001, npoint=4096, step_size=10, lr_decay=0.7, test_area=5)
+2025-05-19 18:17:33,381 - Model - INFO - The number of training data is: 1588
+2025-05-19 18:17:33,381 - Model - INFO - The number of training data is: 1588
+2025-05-19 18:17:33,381 - Model - INFO - The number of training data is: 1588
+2025-05-19 18:17:33,381 - Model - INFO - The number of training data is: 1588
+2025-05-19 18:17:33,381 - Model - INFO - The number of training data is: 1588
+2025-05-19 18:17:33,381 - Model - INFO - The number of test data is: 411
+2025-05-19 18:17:33,381 - Model - INFO - The number of test data is: 411
+2025-05-19 18:17:33,381 - Model - INFO - The number of test data is: 411
+2025-05-19 18:17:33,381 - Model - INFO - The number of test data is: 411
+2025-05-19 18:17:33,381 - Model - INFO - The number of test data is: 411
+2025-05-19 18:17:33,480 - Model - INFO - No existing model, starting training from scratch...
+2025-05-19 18:17:33,480 - Model - INFO - No existing model, starting training from scratch...
+2025-05-19 18:17:33,480 - Model - INFO - No existing model, starting training from scratch...
+2025-05-19 18:17:33,480 - Model - INFO - No existing model, starting training from scratch...
+2025-05-19 18:17:33,480 - Model - INFO - No existing model, starting training from scratch...
+2025-05-19 18:17:33,484 - Model - INFO - **** Epoch 1 (1/32) ****
+2025-05-19 18:17:33,484 - Model - INFO - **** Epoch 1 (1/32) ****
+2025-05-19 18:17:33,484 - Model - INFO - **** Epoch 1 (1/32) ****
+2025-05-19 18:17:33,484 - Model - INFO - **** Epoch 1 (1/32) ****
+2025-05-19 18:17:33,484 - Model - INFO - **** Epoch 1 (1/32) ****
+2025-05-19 18:17:33,484 - Model - INFO - Learning rate:0.001000
+2025-05-19 18:17:33,484 - Model - INFO - Learning rate:0.001000
+2025-05-19 18:17:33,484 - Model - INFO - Learning rate:0.001000
+2025-05-19 18:17:33,484 - Model - INFO - Learning rate:0.001000
+2025-05-19 18:17:33,484 - Model - INFO - Learning rate:0.001000
+2025-05-19 18:18:35,083 - Model - INFO - PARAMETER ...
+2025-05-19 18:18:35,083 - Model - INFO - PARAMETER ...
+2025-05-19 18:18:35,083 - Model - INFO - PARAMETER ...
+2025-05-19 18:18:35,083 - Model - INFO - PARAMETER ...
+2025-05-19 18:18:35,083 - Model - INFO - PARAMETER ...
+2025-05-19 18:18:35,084 - Model - INFO - Namespace(model='pointnet_sem_seg', batch_size=16, epoch=32, learning_rate=0.001, gpu='0', optimizer='Adam', log_dir='pointnet_sem_seg', decay_rate=0.0001, npoint=4096, step_size=10, lr_decay=0.7, test_area=5)
+2025-05-19 18:18:35,084 - Model - INFO - Namespace(model='pointnet_sem_seg', batch_size=16, epoch=32, learning_rate=0.001, gpu='0', optimizer='Adam', log_dir='pointnet_sem_seg', decay_rate=0.0001, npoint=4096, step_size=10, lr_decay=0.7, test_area=5)
+2025-05-19 18:18:35,084 - Model - INFO - Namespace(model='pointnet_sem_seg', batch_size=16, epoch=32, learning_rate=0.001, gpu='0', optimizer='Adam', log_dir='pointnet_sem_seg', decay_rate=0.0001, npoint=4096, step_size=10, lr_decay=0.7, test_area=5)
+2025-05-19 18:18:35,084 - Model - INFO - Namespace(model='pointnet_sem_seg', batch_size=16, epoch=32, learning_rate=0.001, gpu='0', optimizer='Adam', log_dir='pointnet_sem_seg', decay_rate=0.0001, npoint=4096, step_size=10, lr_decay=0.7, test_area=5)
+2025-05-19 18:18:35,084 - Model - INFO - Namespace(model='pointnet_sem_seg', batch_size=16, epoch=32, learning_rate=0.001, gpu='0', optimizer='Adam', log_dir='pointnet_sem_seg', decay_rate=0.0001, npoint=4096, step_size=10, lr_decay=0.7, test_area=5)
+2025-05-19 18:18:36,452 - Model - INFO - The number of training data is: 1588
+2025-05-19 18:18:36,452 - Model - INFO - The number of training data is: 1588
+2025-05-19 18:18:36,452 - Model - INFO - The number of training data is: 1588
+2025-05-19 18:18:36,452 - Model - INFO - The number of training data is: 1588
+2025-05-19 18:18:36,452 - Model - INFO - The number of training data is: 1588
+2025-05-19 18:18:36,452 - Model - INFO - The number of test data is: 411
+2025-05-19 18:18:36,452 - Model - INFO - The number of test data is: 411
+2025-05-19 18:18:36,452 - Model - INFO - The number of test data is: 411
+2025-05-19 18:18:36,452 - Model - INFO - The number of test data is: 411
+2025-05-19 18:18:36,452 - Model - INFO - The number of test data is: 411
+2025-05-19 18:18:36,494 - Model - INFO - No existing model, starting training from scratch...
+2025-05-19 18:18:36,494 - Model - INFO - No existing model, starting training from scratch...
+2025-05-19 18:18:36,494 - Model - INFO - No existing model, starting training from scratch...
+2025-05-19 18:18:36,494 - Model - INFO - No existing model, starting training from scratch...
+2025-05-19 18:18:36,494 - Model - INFO - No existing model, starting training from scratch...
+2025-05-19 18:18:36,495 - Model - INFO - **** Epoch 1 (1/32) ****
+2025-05-19 18:18:36,495 - Model - INFO - **** Epoch 1 (1/32) ****
+2025-05-19 18:18:36,495 - Model - INFO - **** Epoch 1 (1/32) ****
+2025-05-19 18:18:36,495 - Model - INFO - **** Epoch 1 (1/32) ****
+2025-05-19 18:18:36,495 - Model - INFO - **** Epoch 1 (1/32) ****
+2025-05-19 18:18:36,495 - Model - INFO - Learning rate:0.001000
+2025-05-19 18:18:36,495 - Model - INFO - Learning rate:0.001000
+2025-05-19 18:18:36,495 - Model - INFO - Learning rate:0.001000
+2025-05-19 18:18:36,495 - Model - INFO - Learning rate:0.001000
+2025-05-19 18:18:36,495 - Model - INFO - Learning rate:0.001000
+2025-05-20 07:24:18,886 - Model - INFO - PARAMETER ...
+2025-05-20 07:24:18,886 - Model - INFO - PARAMETER ...
+2025-05-20 07:24:18,886 - Model - INFO - PARAMETER ...
+2025-05-20 07:24:18,886 - Model - INFO - PARAMETER ...
+2025-05-20 07:24:18,886 - Model - INFO - PARAMETER ...
+2025-05-20 07:24:18,888 - Model - INFO - Namespace(model='pointnet_sem_seg', batch_size=16, epoch=32, learning_rate=0.001, gpu='0', optimizer='Adam', log_dir='pointnet_sem_seg', decay_rate=0.0001, npoint=4096, step_size=10, lr_decay=0.7, test_area=5)
+2025-05-20 07:24:18,888 - Model - INFO - Namespace(model='pointnet_sem_seg', batch_size=16, epoch=32, learning_rate=0.001, gpu='0', optimizer='Adam', log_dir='pointnet_sem_seg', decay_rate=0.0001, npoint=4096, step_size=10, lr_decay=0.7, test_area=5)
+2025-05-20 07:24:18,888 - Model - INFO - Namespace(model='pointnet_sem_seg', batch_size=16, epoch=32, learning_rate=0.001, gpu='0', optimizer='Adam', log_dir='pointnet_sem_seg', decay_rate=0.0001, npoint=4096, step_size=10, lr_decay=0.7, test_area=5)
+2025-05-20 07:24:18,888 - Model - INFO - Namespace(model='pointnet_sem_seg', batch_size=16, epoch=32, learning_rate=0.001, gpu='0', optimizer='Adam', log_dir='pointnet_sem_seg', decay_rate=0.0001, npoint=4096, step_size=10, lr_decay=0.7, test_area=5)
+2025-05-20 07:24:18,888 - Model - INFO - Namespace(model='pointnet_sem_seg', batch_size=16, epoch=32, learning_rate=0.001, gpu='0', optimizer='Adam', log_dir='pointnet_sem_seg', decay_rate=0.0001, npoint=4096, step_size=10, lr_decay=0.7, test_area=5)
+2025-05-20 07:24:44,299 - Model - INFO - The number of training data is: 1588
+2025-05-20 07:24:44,299 - Model - INFO - The number of training data is: 1588
+2025-05-20 07:24:44,299 - Model - INFO - The number of training data is: 1588
+2025-05-20 07:24:44,299 - Model - INFO - The number of training data is: 1588
+2025-05-20 07:24:44,299 - Model - INFO - The number of training data is: 1588
+2025-05-20 07:24:44,299 - Model - INFO - The number of test data is: 411
+2025-05-20 07:24:44,299 - Model - INFO - The number of test data is: 411
+2025-05-20 07:24:44,299 - Model - INFO - The number of test data is: 411
+2025-05-20 07:24:44,299 - Model - INFO - The number of test data is: 411
+2025-05-20 07:24:44,299 - Model - INFO - The number of test data is: 411
+2025-05-20 07:24:44,547 - Model - INFO - No existing model, starting training from scratch...
+2025-05-20 07:24:44,547 - Model - INFO - No existing model, starting training from scratch...
+2025-05-20 07:24:44,547 - Model - INFO - No existing model, starting training from scratch...
+2025-05-20 07:24:44,547 - Model - INFO - No existing model, starting training from scratch...
+2025-05-20 07:24:44,547 - Model - INFO - No existing model, starting training from scratch...
+2025-05-20 07:24:44,550 - Model - INFO - **** Epoch 1 (1/32) ****
+2025-05-20 07:24:44,550 - Model - INFO - **** Epoch 1 (1/32) ****
+2025-05-20 07:24:44,550 - Model - INFO - **** Epoch 1 (1/32) ****
+2025-05-20 07:24:44,550 - Model - INFO - **** Epoch 1 (1/32) ****
+2025-05-20 07:24:44,550 - Model - INFO - **** Epoch 1 (1/32) ****
+2025-05-20 07:24:44,550 - Model - INFO - Learning rate:0.001000
+2025-05-20 07:24:44,550 - Model - INFO - Learning rate:0.001000
+2025-05-20 07:24:44,550 - Model - INFO - Learning rate:0.001000
+2025-05-20 07:24:44,550 - Model - INFO - Learning rate:0.001000
+2025-05-20 07:24:44,550 - Model - INFO - Learning rate:0.001000
+2025-05-20 07:32:25,207 - Model - INFO - PARAMETER ...
+2025-05-20 07:32:25,207 - Model - INFO - PARAMETER ...
+2025-05-20 07:32:25,207 - Model - INFO - PARAMETER ...
+2025-05-20 07:32:25,207 - Model - INFO - PARAMETER ...
+2025-05-20 07:32:25,207 - Model - INFO - PARAMETER ...
+2025-05-20 07:32:25,208 - Model - INFO - Namespace(model='pointnet_sem_seg', batch_size=16, epoch=32, learning_rate=0.001, gpu='0', optimizer='Adam', log_dir='pointnet_sem_seg', decay_rate=0.0001, npoint=4096, step_size=10, lr_decay=0.7, test_area=5)
+2025-05-20 07:32:25,208 - Model - INFO - Namespace(model='pointnet_sem_seg', batch_size=16, epoch=32, learning_rate=0.001, gpu='0', optimizer='Adam', log_dir='pointnet_sem_seg', decay_rate=0.0001, npoint=4096, step_size=10, lr_decay=0.7, test_area=5)
+2025-05-20 07:32:25,208 - Model - INFO - Namespace(model='pointnet_sem_seg', batch_size=16, epoch=32, learning_rate=0.001, gpu='0', optimizer='Adam', log_dir='pointnet_sem_seg', decay_rate=0.0001, npoint=4096, step_size=10, lr_decay=0.7, test_area=5)
+2025-05-20 07:32:25,208 - Model - INFO - Namespace(model='pointnet_sem_seg', batch_size=16, epoch=32, learning_rate=0.001, gpu='0', optimizer='Adam', log_dir='pointnet_sem_seg', decay_rate=0.0001, npoint=4096, step_size=10, lr_decay=0.7, test_area=5)
+2025-05-20 07:32:25,208 - Model - INFO - Namespace(model='pointnet_sem_seg', batch_size=16, epoch=32, learning_rate=0.001, gpu='0', optimizer='Adam', log_dir='pointnet_sem_seg', decay_rate=0.0001, npoint=4096, step_size=10, lr_decay=0.7, test_area=5)
+2025-05-20 07:32:26,630 - Model - INFO - The number of training data is: 1588
+2025-05-20 07:32:26,630 - Model - INFO - The number of training data is: 1588
+2025-05-20 07:32:26,630 - Model - INFO - The number of training data is: 1588
+2025-05-20 07:32:26,630 - Model - INFO - The number of training data is: 1588
+2025-05-20 07:32:26,630 - Model - INFO - The number of training data is: 1588
+2025-05-20 07:32:26,630 - Model - INFO - The number of test data is: 411
+2025-05-20 07:32:26,630 - Model - INFO - The number of test data is: 411
+2025-05-20 07:32:26,630 - Model - INFO - The number of test data is: 411
+2025-05-20 07:32:26,630 - Model - INFO - The number of test data is: 411
+2025-05-20 07:32:26,630 - Model - INFO - The number of test data is: 411
+2025-05-20 07:32:26,692 - Model - INFO - No existing model, starting training from scratch...
+2025-05-20 07:32:26,692 - Model - INFO - No existing model, starting training from scratch...
+2025-05-20 07:32:26,692 - Model - INFO - No existing model, starting training from scratch...
+2025-05-20 07:32:26,692 - Model - INFO - No existing model, starting training from scratch...
+2025-05-20 07:32:26,692 - Model - INFO - No existing model, starting training from scratch...
+2025-05-20 07:32:26,693 - Model - INFO - **** Epoch 1 (1/32) ****
+2025-05-20 07:32:26,693 - Model - INFO - **** Epoch 1 (1/32) ****
+2025-05-20 07:32:26,693 - Model - INFO - **** Epoch 1 (1/32) ****
+2025-05-20 07:32:26,693 - Model - INFO - **** Epoch 1 (1/32) ****
+2025-05-20 07:32:26,693 - Model - INFO - **** Epoch 1 (1/32) ****
+2025-05-20 07:32:26,694 - Model - INFO - Learning rate:0.001000
+2025-05-20 07:32:26,694 - Model - INFO - Learning rate:0.001000
+2025-05-20 07:32:26,694 - Model - INFO - Learning rate:0.001000
+2025-05-20 07:32:26,694 - Model - INFO - Learning rate:0.001000
+2025-05-20 07:32:26,694 - Model - INFO - Learning rate:0.001000
+2025-05-20 07:36:26,842 - Model - INFO - PARAMETER ...
+2025-05-20 07:36:26,842 - Model - INFO - PARAMETER ...
+2025-05-20 07:36:26,842 - Model - INFO - PARAMETER ...
+2025-05-20 07:36:26,842 - Model - INFO - PARAMETER ...
+2025-05-20 07:36:26,842 - Model - INFO - PARAMETER ...
+2025-05-20 07:36:26,842 - Model - INFO - Namespace(model='pointnet_sem_seg', batch_size=16, epoch=32, learning_rate=0.001, gpu='0', optimizer='Adam', log_dir='pointnet_sem_seg', decay_rate=0.0001, npoint=4096, step_size=10, lr_decay=0.7, test_area=5)
+2025-05-20 07:36:26,842 - Model - INFO - Namespace(model='pointnet_sem_seg', batch_size=16, epoch=32, learning_rate=0.001, gpu='0', optimizer='Adam', log_dir='pointnet_sem_seg', decay_rate=0.0001, npoint=4096, step_size=10, lr_decay=0.7, test_area=5)
+2025-05-20 07:36:26,842 - Model - INFO - Namespace(model='pointnet_sem_seg', batch_size=16, epoch=32, learning_rate=0.001, gpu='0', optimizer='Adam', log_dir='pointnet_sem_seg', decay_rate=0.0001, npoint=4096, step_size=10, lr_decay=0.7, test_area=5)
+2025-05-20 07:36:26,842 - Model - INFO - Namespace(model='pointnet_sem_seg', batch_size=16, epoch=32, learning_rate=0.001, gpu='0', optimizer='Adam', log_dir='pointnet_sem_seg', decay_rate=0.0001, npoint=4096, step_size=10, lr_decay=0.7, test_area=5)
+2025-05-20 07:36:26,842 - Model - INFO - Namespace(model='pointnet_sem_seg', batch_size=16, epoch=32, learning_rate=0.001, gpu='0', optimizer='Adam', log_dir='pointnet_sem_seg', decay_rate=0.0001, npoint=4096, step_size=10, lr_decay=0.7, test_area=5)
+2025-05-20 07:36:28,187 - Model - INFO - The number of training data is: 1588
+2025-05-20 07:36:28,187 - Model - INFO - The number of training data is: 1588
+2025-05-20 07:36:28,187 - Model - INFO - The number of training data is: 1588
+2025-05-20 07:36:28,187 - Model - INFO - The number of training data is: 1588
+2025-05-20 07:36:28,187 - Model - INFO - The number of training data is: 1588
+2025-05-20 07:36:28,187 - Model - INFO - The number of test data is: 411
+2025-05-20 07:36:28,187 - Model - INFO - The number of test data is: 411
+2025-05-20 07:36:28,187 - Model - INFO - The number of test data is: 411
+2025-05-20 07:36:28,187 - Model - INFO - The number of test data is: 411
+2025-05-20 07:36:28,187 - Model - INFO - The number of test data is: 411
+2025-05-20 07:36:28,235 - Model - INFO - No existing model, starting training from scratch...
+2025-05-20 07:36:28,235 - Model - INFO - No existing model, starting training from scratch...
+2025-05-20 07:36:28,235 - Model - INFO - No existing model, starting training from scratch...
+2025-05-20 07:36:28,235 - Model - INFO - No existing model, starting training from scratch...
+2025-05-20 07:36:28,235 - Model - INFO - No existing model, starting training from scratch...
+2025-05-20 07:36:28,236 - Model - INFO - **** Epoch 1 (1/32) ****
+2025-05-20 07:36:28,236 - Model - INFO - **** Epoch 1 (1/32) ****
+2025-05-20 07:36:28,236 - Model - INFO - **** Epoch 1 (1/32) ****
+2025-05-20 07:36:28,236 - Model - INFO - **** Epoch 1 (1/32) ****
+2025-05-20 07:36:28,236 - Model - INFO - **** Epoch 1 (1/32) ****
+2025-05-20 07:36:28,237 - Model - INFO - Learning rate:0.001000
+2025-05-20 07:36:28,237 - Model - INFO - Learning rate:0.001000
+2025-05-20 07:36:28,237 - Model - INFO - Learning rate:0.001000
+2025-05-20 07:36:28,237 - Model - INFO - Learning rate:0.001000
+2025-05-20 07:36:28,237 - Model - INFO - Learning rate:0.001000
+2025-05-22 11:20:57,011 - Model - INFO - PARAMETER ...
+2025-05-22 11:20:57,046 - Model - INFO - Namespace(batch_size=32, gpu='0', num_point=4096, log_dir='pointnet_sem_seg', visual=True, test_area=1, num_votes=3)
+2025-05-22 11:20:57,127 - Model - INFO - The number of test data is: 10
+2025-05-22 11:29:05,707 - Model - INFO - PARAMETER ...
+2025-05-22 11:29:05,707 - Model - INFO - Namespace(batch_size=32, gpu='0', num_point=4096, log_dir='pointnet_sem_seg', visual=True, test_area=1, num_votes=3)
+2025-05-22 11:29:05,715 - Model - INFO - The number of test data is: 10
+2025-05-22 11:29:05,986 - Model - INFO - ---- EVALUATION WHOLE SCENE----
+2025-05-22 11:32:43,521 - Model - INFO - PARAMETER ...
+2025-05-22 11:32:43,521 - Model - INFO - Namespace(batch_size=32, gpu='0', num_point=4096, log_dir='pointnet_sem_seg', visual=True, test_area=1, num_votes=3)
+2025-05-22 11:32:43,529 - Model - INFO - The number of test data is: 10
+2025-05-22 11:32:43,803 - Model - INFO - ---- EVALUATION WHOLE SCENE----
+2025-05-22 13:39:45,409 - Model - INFO - PARAMETER ...
+2025-05-22 13:39:45,409 - Model - INFO - Namespace(batch_size=32, gpu='0', num_point=4096, log_dir='pointnet_sem_seg', visual=True, test_area=1, num_votes=3)
+2025-05-22 13:39:45,509 - Model - INFO - The number of test data is: 10
+2025-05-22 13:39:45,788 - Model - INFO - ---- EVALUATION WHOLE SCENE----
+2025-05-22 13:41:50,766 - Model - INFO - PARAMETER ...
+2025-05-22 13:41:50,767 - Model - INFO - Namespace(batch_size=32, gpu='0', num_point=4096, log_dir='pointnet_sem_seg', visual=True, test_area=1, num_votes=3)
+2025-05-22 13:41:50,774 - Model - INFO - The number of test data is: 10
+2025-05-22 13:41:51,067 - Model - INFO - ---- EVALUATION WHOLE SCENE----
+2025-05-22 16:05:50,472 - Model - INFO - PARAMETER ...
+2025-05-22 16:05:50,472 - Model - INFO - Namespace(batch_size=32, gpu='0', num_point=4096, log_dir='pointnet_sem_seg', visual=True, test_area=1, num_votes=3)
+2025-05-22 16:05:50,480 - Model - INFO - The number of test data is: 10
+2025-05-22 16:05:50,764 - Model - INFO - ---- EVALUATION WHOLE SCENE----
+2025-05-22 16:31:09,621 - Model - INFO - PARAMETER ...
+2025-05-22 16:31:09,621 - Model - INFO - Namespace(batch_size=32, gpu='0', num_point=4096, log_dir='pointnet_sem_seg', visual=True, test_area=1, num_votes=3)
+2025-05-22 16:31:09,646 - Model - INFO - The number of test data is: 10
+2025-05-22 16:31:09,941 - Model - INFO - ---- EVALUATION WHOLE SCENE----
+2025-05-22 17:56:22,756 - Model - INFO - PARAMETER ...
+2025-05-22 17:56:22,756 - Model - INFO - Namespace(batch_size=32, gpu='0', num_point=4096, log_dir='pointnet_sem_seg', visual=True, test_area=1, num_votes=3)
+2025-05-22 17:56:22,775 - Model - INFO - The number of test data is: 10
+2025-05-22 17:56:23,062 - Model - INFO - ---- EVALUATION WHOLE SCENE----
+2025-05-22 17:58:04,069 - Model - INFO - PARAMETER ...
+2025-05-22 17:58:04,070 - Model - INFO - Namespace(batch_size=32, gpu='0', num_point=4096, log_dir='pointnet_sem_seg', visual=True, test_area=1, num_votes=3)
+2025-05-22 17:58:04,077 - Model - INFO - The number of test data is: 10
+2025-05-22 17:58:04,364 - Model - INFO - ---- EVALUATION WHOLE SCENE----
+2025-05-22 18:00:08,879 - Model - INFO - PARAMETER ...
+2025-05-22 18:00:08,879 - Model - INFO - Namespace(batch_size=32, gpu='0', num_point=4096, log_dir='pointnet_sem_seg', visual=True, test_area=1, num_votes=3)
+2025-05-22 18:00:08,886 - Model - INFO - The number of test data is: 10
+2025-05-22 18:00:09,172 - Model - INFO - ---- EVALUATION WHOLE SCENE----
+2025-05-22 18:02:05,127 - Model - INFO - PARAMETER ...
+2025-05-22 18:02:05,127 - Model - INFO - Namespace(batch_size=32, gpu='0', num_point=4096, log_dir='pointnet_sem_seg', visual=True, test_area=1, num_votes=3)
+2025-05-22 18:02:05,136 - Model - INFO - The number of test data is: 10
+2025-05-22 18:02:05,413 - Model - INFO - ---- EVALUATION WHOLE SCENE----
+2025-05-22 18:03:17,085 - Model - INFO - PARAMETER ...
+2025-05-22 18:03:17,085 - Model - INFO - Namespace(batch_size=32, gpu='0', num_point=4096, log_dir='pointnet_sem_seg', visual=True, test_area=1, num_votes=3)
+2025-05-22 18:03:17,093 - Model - INFO - The number of test data is: 10
+2025-05-22 18:03:17,377 - Model - INFO - ---- EVALUATION WHOLE SCENE----
+2025-05-22 18:03:17,695 - Model - INFO - Mean IoU of Area_1_RetainerBody_60-1810_001: 0.6948
+2025-05-22 18:19:51,088 - Model - INFO - PARAMETER ...
+2025-05-22 18:19:51,089 - Model - INFO - Namespace(batch_size=32, gpu='0', num_point=4096, log_dir='pointnet_sem_seg', visual=True, test_area=1, num_votes=3)
+2025-05-22 18:19:51,096 - Model - INFO - The number of test data is: 10
+2025-05-22 18:19:51,384 - Model - INFO - ---- EVALUATION WHOLE SCENE----
+2025-05-22 18:19:51,694 - Model - INFO - Mean IoU of Area_1_RetainerBody_60-1810_001: 0.6948
+2025-05-22 18:19:51,807 - Model - INFO - Mean IoU of Area_1_RetainerBody_60-1810_002: 0.7288
+2025-05-22 18:19:51,927 - Model - INFO - Mean IoU of Area_1_RetainerBody_60-1810_005: 0.7109
+2025-05-22 18:19:52,035 - Model - INFO - Mean IoU of Area_1_RetainerBody_60-1810_006: 0.7266
+2025-05-22 18:19:52,145 - Model - INFO - Mean IoU of Area_1_RetainerBody_60-1810_007: 0.7101
+2025-05-22 18:19:52,246 - Model - INFO - Mean IoU of Area_1_RetainerBody_60-1810_008: 0.7104
+2025-05-22 18:19:52,342 - Model - INFO - Mean IoU of Area_1_RetainerBody_60-1810_009: 0.7251
+2025-05-22 18:19:52,440 - Model - INFO - Mean IoU of Area_1_RetainerBody_60-1810_010: 0.7014
+2025-05-22 18:19:52,540 - Model - INFO - Mean IoU of Area_1_RetainerBody_60-1810_011: 0.6936
+2025-05-22 18:19:52,636 - Model - INFO - Mean IoU of Area_1_RetainerBody_60-1810_012: 0.6836
+2025-05-22 18:19:52,674 - Model - INFO - ------- IoU --------
+class 0             , IoU: 0.806 
+class 1             , IoU: 0.819 
+class 2             , IoU: 0.809 
+class 3             , IoU: 0.780 
+class 4             , IoU: 0.859 
+class 5             , IoU: 0.857 
+class 6             , IoU: 0.798 
+class 7             , IoU: 0.866 
+class 8             , IoU: 0.433 
+class 9             , IoU: 0.580 
+class 10            , IoU: 0.563 
+class 11            , IoU: 0.790 
+class 12            , IoU: 0.353 
+class 13            , IoU: 0.488 
+class 14            , IoU: 0.824 
+
+2025-05-22 18:19:52,675 - Model - INFO - eval point avg class IoU: 0.708475
+2025-05-22 18:19:52,675 - Model - INFO - eval whole scene point avg class acc: 0.828690
+2025-05-22 18:19:52,676 - Model - INFO - eval whole scene point accuracy: 0.851367
+2025-05-22 18:25:11,312 - Model - INFO - PARAMETER ...
+2025-05-22 18:25:11,312 - Model - INFO - Namespace(batch_size=32, gpu='0', num_point=4096, log_dir='pointnet_sem_seg', visual=True, test_area=11, num_votes=3)
+2025-05-22 18:25:11,335 - Model - INFO - The number of test data is: 1
+2025-05-22 18:25:11,614 - Model - INFO - ---- EVALUATION WHOLE SCENE----
+2025-05-22 18:25:13,987 - Model - INFO - Mean IoU of Area_11_RetainerBody_60-1810_001: nan
+2025-05-22 18:26:13,399 - Model - INFO - PARAMETER ...
+2025-05-22 18:26:13,399 - Model - INFO - Namespace(batch_size=32, gpu='0', num_point=4096, log_dir='pointnet_sem_seg', visual=True, test_area=2, num_votes=3)
+2025-05-22 18:26:13,423 - Model - INFO - The number of test data is: 1
+2025-05-22 18:26:13,703 - Model - INFO - ---- EVALUATION WHOLE SCENE----
+2025-05-22 18:26:15,995 - Model - INFO - Mean IoU of Area_2_RetainerBody_60-1810_001: nan
+2025-05-22 18:36:39,122 - Model - INFO - PARAMETER ...
+2025-05-22 18:36:39,122 - Model - INFO - Namespace(batch_size=32, gpu='0', num_point=4096, log_dir='pointnet_sem_seg', visual=True, test_area=0, num_votes=3)
+2025-05-22 18:36:39,241 - Model - INFO - The number of test data is: 6
+2025-05-22 18:36:39,527 - Model - INFO - ---- EVALUATION WHOLE SCENE----
+2025-05-22 18:36:42,317 - Model - INFO - Mean IoU of Area_0_RetainerBody_60-1810_1: 0.7068
+2025-05-22 18:36:45,512 - Model - INFO - Mean IoU of Area_0_RetainerBody_60-1810_2: 0.8014
+2025-05-22 18:36:48,545 - Model - INFO - Mean IoU of Area_0_RetainerBody_60-1810_3: 0.7873
+2025-05-22 18:36:51,492 - Model - INFO - Mean IoU of Area_0_RetainerBody_60-1810_4: 0.7859
+2025-05-22 18:36:54,482 - Model - INFO - Mean IoU of Area_0_RetainerBody_60-1810_5: 0.7986
+2025-05-22 18:36:57,584 - Model - INFO - Mean IoU of Area_0_RetainerBody_60-1810_6: 0.7986
+2025-05-22 18:36:58,614 - Model - INFO - ------- IoU --------
+class 0             , IoU: 0.800 
+class 1             , IoU: 0.809 
+class 2             , IoU: 0.789 
+class 3             , IoU: 0.758 
+class 4             , IoU: 0.841 
+class 5             , IoU: 0.842 
+class 6             , IoU: 0.745 
+class 7             , IoU: 0.863 
+class 8             , IoU: 0.518 
+class 9             , IoU: 0.709 
+class 10            , IoU: 0.725 
+class 11            , IoU: 0.896 
+class 12            , IoU: 0.697 
+class 13            , IoU: 0.753 
+class 14            , IoU: 0.908 
+
+2025-05-22 18:36:58,615 - Model - INFO - eval point avg class IoU: 0.776893
+2025-05-22 18:36:58,616 - Model - INFO - eval whole scene point avg class acc: 0.880655
+2025-05-22 18:36:58,616 - Model - INFO - eval whole scene point accuracy: 0.886443
