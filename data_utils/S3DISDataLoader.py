@@ -52,8 +52,6 @@ class S3DISDataset(Dataset):
         # Предотвращает дисбаланс классов. Редким классам присваивается больший вес.
         self.labelweights = np.power(np.amax(labelweights) / labelweights, 1 / 3.0)
         
-        print(self.labelweights)
-        
         sample_prob = num_point_all / np.sum(num_point_all)
         num_iter = int(np.sum(num_point_all) * sample_rate / num_point)
         room_idxs = []
@@ -107,7 +105,11 @@ class S3DISDataset(Dataset):
         current_labels = labels #[selected_point_idxs]
         
         if self.transform is not None:
-            current_points, current_labels = self.transform(current_points, current_labels)
+            data = np.hstack([current_points, current_labels.reshape([-1, 1])])
+            data = self.transform(data.copy())
+            current_points = data[:, 0:-1]
+            current_labels = data[:, -1]
+            # current_points, current_labels = self.transform(current_points, current_labels)
         return current_points, current_labels
 
     def __len__(self):

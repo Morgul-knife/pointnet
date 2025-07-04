@@ -1,0 +1,23 @@
+2025-06-09 14:58:39,980 - Model - INFO - PARAMETER ...
+2025-06-09 14:58:39,980 - Model - INFO - Namespace(model='pointnet_sem_seg', batch_size=8, epoch=1, learning_rate=0.001, gpu='0', optimizer='Adam', log_dir=None, decay_rate=0.0001, npoint=16384, step_size=10, lr_decay=0.7, test_area=5)
+2025-06-09 14:58:51,559 - Model - INFO - The number of training data is: 4493
+2025-06-09 14:58:51,559 - Model - INFO - The number of test data is: 907
+2025-06-09 14:58:51,598 - Model - INFO - No existing model, starting training from scratch...
+2025-06-09 14:58:53,795 - Model - INFO - **** Epoch 1 (1/1) ****
+2025-06-09 14:58:53,795 - Model - INFO - Learning rate:0.001000
+2025-06-09 15:01:20,171 - Model - INFO - Training mean loss: 0.823661
+2025-06-09 15:01:20,179 - Model - INFO - Training accuracy: 0.695341
+2025-06-09 15:01:20,179 - Model - INFO - Save model...
+2025-06-09 15:22:44,040 - Model - INFO - Saving at log\sem_seg\2025-06-09_14-58\checkpoints/model.pth
+2025-06-09 15:22:44,175 - Model - INFO - Saving model....
+2025-06-09 15:22:44,176 - Model - INFO - ---- EPOCH 001 EVALUATION ----
+2025-06-09 15:25:51,125 - Model - INFO - Eval mean loss: 1.014132
+2025-06-09 15:25:51,127 - Model - INFO - Eval accuracy: 0.601792
+2025-06-09 15:25:51,128 - Model - INFO - Eval avg class acc: 0.535854
+2025-06-09 15:25:51,128 - Model - INFO - Eval avg class IoU: 0.429814
+2025-06-09 15:25:51,129 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 0.722class 1              weight: 0.030, IoU: 0.693class 2              weight: 0.061, IoU: 0.702class 3              weight: 0.061, IoU: 0.644class 4              weight: 0.059, IoU: 0.765class 5              weight: 0.080, IoU: 0.802class 6              weight: 0.057, IoU: 0.540class 7              weight: 0.036, IoU: 0.764class 8              weight: 0.189, IoU: 0.133class 9              weight: 0.053, IoU: 0.086class 10             weight: 0.066, IoU: 0.000class 11             weight: 0.050, IoU: 0.444class 12             weight: 0.119, IoU: 0.000class 13             weight: 0.028, IoU: 0.003class 14             weight: 0.039, IoU: 0.150
+2025-06-09 15:25:51,130 - Model - INFO - Save model...
+2025-06-09 15:25:51,130 - Model - INFO - Saving at log\sem_seg\2025-06-09_14-58\checkpoints/best_model.pth
+2025-06-09 15:25:51,256 - Model - INFO - Saving model....
+2025-06-09 15:25:51,256 - Model - INFO - Best mIoU: 0.429814

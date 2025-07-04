@@ -474,3 +474,406 @@ class 14            , IoU: 0.908
 2025-05-22 18:36:58,615 - Model - INFO - eval point avg class IoU: 0.776893
 2025-05-22 18:36:58,616 - Model - INFO - eval whole scene point avg class acc: 0.880655
 2025-05-22 18:36:58,616 - Model - INFO - eval whole scene point accuracy: 0.886443
+2025-05-29 22:56:52,016 - Model - INFO - PARAMETER ...
+2025-05-29 22:56:52,026 - Model - INFO - Namespace(batch_size=32, gpu='0', num_point=4096, log_dir='pointnet_sem_seg', visual=True, test_area=0, num_votes=3)
+2025-05-29 22:56:52,067 - Model - INFO - The number of test data is: 5
+2025-05-29 22:56:52,349 - Model - INFO - ---- EVALUATION WHOLE SCENE----
+2025-05-29 22:56:52,880 - Model - INFO - Mean IoU of Area_0_RetainerBody_60-1810_003: 0.7551
+2025-05-29 22:56:53,243 - Model - INFO - Mean IoU of Area_0_RetainerBody_60-1810_025: 0.7685
+2025-05-29 22:56:53,627 - Model - INFO - Mean IoU of Area_0_RetainerBody_60-1810_032: 0.7709
+2025-05-29 22:56:54,003 - Model - INFO - Mean IoU of Area_0_RetainerBody_60-1810_035: 0.7709
+2025-05-29 22:56:54,349 - Model - INFO - Mean IoU of Area_0_RetainerBody_60-1810_037: 0.7711
+2025-05-29 22:56:54,492 - Model - INFO - ------- IoU --------
+class 0             , IoU: 0.828 
+class 1             , IoU: 0.861 
+class 2             , IoU: 0.886 
+class 3             , IoU: 0.858 
+class 4             , IoU: 0.898 
+class 5             , IoU: 0.875 
+class 6             , IoU: 0.797 
+class 7             , IoU: 0.893 
+class 8             , IoU: 0.598 
+class 9             , IoU: 0.688 
+class 10            , IoU: 0.630 
+class 11            , IoU: 0.825 
+class 12            , IoU: 0.435 
+class 13            , IoU: 0.585 
+class 14            , IoU: 0.853 
+
+2025-05-29 22:56:54,493 - Model - INFO - eval point avg class IoU: 0.767297
+2025-05-29 22:56:54,493 - Model - INFO - eval whole scene point avg class acc: 0.870383
+2025-05-29 22:56:54,494 - Model - INFO - eval whole scene point accuracy: 0.889636
+2025-05-29 23:02:55,230 - Model - INFO - PARAMETER ...
+2025-05-29 23:02:55,230 - Model - INFO - Namespace(batch_size=32, gpu='0', num_point=4096, log_dir='pointnet_sem_seg', visual=True, test_area=0, num_votes=3)
+2025-05-29 23:02:55,260 - Model - INFO - The number of test data is: 1
+2025-05-29 23:02:55,504 - Model - INFO - ---- EVALUATION WHOLE SCENE----
+2025-05-29 23:02:58,235 - Model - INFO - Mean IoU of Area_0_RetainerBody_60-1810_001: 0.7725
+2025-05-29 23:02:59,678 - Model - INFO - ------- IoU --------
+class 0             , IoU: 0.835 
+class 1             , IoU: 0.867 
+class 2             , IoU: 0.889 
+class 3             , IoU: 0.865 
+class 4             , IoU: 0.896 
+class 5             , IoU: 0.873 
+class 6             , IoU: 0.805 
+class 7             , IoU: 0.894 
+class 8             , IoU: 0.601 
+class 9             , IoU: 0.690 
+class 10            , IoU: 0.637 
+class 11            , IoU: 0.830 
+class 12            , IoU: 0.456 
+class 13            , IoU: 0.593 
+class 14            , IoU: 0.856 
+
+2025-05-29 23:02:59,679 - Model - INFO - eval point avg class IoU: 0.772516
+2025-05-29 23:02:59,679 - Model - INFO - eval whole scene point avg class acc: 0.872914
+2025-05-29 23:02:59,679 - Model - INFO - eval whole scene point accuracy: 0.892013
+2025-05-29 23:04:16,063 - Model - INFO - PARAMETER ...
+2025-05-29 23:04:16,063 - Model - INFO - Namespace(batch_size=32, gpu='0', num_point=4096, log_dir='pointnet_sem_seg', visual=True, test_area=1, num_votes=3)
+2025-05-29 23:04:16,074 - Model - INFO - The number of test data is: 1
+2025-05-29 23:04:16,331 - Model - INFO - ---- EVALUATION WHOLE SCENE----
+2025-05-29 23:04:18,577 - Model - INFO - Mean IoU of Area_1_RetainerBody_60-1810_001: 0.8445
+2025-05-29 23:04:19,569 - Model - INFO - ------- IoU --------
+class 0             , IoU: 0.828 
+class 1             , IoU: 0.839 
+class 2             , IoU: 0.851 
+class 3             , IoU: 0.841 
+class 4             , IoU: 0.876 
+class 5             , IoU: 0.853 
+class 6             , IoU: 0.779 
+class 7             , IoU: 0.912 
+class 8             , IoU: 0.714 
+class 9             , IoU: 0.831 
+class 10            , IoU: 0.843 
+class 11            , IoU: 0.941 
+class 12            , IoU: 0.837 
+class 13            , IoU: 0.811 
+class 14            , IoU: 0.910 
+
+2025-05-29 23:04:19,571 - Model - INFO - eval point avg class IoU: 0.844531
+2025-05-29 23:04:19,571 - Model - INFO - eval whole scene point avg class acc: 0.926089
+2025-05-29 23:04:19,571 - Model - INFO - eval whole scene point accuracy: 0.925491
+2025-06-03 18:08:48,158 - Model - INFO - PARAMETER ...
+2025-06-03 18:08:48,177 - Model - INFO - Namespace(batch_size=8, gpu='0', num_point=16384, log_dir='pointnet_sem_seg', visual=True, test_area=0, num_votes=3)
+2025-06-03 18:08:48,331 - Model - INFO - The number of test data is: 1
+2025-06-03 18:08:48,594 - Model - INFO - ---- EVALUATION WHOLE SCENE----
+2025-06-03 18:08:51,297 - Model - INFO - Mean IoU of Area_0_RetainerBody_60-1810_001: 0.8765
+2025-06-03 18:08:52,588 - Model - INFO - ------- IoU --------
+class 0             , IoU: 0.875 
+class 1             , IoU: 0.911 
+class 2             , IoU: 0.942 
+class 3             , IoU: 0.913 
+class 4             , IoU: 0.914 
+class 5             , IoU: 0.915 
+class 6             , IoU: 0.863 
+class 7             , IoU: 0.945 
+class 8             , IoU: 0.790 
+class 9             , IoU: 0.821 
+class 10            , IoU: 0.833 
+class 11            , IoU: 0.932 
+class 12            , IoU: 0.760 
+class 13            , IoU: 0.812 
+class 14            , IoU: 0.921 
+
+2025-06-03 18:08:52,596 - Model - INFO - eval point avg class IoU: 0.876472
+2025-06-03 18:08:52,596 - Model - INFO - eval whole scene point avg class acc: 0.940405
+2025-06-03 18:08:52,596 - Model - INFO - eval whole scene point accuracy: 0.945095
+2025-06-03 18:09:50,485 - Model - INFO - PARAMETER ...
+2025-06-03 18:09:50,485 - Model - INFO - Namespace(batch_size=8, gpu='0', num_point=16384, log_dir='pointnet_sem_seg', visual=True, test_area=1, num_votes=3)
+2025-06-03 18:09:50,638 - Model - INFO - The number of test data is: 1
+2025-06-03 18:09:50,865 - Model - INFO - ---- EVALUATION WHOLE SCENE----
+2025-06-03 18:09:53,118 - Model - INFO - Mean IoU of Area_1_RetainerBody_60-1810_001: 0.8765
+2025-06-03 18:09:54,260 - Model - INFO - ------- IoU --------
+class 0             , IoU: 0.873 
+class 1             , IoU: 0.888 
+class 2             , IoU: 0.900 
+class 3             , IoU: 0.875 
+class 4             , IoU: 0.889 
+class 5             , IoU: 0.891 
+class 6             , IoU: 0.845 
+class 7             , IoU: 0.947 
+class 8             , IoU: 0.809 
+class 9             , IoU: 0.860 
+class 10            , IoU: 0.827 
+class 11            , IoU: 0.934 
+class 12            , IoU: 0.832 
+class 13            , IoU: 0.839 
+class 14            , IoU: 0.940 
+
+2025-06-03 18:09:54,260 - Model - INFO - eval point avg class IoU: 0.876546
+2025-06-03 18:09:54,260 - Model - INFO - eval whole scene point avg class acc: 0.940041
+2025-06-03 18:09:54,260 - Model - INFO - eval whole scene point accuracy: 0.943081
+2025-06-03 18:10:04,054 - Model - INFO - PARAMETER ...
+2025-06-03 18:10:04,054 - Model - INFO - Namespace(batch_size=8, gpu='0', num_point=16384, log_dir='pointnet_sem_seg', visual=True, test_area=2, num_votes=3)
+2025-06-03 18:10:04,205 - Model - INFO - The number of test data is: 1
+2025-06-03 18:10:04,443 - Model - INFO - ---- EVALUATION WHOLE SCENE----
+2025-06-03 18:10:06,661 - Model - INFO - Mean IoU of Area_2_RetainerBody_60-1810_001: 0.8673
+2025-06-03 18:10:07,650 - Model - INFO - ------- IoU --------
+class 0             , IoU: 0.887 
+class 1             , IoU: 0.897 
+class 2             , IoU: 0.915 
+class 3             , IoU: 0.879 
+class 4             , IoU: 0.890 
+class 5             , IoU: 0.893 
+class 6             , IoU: 0.760 
+class 7             , IoU: 0.929 
+class 8             , IoU: 0.826 
+class 9             , IoU: 0.866 
+class 10            , IoU: 0.767 
+class 11            , IoU: 0.919 
+class 12            , IoU: 0.812 
+class 13            , IoU: 0.830 
+class 14            , IoU: 0.939 
+
+2025-06-03 18:10:07,650 - Model - INFO - eval point avg class IoU: 0.867309
+2025-06-03 18:10:07,650 - Model - INFO - eval whole scene point avg class acc: 0.933412
+2025-06-03 18:10:07,650 - Model - INFO - eval whole scene point accuracy: 0.938528
+2025-06-03 18:10:13,301 - Model - INFO - PARAMETER ...
+2025-06-03 18:10:13,301 - Model - INFO - Namespace(batch_size=8, gpu='0', num_point=16384, log_dir='pointnet_sem_seg', visual=True, test_area=3, num_votes=3)
+2025-06-03 18:10:13,436 - Model - INFO - The number of test data is: 1
+2025-06-03 18:10:13,667 - Model - INFO - ---- EVALUATION WHOLE SCENE----
+2025-06-03 18:10:15,954 - Model - INFO - Mean IoU of Area_3_RetainerBody_60-1810_001: 0.8533
+2025-06-03 18:10:16,950 - Model - INFO - ------- IoU --------
+class 0             , IoU: 0.896 
+class 1             , IoU: 0.906 
+class 2             , IoU: 0.905 
+class 3             , IoU: 0.873 
+class 4             , IoU: 0.888 
+class 5             , IoU: 0.890 
+class 6             , IoU: 0.792 
+class 7             , IoU: 0.915 
+class 8             , IoU: 0.711 
+class 9             , IoU: 0.812 
+class 10            , IoU: 0.770 
+class 11            , IoU: 0.914 
+class 12            , IoU: 0.778 
+class 13            , IoU: 0.815 
+class 14            , IoU: 0.937 
+
+2025-06-03 18:10:16,950 - Model - INFO - eval point avg class IoU: 0.853315
+2025-06-03 18:10:16,950 - Model - INFO - eval whole scene point avg class acc: 0.925410
+2025-06-03 18:10:16,950 - Model - INFO - eval whole scene point accuracy: 0.930218
+2025-06-03 18:10:22,796 - Model - INFO - PARAMETER ...
+2025-06-03 18:10:22,796 - Model - INFO - Namespace(batch_size=8, gpu='0', num_point=16384, log_dir='pointnet_sem_seg', visual=True, test_area=4, num_votes=3)
+2025-06-03 18:10:22,927 - Model - INFO - The number of test data is: 1
+2025-06-03 18:10:23,146 - Model - INFO - ---- EVALUATION WHOLE SCENE----
+2025-06-03 18:10:25,466 - Model - INFO - Mean IoU of Area_4_RetainerBody_60-1810_001: 0.8726
+2025-06-03 18:10:26,490 - Model - INFO - ------- IoU --------
+class 0             , IoU: 0.890 
+class 1             , IoU: 0.900 
+class 2             , IoU: 0.905 
+class 3             , IoU: 0.873 
+class 4             , IoU: 0.893 
+class 5             , IoU: 0.893 
+class 6             , IoU: 0.824 
+class 7             , IoU: 0.927 
+class 8             , IoU: 0.751 
+class 9             , IoU: 0.842 
+class 10            , IoU: 0.821 
+class 11            , IoU: 0.930 
+class 12            , IoU: 0.850 
+class 13            , IoU: 0.853 
+class 14            , IoU: 0.935 
+
+2025-06-03 18:10:26,490 - Model - INFO - eval point avg class IoU: 0.872554
+2025-06-03 18:10:26,490 - Model - INFO - eval whole scene point avg class acc: 0.937533
+2025-06-03 18:10:26,490 - Model - INFO - eval whole scene point accuracy: 0.938810
+2025-06-03 18:10:31,724 - Model - INFO - PARAMETER ...
+2025-06-03 18:10:31,724 - Model - INFO - Namespace(batch_size=8, gpu='0', num_point=16384, log_dir='pointnet_sem_seg', visual=True, test_area=5, num_votes=3)
+2025-06-03 18:10:31,861 - Model - INFO - The number of test data is: 1
+2025-06-03 18:10:32,099 - Model - INFO - ---- EVALUATION WHOLE SCENE----
+2025-06-03 18:10:34,515 - Model - INFO - Mean IoU of Area_5_RetainerBody_60-1810_001: 0.8726
+2025-06-03 18:10:35,561 - Model - INFO - ------- IoU --------
+class 0             , IoU: 0.890 
+class 1             , IoU: 0.900 
+class 2             , IoU: 0.905 
+class 3             , IoU: 0.873 
+class 4             , IoU: 0.893 
+class 5             , IoU: 0.893 
+class 6             , IoU: 0.824 
+class 7             , IoU: 0.927 
+class 8             , IoU: 0.751 
+class 9             , IoU: 0.842 
+class 10            , IoU: 0.821 
+class 11            , IoU: 0.930 
+class 12            , IoU: 0.850 
+class 13            , IoU: 0.853 
+class 14            , IoU: 0.935 
+
+2025-06-03 18:10:35,561 - Model - INFO - eval point avg class IoU: 0.872554
+2025-06-03 18:10:35,561 - Model - INFO - eval whole scene point avg class acc: 0.937533
+2025-06-03 18:10:35,561 - Model - INFO - eval whole scene point accuracy: 0.938810
+2025-06-04 17:13:35,303 - Model - INFO - PARAMETER ...
+2025-06-04 17:13:35,304 - Model - INFO - Namespace(batch_size=8, gpu='0', num_point=16384, log_dir='pointnet_sem_seg', visual=True, test_area=6, num_votes=3)
+2025-06-04 17:13:35,313 - Model - INFO - The number of test data is: 1
+2025-06-04 17:13:35,581 - Model - INFO - ---- EVALUATION WHOLE SCENE----
+2025-06-04 17:13:36,083 - Model - INFO - Mean IoU of Area_6_RetainerBody_60-1810_001: nan
+2025-06-04 17:13:45,633 - Model - INFO - PARAMETER ...
+2025-06-04 17:13:45,633 - Model - INFO - Namespace(batch_size=8, gpu='0', num_point=16384, log_dir='pointnet_sem_seg', visual=True, test_area=6, num_votes=3)
+2025-06-04 17:13:45,633 - Model - INFO - The number of test data is: 1
+2025-06-04 17:13:45,875 - Model - INFO - ---- EVALUATION WHOLE SCENE----
+2025-06-04 17:13:46,363 - Model - INFO - Mean IoU of Area_6_RetainerBody_60-1810_001: nan
+2025-06-04 17:31:36,592 - Model - INFO - PARAMETER ...
+2025-06-04 17:31:36,592 - Model - INFO - Namespace(batch_size=8, gpu='0', num_point=16384, log_dir='pointnet_sem_seg', visual=True, test_area=5, num_votes=3)
+2025-06-04 17:31:36,611 - Model - INFO - The number of test data is: 1
+2025-06-04 17:31:36,840 - Model - INFO - ---- EVALUATION WHOLE SCENE----
+2025-06-04 17:31:39,237 - Model - INFO - Mean IoU of Area_5_RetainerBody_60-1810_001: 0.8726
+2025-06-04 17:31:40,312 - Model - INFO - ------- IoU --------
+class 0             , IoU: 0.890 
+class 1             , IoU: 0.900 
+class 2             , IoU: 0.905 
+class 3             , IoU: 0.873 
+class 4             , IoU: 0.893 
+class 5             , IoU: 0.893 
+class 6             , IoU: 0.824 
+class 7             , IoU: 0.927 
+class 8             , IoU: 0.751 
+class 9             , IoU: 0.842 
+class 10            , IoU: 0.821 
+class 11            , IoU: 0.930 
+class 12            , IoU: 0.850 
+class 13            , IoU: 0.853 
+class 14            , IoU: 0.935 
+
+2025-06-04 17:31:40,312 - Model - INFO - eval point avg class IoU: 0.872554
+2025-06-04 17:31:40,312 - Model - INFO - eval whole scene point avg class acc: 0.937533
+2025-06-04 17:31:40,312 - Model - INFO - eval whole scene point accuracy: 0.938810
+2025-06-04 17:32:20,036 - Model - INFO - PARAMETER ...
+2025-06-04 17:32:20,036 - Model - INFO - Namespace(batch_size=8, gpu='0', num_point=16384, log_dir='pointnet_sem_seg', visual=True, test_area=5, num_votes=3)
+2025-06-04 17:32:20,036 - Model - INFO - The number of test data is: 1
+2025-06-04 17:32:20,278 - Model - INFO - ---- EVALUATION WHOLE SCENE----
+2025-06-04 17:32:20,773 - Model - INFO - Mean IoU of Area_5_RetainerBody_60-1810_001: nan
+2025-06-04 17:48:30,072 - Model - INFO - PARAMETER ...
+2025-06-04 17:48:30,072 - Model - INFO - Namespace(batch_size=8, gpu='0', num_point=16384, log_dir='pointnet_sem_seg', visual=True, test_area=6, num_votes=3)
+2025-06-04 17:48:30,072 - Model - INFO - The number of test data is: 0
+2025-06-04 17:48:30,333 - Model - INFO - ---- EVALUATION WHOLE SCENE----
+2025-06-04 17:49:46,772 - Model - INFO - PARAMETER ...
+2025-06-04 17:49:46,773 - Model - INFO - Namespace(batch_size=8, gpu='0', num_point=16384, log_dir='pointnet_sem_seg', visual=True, test_area=6, num_votes=3)
+2025-06-04 17:49:46,788 - Model - INFO - The number of test data is: 11
+2025-06-04 17:49:47,059 - Model - INFO - ---- EVALUATION WHOLE SCENE----
+2025-06-04 17:49:47,594 - Model - INFO - Mean IoU of Area_6_RetainerBody_60-1810_000: 0.8767
+2025-06-04 17:49:47,947 - Model - INFO - Mean IoU of Area_6_RetainerBody_60-1810_005: 0.8815
+2025-06-04 17:49:48,323 - Model - INFO - Mean IoU of Area_6_RetainerBody_60-1810_006: 0.8778
+2025-06-04 17:49:48,693 - Model - INFO - Mean IoU of Area_6_RetainerBody_60-1810_007: 0.8799
+2025-06-04 17:49:49,081 - Model - INFO - Mean IoU of Area_6_RetainerBody_60-1810_009: 0.8707
+2025-06-04 17:49:49,483 - Model - INFO - Mean IoU of Area_6_RetainerBody_60-1810_010: 0.8584
+2025-06-04 17:49:49,868 - Model - INFO - Mean IoU of Area_6_RetainerBody_60-1810_019: 0.8805
+2025-06-04 17:49:50,262 - Model - INFO - Mean IoU of Area_6_RetainerBody_60-1810_023: 0.8613
+2025-06-04 17:49:50,616 - Model - INFO - Mean IoU of Area_6_RetainerBody_60-1810_027: 0.8751
+2025-06-04 17:49:50,978 - Model - INFO - Mean IoU of Area_6_RetainerBody_60-1810_029: 0.8676
+2025-06-04 17:49:51,373 - Model - INFO - Mean IoU of Area_6_RetainerBody_60-1810_030: 0.8775
+2025-06-04 17:49:51,519 - Model - INFO - ------- IoU --------
+class 0             , IoU: 0.879 
+class 1             , IoU: 0.915 
+class 2             , IoU: 0.948 
+class 3             , IoU: 0.916 
+class 4             , IoU: 0.915 
+class 5             , IoU: 0.914 
+class 6             , IoU: 0.864 
+class 7             , IoU: 0.945 
+class 8             , IoU: 0.782 
+class 9             , IoU: 0.809 
+class 10            , IoU: 0.824 
+class 11            , IoU: 0.928 
+class 12            , IoU: 0.753 
+class 13            , IoU: 0.794 
+class 14            , IoU: 0.915 
+
+2025-06-04 17:49:51,520 - Model - INFO - eval point avg class IoU: 0.873343
+2025-06-04 17:49:51,520 - Model - INFO - eval whole scene point avg class acc: 0.939319
+2025-06-04 17:49:51,520 - Model - INFO - eval whole scene point accuracy: 0.943714
+2025-06-05 11:27:05,729 - Model - INFO - PARAMETER ...
+2025-06-05 11:27:05,745 - Model - INFO - Namespace(batch_size=8, gpu='0', num_point=16384, log_dir='pointnet_sem_seg', visual=True, test_area=6, num_votes=3)
+2025-06-05 11:27:06,201 - Model - INFO - The number of test data is: 11
+2025-06-05 11:27:06,483 - Model - INFO - ---- EVALUATION WHOLE SCENE----
+2025-06-05 11:27:06,997 - Model - INFO - Mean IoU of Area_6_RetainerBody_60-1810_000: 0.9999
+2025-06-05 11:27:07,341 - Model - INFO - Mean IoU of Area_6_RetainerBody_60-1810_005: 0.9997
+2025-06-05 11:27:07,681 - Model - INFO - Mean IoU of Area_6_RetainerBody_60-1810_006: 0.9999
+2025-06-05 11:27:08,021 - Model - INFO - Mean IoU of Area_6_RetainerBody_60-1810_007: 0.9997
+2025-06-05 11:27:08,352 - Model - INFO - Mean IoU of Area_6_RetainerBody_60-1810_009: 0.9999
+2025-06-05 11:27:08,715 - Model - INFO - Mean IoU of Area_6_RetainerBody_60-1810_010: 0.9997
+2025-06-05 11:27:09,039 - Model - INFO - Mean IoU of Area_6_RetainerBody_60-1810_019: 1.0000
+2025-06-05 11:27:09,404 - Model - INFO - Mean IoU of Area_6_RetainerBody_60-1810_023: 0.9997
+2025-06-05 11:27:09,756 - Model - INFO - Mean IoU of Area_6_RetainerBody_60-1810_027: 0.9997
+2025-06-05 11:27:10,084 - Model - INFO - Mean IoU of Area_6_RetainerBody_60-1810_029: 0.9997
+2025-06-05 11:27:10,435 - Model - INFO - Mean IoU of Area_6_RetainerBody_60-1810_030: 1.0000
+2025-06-05 11:27:10,540 - Model - INFO - ------- IoU --------
+class 0             , IoU: 1.000 
+class 1             , IoU: 1.000 
+class 2             , IoU: 1.000 
+class 3             , IoU: 1.000 
+class 4             , IoU: 1.000 
+class 5             , IoU: 1.000 
+class 6             , IoU: 0.999 
+class 7             , IoU: 1.000 
+class 8             , IoU: 1.000 
+class 9             , IoU: 1.000 
+class 10            , IoU: 0.999 
+class 11            , IoU: 1.000 
+class 12            , IoU: 1.000 
+class 13            , IoU: 1.000 
+class 14            , IoU: 1.000 
+
+2025-06-05 11:27:10,540 - Model - INFO - eval point avg class IoU: 0.999821
+2025-06-05 11:27:10,540 - Model - INFO - eval whole scene point avg class acc: 0.999884
+2025-06-05 11:27:10,540 - Model - INFO - eval whole scene point accuracy: 0.999917
+2025-06-05 11:29:42,187 - Model - INFO - PARAMETER ...
+2025-06-05 11:29:42,187 - Model - INFO - Namespace(batch_size=8, gpu='0', num_point=16384, log_dir='pointnet_sem_seg', visual=True, test_area=0, num_votes=3)
+2025-06-05 11:29:42,939 - Model - INFO - The number of test data is: 6
+2025-06-05 11:29:43,191 - Model - INFO - ---- EVALUATION WHOLE SCENE----
+2025-06-05 11:29:45,850 - Model - INFO - Mean IoU of Area_0_RetainerBody_60-1810_001: 0.9999
+2025-06-05 11:29:49,000 - Model - INFO - Mean IoU of Area_0_RetainerBody_60-1810_002: 1.0000
+2025-06-05 11:29:51,992 - Model - INFO - Mean IoU of Area_0_RetainerBody_60-1810_003: 0.9999
+2025-06-05 11:29:54,844 - Model - INFO - Mean IoU of Area_0_RetainerBody_60-1810_004: 1.0000
+2025-06-05 11:29:57,847 - Model - INFO - Mean IoU of Area_0_RetainerBody_60-1810_005: 1.0000
+2025-06-05 11:30:00,996 - Model - INFO - Mean IoU of Area_0_RetainerBody_60-1810_006: 1.0000
+2025-06-05 11:30:02,033 - Model - INFO - ------- IoU --------
+class 0             , IoU: 1.000 
+class 1             , IoU: 1.000 
+class 2             , IoU: 1.000 
+class 3             , IoU: 1.000 
+class 4             , IoU: 1.000 
+class 5             , IoU: 1.000 
+class 6             , IoU: 1.000 
+class 7             , IoU: 1.000 
+class 8             , IoU: 1.000 
+class 9             , IoU: 1.000 
+class 10            , IoU: 1.000 
+class 11            , IoU: 1.000 
+class 12            , IoU: 1.000 
+class 13            , IoU: 1.000 
+class 14            , IoU: 1.000 
+
+2025-06-05 11:30:02,033 - Model - INFO - eval point avg class IoU: 0.999964
+2025-06-05 11:30:02,033 - Model - INFO - eval whole scene point avg class acc: 0.999977
+2025-06-05 11:30:02,033 - Model - INFO - eval whole scene point accuracy: 0.999984
+2025-06-09 17:37:44,904 - Model - INFO - PARAMETER ...
+2025-06-09 17:37:44,925 - Model - INFO - Namespace(batch_size=8, gpu='0', num_point=16384, log_dir='pointnet_sem_seg', visual=True, test_area=0, num_votes=3)
+2025-06-09 17:37:45,720 - Model - INFO - The number of test data is: 6
+2025-06-09 17:37:45,963 - Model - INFO - ---- EVALUATION WHOLE SCENE----
+2025-06-09 17:37:48,714 - Model - INFO - Mean IoU of Area_0_RetainerBody_60-1810_001: 0.9999
+2025-06-09 17:37:51,874 - Model - INFO - Mean IoU of Area_0_RetainerBody_60-1810_002: 1.0000
+2025-06-09 17:37:54,692 - Model - INFO - Mean IoU of Area_0_RetainerBody_60-1810_003: 0.9998
+2025-06-09 17:37:57,419 - Model - INFO - Mean IoU of Area_0_RetainerBody_60-1810_004: 1.0000
+2025-06-09 17:38:00,389 - Model - INFO - Mean IoU of Area_0_RetainerBody_60-1810_005: 1.0000
+2025-06-09 17:38:03,424 - Model - INFO - Mean IoU of Area_0_RetainerBody_60-1810_006: 1.0000
+2025-06-09 17:38:04,458 - Model - INFO - ------- IoU --------
+class 0             , IoU: 1.000 
+class 1             , IoU: 1.000 
+class 2             , IoU: 1.000 
+class 3             , IoU: 1.000 
+class 4             , IoU: 1.000 
+class 5             , IoU: 1.000 
+class 6             , IoU: 1.000 
+class 7             , IoU: 1.000 
+class 8             , IoU: 1.000 
+class 9             , IoU: 1.000 
+class 10            , IoU: 1.000 
+class 11            , IoU: 1.000 
+class 12            , IoU: 1.000 
+class 13            , IoU: 1.000 
+class 14            , IoU: 1.000 
+
+2025-06-09 17:38:04,458 - Model - INFO - eval point avg class IoU: 0.999928
+2025-06-09 17:38:04,458 - Model - INFO - eval whole scene point avg class acc: 0.999965
+2025-06-09 17:38:04,458 - Model - INFO - eval whole scene point accuracy: 0.999970

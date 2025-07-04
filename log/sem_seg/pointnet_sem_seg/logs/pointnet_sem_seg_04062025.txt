@@ -1,0 +1,2918 @@
+2025-06-04 20:59:16,692 - Model - INFO - PARAMETER ...
+2025-06-04 20:59:16,692 - Model - INFO - Namespace(model='pointnet_sem_seg', batch_size=8, epoch=96, learning_rate=0.001, gpu='0', optimizer='Adam', log_dir='pointnet_sem_seg', decay_rate=0.0001, npoint=16384, step_size=10, lr_decay=0.7, test_area=5)
+2025-06-04 21:01:59,791 - Model - INFO - The number of training data is: 4493
+2025-06-04 21:01:59,791 - Model - INFO - The number of test data is: 907
+2025-06-04 21:01:59,881 - Model - INFO - No existing model, starting training from scratch...
+2025-06-04 21:02:01,296 - Model - INFO - **** Epoch 1 (1/96) ****
+2025-06-04 21:02:01,296 - Model - INFO - Learning rate:0.001000
+2025-06-04 21:04:30,668 - Model - INFO - Training mean loss: 1.006272
+2025-06-04 21:04:30,668 - Model - INFO - Training accuracy: 0.626550
+2025-06-04 21:04:30,668 - Model - INFO - Save model...
+2025-06-04 21:04:30,668 - Model - INFO - Saving at log\sem_seg\pointnet_sem_seg\checkpoints/model.pth
+2025-06-04 21:04:30,748 - Model - INFO - Saving model....
+2025-06-04 21:04:30,787 - Model - INFO - ---- EPOCH 001 EVALUATION ----
+2025-06-04 21:04:43,059 - Model - INFO - eval mean loss: 1.324998
+2025-06-04 21:04:43,059 - Model - INFO - eval point avg class IoU: 0.301846
+2025-06-04 21:04:43,059 - Model - INFO - eval point accuracy: 0.522483
+2025-06-04 21:04:43,059 - Model - INFO - eval point avg class acc: 0.444224
+2025-06-04 21:04:43,059 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 0.415 
+class 1              weight: 0.030, IoU: 0.306 
+class 2              weight: 0.061, IoU: 0.136 
+class 3              weight: 0.061, IoU: 0.133 
+class 4              weight: 0.059, IoU: 0.286 
+class 5              weight: 0.080, IoU: 0.258 
+class 6              weight: 0.057, IoU: 0.118 
+class 7              weight: 0.036, IoU: 0.692 
+class 8              weight: 0.189, IoU: 0.272 
+class 9              weight: 0.053, IoU: 0.281 
+class 10             weight: 0.066, IoU: 0.223 
+class 11             weight: 0.050, IoU: 0.502 
+class 12             weight: 0.119, IoU: 0.143 
+class 13             weight: 0.028, IoU: 0.141 
+class 14             weight: 0.039, IoU: 0.622 
+
+2025-06-04 21:04:43,059 - Model - INFO - Eval mean loss: 1.324998
+2025-06-04 21:04:43,059 - Model - INFO - Eval accuracy: 0.522483
+2025-06-04 21:04:43,059 - Model - INFO - Save model...
+2025-06-04 21:04:43,059 - Model - INFO - Saving at log\sem_seg\pointnet_sem_seg\checkpoints/best_model.pth
+2025-06-04 21:04:43,138 - Model - INFO - Saving model....
+2025-06-04 21:04:43,138 - Model - INFO - Best mIoU: 0.301846
+2025-06-04 21:04:43,138 - Model - INFO - **** Epoch 2 (2/96) ****
+2025-06-04 21:04:43,138 - Model - INFO - Learning rate:0.001000
+2025-06-04 21:07:11,768 - Model - INFO - Training mean loss: 0.714464
+2025-06-04 21:07:11,768 - Model - INFO - Training accuracy: 0.712107
+2025-06-04 21:07:11,791 - Model - INFO - ---- EPOCH 002 EVALUATION ----
+2025-06-04 21:07:23,832 - Model - INFO - eval mean loss: 0.766783
+2025-06-04 21:07:23,832 - Model - INFO - eval point avg class IoU: 0.483332
+2025-06-04 21:07:23,832 - Model - INFO - eval point accuracy: 0.685881
+2025-06-04 21:07:23,832 - Model - INFO - eval point avg class acc: 0.639733
+2025-06-04 21:07:23,832 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 0.620 
+class 1              weight: 0.030, IoU: 0.553 
+class 2              weight: 0.061, IoU: 0.535 
+class 3              weight: 0.061, IoU: 0.571 
+class 4              weight: 0.059, IoU: 0.705 
+class 5              weight: 0.080, IoU: 0.562 
+class 6              weight: 0.057, IoU: 0.425 
+class 7              weight: 0.036, IoU: 0.724 
+class 8              weight: 0.189, IoU: 0.308 
+class 9              weight: 0.053, IoU: 0.445 
+class 10             weight: 0.066, IoU: 0.495 
+class 11             weight: 0.050, IoU: 0.639 
+class 12             weight: 0.119, IoU: 0.000 
+class 13             weight: 0.028, IoU: 0.018 
+class 14             weight: 0.039, IoU: 0.652 
+
+2025-06-04 21:07:23,832 - Model - INFO - Eval mean loss: 0.766783
+2025-06-04 21:07:23,832 - Model - INFO - Eval accuracy: 0.685881
+2025-06-04 21:07:23,846 - Model - INFO - Save model...
+2025-06-04 21:07:23,846 - Model - INFO - Saving at log\sem_seg\pointnet_sem_seg\checkpoints/best_model.pth
+2025-06-04 21:07:23,912 - Model - INFO - Saving model....
+2025-06-04 21:07:23,912 - Model - INFO - Best mIoU: 0.483332
+2025-06-04 21:07:23,912 - Model - INFO - **** Epoch 3 (3/96) ****
+2025-06-04 21:07:23,912 - Model - INFO - Learning rate:0.001000
+2025-06-04 21:09:51,611 - Model - INFO - Training mean loss: 0.572763
+2025-06-04 21:09:51,611 - Model - INFO - Training accuracy: 0.764776
+2025-06-04 21:09:51,649 - Model - INFO - ---- EPOCH 003 EVALUATION ----
+2025-06-04 21:10:03,658 - Model - INFO - eval mean loss: 1.520286
+2025-06-04 21:10:03,658 - Model - INFO - eval point avg class IoU: 0.421532
+2025-06-04 21:10:03,658 - Model - INFO - eval point accuracy: 0.637675
+2025-06-04 21:10:03,658 - Model - INFO - eval point avg class acc: 0.583016
+2025-06-04 21:10:03,658 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 0.392 
+class 1              weight: 0.030, IoU: 0.172 
+class 2              weight: 0.061, IoU: 0.226 
+class 3              weight: 0.061, IoU: 0.445 
+class 4              weight: 0.059, IoU: 0.437 
+class 5              weight: 0.080, IoU: 0.067 
+class 6              weight: 0.057, IoU: 0.000 
+class 7              weight: 0.036, IoU: 0.637 
+class 8              weight: 0.189, IoU: 0.456 
+class 9              weight: 0.053, IoU: 0.451 
+class 10             weight: 0.066, IoU: 0.461 
+class 11             weight: 0.050, IoU: 0.728 
+class 12             weight: 0.119, IoU: 0.402 
+class 13             weight: 0.028, IoU: 0.585 
+class 14             weight: 0.039, IoU: 0.864 
+
+2025-06-04 21:10:03,674 - Model - INFO - Eval mean loss: 1.520286
+2025-06-04 21:10:03,674 - Model - INFO - Eval accuracy: 0.637675
+2025-06-04 21:10:03,674 - Model - INFO - Best mIoU: 0.483332
+2025-06-04 21:10:03,674 - Model - INFO - **** Epoch 4 (4/96) ****
+2025-06-04 21:10:03,674 - Model - INFO - Learning rate:0.001000
+2025-06-04 21:12:31,142 - Model - INFO - Training mean loss: 0.510550
+2025-06-04 21:12:31,157 - Model - INFO - Training accuracy: 0.790873
+2025-06-04 21:12:31,179 - Model - INFO - ---- EPOCH 004 EVALUATION ----
+2025-06-04 21:12:43,262 - Model - INFO - eval mean loss: 0.661476
+2025-06-04 21:12:43,263 - Model - INFO - eval point avg class IoU: 0.538105
+2025-06-04 21:12:43,263 - Model - INFO - eval point accuracy: 0.731092
+2025-06-04 21:12:43,263 - Model - INFO - eval point avg class acc: 0.692799
+2025-06-04 21:12:43,264 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 0.499 
+class 1              weight: 0.030, IoU: 0.493 
+class 2              weight: 0.061, IoU: 0.368 
+class 3              weight: 0.061, IoU: 0.226 
+class 4              weight: 0.059, IoU: 0.568 
+class 5              weight: 0.080, IoU: 0.477 
+class 6              weight: 0.057, IoU: 0.236 
+class 7              weight: 0.036, IoU: 0.788 
+class 8              weight: 0.189, IoU: 0.446 
+class 9              weight: 0.053, IoU: 0.606 
+class 10             weight: 0.066, IoU: 0.564 
+class 11             weight: 0.050, IoU: 0.795 
+class 12             weight: 0.119, IoU: 0.521 
+class 13             weight: 0.028, IoU: 0.621 
+class 14             weight: 0.039, IoU: 0.862 
+
+2025-06-04 21:12:43,266 - Model - INFO - Eval mean loss: 0.661476
+2025-06-04 21:12:43,266 - Model - INFO - Eval accuracy: 0.731092
+2025-06-04 21:12:43,266 - Model - INFO - Save model...
+2025-06-04 21:12:43,266 - Model - INFO - Saving at log\sem_seg\pointnet_sem_seg\checkpoints/best_model.pth
+2025-06-04 21:12:43,345 - Model - INFO - Saving model....
+2025-06-04 21:12:43,345 - Model - INFO - Best mIoU: 0.538105
+2025-06-04 21:12:43,346 - Model - INFO - **** Epoch 5 (5/96) ****
+2025-06-04 21:12:43,346 - Model - INFO - Learning rate:0.001000
+2025-06-04 21:15:10,344 - Model - INFO - Training mean loss: 0.454763
+2025-06-04 21:15:10,344 - Model - INFO - Training accuracy: 0.815571
+2025-06-04 21:15:10,386 - Model - INFO - ---- EPOCH 005 EVALUATION ----
+2025-06-04 21:15:22,582 - Model - INFO - eval mean loss: 1.215039
+2025-06-04 21:15:22,583 - Model - INFO - eval point avg class IoU: 0.397340
+2025-06-04 21:15:22,583 - Model - INFO - eval point accuracy: 0.606881
+2025-06-04 21:15:22,583 - Model - INFO - eval point avg class acc: 0.568943
+2025-06-04 21:15:22,584 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 0.358 
+class 1              weight: 0.030, IoU: 0.155 
+class 2              weight: 0.061, IoU: 0.158 
+class 3              weight: 0.061, IoU: 0.250 
+class 4              weight: 0.059, IoU: 0.350 
+class 5              weight: 0.080, IoU: 0.463 
+class 6              weight: 0.057, IoU: 0.223 
+class 7              weight: 0.036, IoU: 0.746 
+class 8              weight: 0.189, IoU: 0.425 
+class 9              weight: 0.053, IoU: 0.400 
+class 10             weight: 0.066, IoU: 0.389 
+class 11             weight: 0.050, IoU: 0.687 
+class 12             weight: 0.119, IoU: 0.234 
+class 13             weight: 0.028, IoU: 0.386 
+class 14             weight: 0.039, IoU: 0.736 
+
+2025-06-04 21:15:22,585 - Model - INFO - Eval mean loss: 1.215039
+2025-06-04 21:15:22,586 - Model - INFO - Eval accuracy: 0.606881
+2025-06-04 21:15:22,586 - Model - INFO - Best mIoU: 0.538105
+2025-06-04 21:15:22,586 - Model - INFO - **** Epoch 6 (6/96) ****
+2025-06-04 21:15:22,587 - Model - INFO - Learning rate:0.001000
+2025-06-04 21:17:50,375 - Model - INFO - Training mean loss: 0.362931
+2025-06-04 21:17:50,375 - Model - INFO - Training accuracy: 0.856985
+2025-06-04 21:17:50,375 - Model - INFO - Save model...
+2025-06-04 21:17:50,375 - Model - INFO - Saving at log\sem_seg\pointnet_sem_seg\checkpoints/model.pth
+2025-06-04 21:17:50,470 - Model - INFO - Saving model....
+2025-06-04 21:17:50,504 - Model - INFO - ---- EPOCH 006 EVALUATION ----
+2025-06-04 21:18:02,739 - Model - INFO - eval mean loss: 0.368858
+2025-06-04 21:18:02,739 - Model - INFO - eval point avg class IoU: 0.698923
+2025-06-04 21:18:02,740 - Model - INFO - eval point accuracy: 0.851353
+2025-06-04 21:18:02,740 - Model - INFO - eval point avg class acc: 0.821907
+2025-06-04 21:18:02,740 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 0.703 
+class 1              weight: 0.030, IoU: 0.583 
+class 2              weight: 0.061, IoU: 0.557 
+class 3              weight: 0.061, IoU: 0.668 
+class 4              weight: 0.059, IoU: 0.895 
+class 5              weight: 0.080, IoU: 0.775 
+class 6              weight: 0.057, IoU: 0.545 
+class 7              weight: 0.036, IoU: 0.888 
+class 8              weight: 0.189, IoU: 0.545 
+class 9              weight: 0.053, IoU: 0.707 
+class 10             weight: 0.066, IoU: 0.640 
+class 11             weight: 0.050, IoU: 0.864 
+class 12             weight: 0.119, IoU: 0.521 
+class 13             weight: 0.028, IoU: 0.697 
+class 14             weight: 0.039, IoU: 0.897 
+
+2025-06-04 21:18:02,742 - Model - INFO - Eval mean loss: 0.368858
+2025-06-04 21:18:02,742 - Model - INFO - Eval accuracy: 0.851353
+2025-06-04 21:18:02,743 - Model - INFO - Save model...
+2025-06-04 21:18:02,743 - Model - INFO - Saving at log\sem_seg\pointnet_sem_seg\checkpoints/best_model.pth
+2025-06-04 21:18:02,813 - Model - INFO - Saving model....
+2025-06-04 21:18:02,813 - Model - INFO - Best mIoU: 0.698923
+2025-06-04 21:18:02,813 - Model - INFO - **** Epoch 7 (7/96) ****
+2025-06-04 21:18:02,813 - Model - INFO - Learning rate:0.001000
+2025-06-04 21:20:31,579 - Model - INFO - Training mean loss: 0.341524
+2025-06-04 21:20:31,579 - Model - INFO - Training accuracy: 0.868767
+2025-06-04 21:20:31,608 - Model - INFO - ---- EPOCH 007 EVALUATION ----
+2025-06-04 21:20:43,782 - Model - INFO - eval mean loss: 0.623062
+2025-06-04 21:20:43,783 - Model - INFO - eval point avg class IoU: 0.560725
+2025-06-04 21:20:43,783 - Model - INFO - eval point accuracy: 0.753178
+2025-06-04 21:20:43,783 - Model - INFO - eval point avg class acc: 0.692617
+2025-06-04 21:20:43,784 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 0.706 
+class 1              weight: 0.030, IoU: 0.486 
+class 2              weight: 0.061, IoU: 0.362 
+class 3              weight: 0.061, IoU: 0.515 
+class 4              weight: 0.059, IoU: 0.825 
+class 5              weight: 0.080, IoU: 0.801 
+class 6              weight: 0.057, IoU: 0.420 
+class 7              weight: 0.036, IoU: 0.837 
+class 8              weight: 0.189, IoU: 0.386 
+class 9              weight: 0.053, IoU: 0.477 
+class 10             weight: 0.066, IoU: 0.116 
+class 11             weight: 0.050, IoU: 0.698 
+class 12             weight: 0.119, IoU: 0.342 
+class 13             weight: 0.028, IoU: 0.550 
+class 14             weight: 0.039, IoU: 0.889 
+
+2025-06-04 21:20:43,785 - Model - INFO - Eval mean loss: 0.623062
+2025-06-04 21:20:43,786 - Model - INFO - Eval accuracy: 0.753178
+2025-06-04 21:20:43,786 - Model - INFO - Best mIoU: 0.698923
+2025-06-04 21:20:43,786 - Model - INFO - **** Epoch 8 (8/96) ****
+2025-06-04 21:20:43,787 - Model - INFO - Learning rate:0.001000
+2025-06-04 21:23:10,362 - Model - INFO - Training mean loss: 0.267545
+2025-06-04 21:23:10,362 - Model - INFO - Training accuracy: 0.900034
+2025-06-04 21:23:10,405 - Model - INFO - ---- EPOCH 008 EVALUATION ----
+2025-06-04 21:23:22,513 - Model - INFO - eval mean loss: 1.026266
+2025-06-04 21:23:22,514 - Model - INFO - eval point avg class IoU: 0.517064
+2025-06-04 21:23:22,514 - Model - INFO - eval point accuracy: 0.727352
+2025-06-04 21:23:22,514 - Model - INFO - eval point avg class acc: 0.672569
+2025-06-04 21:23:22,515 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 0.514 
+class 1              weight: 0.030, IoU: 0.233 
+class 2              weight: 0.061, IoU: 0.533 
+class 3              weight: 0.061, IoU: 0.675 
+class 4              weight: 0.059, IoU: 0.846 
+class 5              weight: 0.080, IoU: 0.796 
+class 6              weight: 0.057, IoU: 0.634 
+class 7              weight: 0.036, IoU: 0.782 
+class 8              weight: 0.189, IoU: 0.408 
+class 9              weight: 0.053, IoU: 0.216 
+class 10             weight: 0.066, IoU: 0.264 
+class 11             weight: 0.050, IoU: 0.564 
+class 12             weight: 0.119, IoU: 0.209 
+class 13             weight: 0.028, IoU: 0.339 
+class 14             weight: 0.039, IoU: 0.744 
+
+2025-06-04 21:23:22,517 - Model - INFO - Eval mean loss: 1.026266
+2025-06-04 21:23:22,517 - Model - INFO - Eval accuracy: 0.727352
+2025-06-04 21:23:22,517 - Model - INFO - Best mIoU: 0.698923
+2025-06-04 21:23:22,518 - Model - INFO - **** Epoch 9 (9/96) ****
+2025-06-04 21:23:22,518 - Model - INFO - Learning rate:0.001000
+2025-06-04 21:25:49,519 - Model - INFO - Training mean loss: 0.227387
+2025-06-04 21:25:49,519 - Model - INFO - Training accuracy: 0.918014
+2025-06-04 21:25:49,548 - Model - INFO - ---- EPOCH 009 EVALUATION ----
+2025-06-04 21:26:01,792 - Model - INFO - eval mean loss: 0.284444
+2025-06-04 21:26:01,792 - Model - INFO - eval point avg class IoU: 0.796530
+2025-06-04 21:26:01,792 - Model - INFO - eval point accuracy: 0.906139
+2025-06-04 21:26:01,793 - Model - INFO - eval point avg class acc: 0.867719
+2025-06-04 21:26:01,793 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 0.868 
+class 1              weight: 0.030, IoU: 0.895 
+class 2              weight: 0.061, IoU: 0.884 
+class 3              weight: 0.061, IoU: 0.923 
+class 4              weight: 0.059, IoU: 0.975 
+class 5              weight: 0.080, IoU: 0.848 
+class 6              weight: 0.057, IoU: 0.715 
+class 7              weight: 0.036, IoU: 0.925 
+class 8              weight: 0.189, IoU: 0.538 
+class 9              weight: 0.053, IoU: 0.723 
+class 10             weight: 0.066, IoU: 0.541 
+class 11             weight: 0.050, IoU: 0.866 
+class 12             weight: 0.119, IoU: 0.682 
+class 13             weight: 0.028, IoU: 0.741 
+class 14             weight: 0.039, IoU: 0.825 
+
+2025-06-04 21:26:01,796 - Model - INFO - Eval mean loss: 0.284444
+2025-06-04 21:26:01,796 - Model - INFO - Eval accuracy: 0.906139
+2025-06-04 21:26:01,796 - Model - INFO - Save model...
+2025-06-04 21:26:01,797 - Model - INFO - Saving at log\sem_seg\pointnet_sem_seg\checkpoints/best_model.pth
+2025-06-04 21:26:01,865 - Model - INFO - Saving model....
+2025-06-04 21:26:01,879 - Model - INFO - Best mIoU: 0.796530
+2025-06-04 21:26:01,879 - Model - INFO - **** Epoch 10 (10/96) ****
+2025-06-04 21:26:01,880 - Model - INFO - Learning rate:0.001000
+2025-06-04 21:28:29,129 - Model - INFO - Training mean loss: 0.181371
+2025-06-04 21:28:29,129 - Model - INFO - Training accuracy: 0.935975
+2025-06-04 21:28:29,166 - Model - INFO - ---- EPOCH 010 EVALUATION ----
+2025-06-04 21:28:41,381 - Model - INFO - eval mean loss: 0.366109
+2025-06-04 21:28:41,382 - Model - INFO - eval point avg class IoU: 0.734608
+2025-06-04 21:28:41,382 - Model - INFO - eval point accuracy: 0.867002
+2025-06-04 21:28:41,382 - Model - INFO - eval point avg class acc: 0.831612
+2025-06-04 21:28:41,383 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 0.798 
+class 1              weight: 0.030, IoU: 0.747 
+class 2              weight: 0.061, IoU: 0.812 
+class 3              weight: 0.061, IoU: 0.919 
+class 4              weight: 0.059, IoU: 0.980 
+class 5              weight: 0.080, IoU: 0.933 
+class 6              weight: 0.057, IoU: 0.854 
+class 7              weight: 0.036, IoU: 0.924 
+class 8              weight: 0.189, IoU: 0.690 
+class 9              weight: 0.053, IoU: 0.712 
+class 10             weight: 0.066, IoU: 0.503 
+class 11             weight: 0.050, IoU: 0.722 
+class 12             weight: 0.119, IoU: 0.311 
+class 13             weight: 0.028, IoU: 0.369 
+class 14             weight: 0.039, IoU: 0.744 
+
+2025-06-04 21:28:41,385 - Model - INFO - Eval mean loss: 0.366109
+2025-06-04 21:28:41,385 - Model - INFO - Eval accuracy: 0.867002
+2025-06-04 21:28:41,386 - Model - INFO - Best mIoU: 0.796530
+2025-06-04 21:28:41,386 - Model - INFO - **** Epoch 11 (11/96) ****
+2025-06-04 21:28:41,386 - Model - INFO - Learning rate:0.000700
+2025-06-04 21:31:08,301 - Model - INFO - Training mean loss: 0.122730
+2025-06-04 21:31:08,301 - Model - INFO - Training accuracy: 0.959719
+2025-06-04 21:31:08,301 - Model - INFO - Save model...
+2025-06-04 21:31:08,301 - Model - INFO - Saving at log\sem_seg\pointnet_sem_seg\checkpoints/model.pth
+2025-06-04 21:31:08,381 - Model - INFO - Saving model....
+2025-06-04 21:31:08,420 - Model - INFO - ---- EPOCH 011 EVALUATION ----
+2025-06-04 21:31:20,426 - Model - INFO - eval mean loss: 0.210499
+2025-06-04 21:31:20,426 - Model - INFO - eval point avg class IoU: 0.842728
+2025-06-04 21:31:20,426 - Model - INFO - eval point accuracy: 0.929367
+2025-06-04 21:31:20,426 - Model - INFO - eval point avg class acc: 0.914809
+2025-06-04 21:31:20,426 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 0.688 
+class 1              weight: 0.030, IoU: 0.627 
+class 2              weight: 0.061, IoU: 0.871 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 0.997 
+class 5              weight: 0.080, IoU: 0.996 
+class 6              weight: 0.057, IoU: 0.967 
+class 7              weight: 0.036, IoU: 0.955 
+class 8              weight: 0.189, IoU: 0.787 
+class 9              weight: 0.053, IoU: 0.858 
+class 10             weight: 0.066, IoU: 0.704 
+class 11             weight: 0.050, IoU: 0.858 
+class 12             weight: 0.119, IoU: 0.651 
+class 13             weight: 0.028, IoU: 0.764 
+class 14             weight: 0.039, IoU: 0.918 
+
+2025-06-04 21:31:20,426 - Model - INFO - Eval mean loss: 0.210499
+2025-06-04 21:31:20,426 - Model - INFO - Eval accuracy: 0.929367
+2025-06-04 21:31:20,426 - Model - INFO - Save model...
+2025-06-04 21:31:20,426 - Model - INFO - Saving at log\sem_seg\pointnet_sem_seg\checkpoints/best_model.pth
+2025-06-04 21:31:20,505 - Model - INFO - Saving model....
+2025-06-04 21:31:20,505 - Model - INFO - Best mIoU: 0.842728
+2025-06-04 21:31:20,505 - Model - INFO - **** Epoch 12 (12/96) ****
+2025-06-04 21:31:20,505 - Model - INFO - Learning rate:0.000700
+2025-06-04 21:33:48,066 - Model - INFO - Training mean loss: 0.102564
+2025-06-04 21:33:48,066 - Model - INFO - Training accuracy: 0.967833
+2025-06-04 21:33:48,103 - Model - INFO - ---- EPOCH 012 EVALUATION ----
+2025-06-04 21:34:00,205 - Model - INFO - eval mean loss: 0.127252
+2025-06-04 21:34:00,205 - Model - INFO - eval point avg class IoU: 0.908632
+2025-06-04 21:34:00,206 - Model - INFO - eval point accuracy: 0.959969
+2025-06-04 21:34:00,206 - Model - INFO - eval point avg class acc: 0.940790
+2025-06-04 21:34:00,207 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 0.998 
+class 1              weight: 0.030, IoU: 0.972 
+class 2              weight: 0.061, IoU: 0.948 
+class 3              weight: 0.061, IoU: 0.974 
+class 4              weight: 0.059, IoU: 0.995 
+class 5              weight: 0.080, IoU: 0.975 
+class 6              weight: 0.057, IoU: 0.956 
+class 7              weight: 0.036, IoU: 0.951 
+class 8              weight: 0.189, IoU: 0.820 
+class 9              weight: 0.053, IoU: 0.929 
+class 10             weight: 0.066, IoU: 0.843 
+class 11             weight: 0.050, IoU: 0.918 
+class 12             weight: 0.119, IoU: 0.667 
+class 13             weight: 0.028, IoU: 0.796 
+class 14             weight: 0.039, IoU: 0.887 
+
+2025-06-04 21:34:00,209 - Model - INFO - Eval mean loss: 0.127252
+2025-06-04 21:34:00,209 - Model - INFO - Eval accuracy: 0.959969
+2025-06-04 21:34:00,209 - Model - INFO - Save model...
+2025-06-04 21:34:00,210 - Model - INFO - Saving at log\sem_seg\pointnet_sem_seg\checkpoints/best_model.pth
+2025-06-04 21:34:00,287 - Model - INFO - Saving model....
+2025-06-04 21:34:00,287 - Model - INFO - Best mIoU: 0.908632
+2025-06-04 21:34:00,287 - Model - INFO - **** Epoch 13 (13/96) ****
+2025-06-04 21:34:00,287 - Model - INFO - Learning rate:0.000700
+2025-06-04 21:36:27,066 - Model - INFO - Training mean loss: 0.084018
+2025-06-04 21:36:27,066 - Model - INFO - Training accuracy: 0.974605
+2025-06-04 21:36:27,103 - Model - INFO - ---- EPOCH 013 EVALUATION ----
+2025-06-04 21:36:39,325 - Model - INFO - eval mean loss: 0.139993
+2025-06-04 21:36:39,325 - Model - INFO - eval point avg class IoU: 0.888948
+2025-06-04 21:36:39,326 - Model - INFO - eval point accuracy: 0.948145
+2025-06-04 21:36:39,326 - Model - INFO - eval point avg class acc: 0.946059
+2025-06-04 21:36:39,327 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 0.889 
+class 1              weight: 0.030, IoU: 0.941 
+class 2              weight: 0.061, IoU: 0.981 
+class 3              weight: 0.061, IoU: 0.988 
+class 4              weight: 0.059, IoU: 0.977 
+class 5              weight: 0.080, IoU: 0.895 
+class 6              weight: 0.057, IoU: 0.849 
+class 7              weight: 0.036, IoU: 0.918 
+class 8              weight: 0.189, IoU: 0.821 
+class 9              weight: 0.053, IoU: 0.799 
+class 10             weight: 0.066, IoU: 0.811 
+class 11             weight: 0.050, IoU: 0.905 
+class 12             weight: 0.119, IoU: 0.767 
+class 13             weight: 0.028, IoU: 0.798 
+class 14             weight: 0.039, IoU: 0.995 
+
+2025-06-04 21:36:39,329 - Model - INFO - Eval mean loss: 0.139993
+2025-06-04 21:36:39,329 - Model - INFO - Eval accuracy: 0.948145
+2025-06-04 21:36:39,330 - Model - INFO - Best mIoU: 0.908632
+2025-06-04 21:36:39,330 - Model - INFO - **** Epoch 14 (14/96) ****
+2025-06-04 21:36:39,330 - Model - INFO - Learning rate:0.000700
+2025-06-04 21:39:06,171 - Model - INFO - Training mean loss: 0.071353
+2025-06-04 21:39:06,171 - Model - INFO - Training accuracy: 0.979151
+2025-06-04 21:39:06,218 - Model - INFO - ---- EPOCH 014 EVALUATION ----
+2025-06-04 21:39:18,371 - Model - INFO - eval mean loss: 0.164939
+2025-06-04 21:39:18,371 - Model - INFO - eval point avg class IoU: 0.858791
+2025-06-04 21:39:18,372 - Model - INFO - eval point accuracy: 0.936080
+2025-06-04 21:39:18,372 - Model - INFO - eval point avg class acc: 0.934210
+2025-06-04 21:39:18,372 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 0.856 
+class 1              weight: 0.030, IoU: 0.777 
+class 2              weight: 0.061, IoU: 0.714 
+class 3              weight: 0.061, IoU: 0.838 
+class 4              weight: 0.059, IoU: 0.989 
+class 5              weight: 0.080, IoU: 0.923 
+class 6              weight: 0.057, IoU: 0.899 
+class 7              weight: 0.036, IoU: 0.985 
+class 8              weight: 0.189, IoU: 0.954 
+class 9              weight: 0.053, IoU: 0.985 
+class 10             weight: 0.066, IoU: 0.798 
+class 11             weight: 0.050, IoU: 0.844 
+class 12             weight: 0.119, IoU: 0.746 
+class 13             weight: 0.028, IoU: 0.689 
+class 14             weight: 0.039, IoU: 0.885 
+
+2025-06-04 21:39:18,374 - Model - INFO - Eval mean loss: 0.164939
+2025-06-04 21:39:18,375 - Model - INFO - Eval accuracy: 0.936080
+2025-06-04 21:39:18,375 - Model - INFO - Best mIoU: 0.908632
+2025-06-04 21:39:18,375 - Model - INFO - **** Epoch 15 (15/96) ****
+2025-06-04 21:39:18,376 - Model - INFO - Learning rate:0.000700
+2025-06-04 21:41:45,057 - Model - INFO - Training mean loss: 0.069325
+2025-06-04 21:41:45,057 - Model - INFO - Training accuracy: 0.979342
+2025-06-04 21:41:45,089 - Model - INFO - ---- EPOCH 015 EVALUATION ----
+2025-06-04 21:41:57,230 - Model - INFO - eval mean loss: 2.787257
+2025-06-04 21:41:57,231 - Model - INFO - eval point avg class IoU: 0.478280
+2025-06-04 21:41:57,231 - Model - INFO - eval point accuracy: 0.625782
+2025-06-04 21:41:57,231 - Model - INFO - eval point avg class acc: 0.694132
+2025-06-04 21:41:57,232 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 0.953 
+class 1              weight: 0.030, IoU: 0.652 
+class 2              weight: 0.061, IoU: 0.339 
+class 3              weight: 0.061, IoU: 0.498 
+class 4              weight: 0.059, IoU: 0.949 
+class 5              weight: 0.080, IoU: 0.871 
+class 6              weight: 0.057, IoU: 0.640 
+class 7              weight: 0.036, IoU: 0.551 
+class 8              weight: 0.189, IoU: 0.345 
+class 9              weight: 0.053, IoU: 0.000 
+class 10             weight: 0.066, IoU: 0.353 
+class 11             weight: 0.050, IoU: 0.029 
+class 12             weight: 0.119, IoU: 0.305 
+class 13             weight: 0.028, IoU: 0.000 
+class 14             weight: 0.039, IoU: 0.689 
+
+2025-06-04 21:41:57,234 - Model - INFO - Eval mean loss: 2.787257
+2025-06-04 21:41:57,235 - Model - INFO - Eval accuracy: 0.625782
+2025-06-04 21:41:57,235 - Model - INFO - Best mIoU: 0.908632
+2025-06-04 21:41:57,235 - Model - INFO - **** Epoch 16 (16/96) ****
+2025-06-04 21:41:57,236 - Model - INFO - Learning rate:0.000700
+2025-06-04 21:44:23,899 - Model - INFO - Training mean loss: 0.068439
+2025-06-04 21:44:23,899 - Model - INFO - Training accuracy: 0.980032
+2025-06-04 21:44:23,899 - Model - INFO - Save model...
+2025-06-04 21:44:23,899 - Model - INFO - Saving at log\sem_seg\pointnet_sem_seg\checkpoints/model.pth
+2025-06-04 21:44:23,979 - Model - INFO - Saving model....
+2025-06-04 21:44:24,016 - Model - INFO - ---- EPOCH 016 EVALUATION ----
+2025-06-04 21:44:36,004 - Model - INFO - eval mean loss: 0.231938
+2025-06-04 21:44:36,004 - Model - INFO - eval point avg class IoU: 0.850683
+2025-06-04 21:44:36,005 - Model - INFO - eval point accuracy: 0.931619
+2025-06-04 21:44:36,005 - Model - INFO - eval point avg class acc: 0.926557
+2025-06-04 21:44:36,005 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 0.849 
+class 1              weight: 0.030, IoU: 0.696 
+class 2              weight: 0.061, IoU: 0.577 
+class 3              weight: 0.061, IoU: 0.788 
+class 4              weight: 0.059, IoU: 0.998 
+class 5              weight: 0.080, IoU: 0.989 
+class 6              weight: 0.057, IoU: 0.991 
+class 7              weight: 0.036, IoU: 0.988 
+class 8              weight: 0.189, IoU: 0.979 
+class 9              weight: 0.053, IoU: 0.966 
+class 10             weight: 0.066, IoU: 0.840 
+class 11             weight: 0.050, IoU: 0.871 
+class 12             weight: 0.119, IoU: 0.626 
+class 13             weight: 0.028, IoU: 0.649 
+class 14             weight: 0.039, IoU: 0.951 
+
+2025-06-04 21:44:36,007 - Model - INFO - Eval mean loss: 0.231938
+2025-06-04 21:44:36,008 - Model - INFO - Eval accuracy: 0.931619
+2025-06-04 21:44:36,008 - Model - INFO - Best mIoU: 0.908632
+2025-06-04 21:44:36,008 - Model - INFO - **** Epoch 17 (17/96) ****
+2025-06-04 21:44:36,009 - Model - INFO - Learning rate:0.000700
+2025-06-04 21:47:02,990 - Model - INFO - Training mean loss: 0.052748
+2025-06-04 21:47:02,990 - Model - INFO - Training accuracy: 0.985276
+2025-06-04 21:47:03,024 - Model - INFO - ---- EPOCH 017 EVALUATION ----
+2025-06-04 21:47:15,227 - Model - INFO - eval mean loss: 0.102073
+2025-06-04 21:47:15,228 - Model - INFO - eval point avg class IoU: 0.936901
+2025-06-04 21:47:15,228 - Model - INFO - eval point accuracy: 0.967073
+2025-06-04 21:47:15,228 - Model - INFO - eval point avg class acc: 0.963846
+2025-06-04 21:47:15,229 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 0.950 
+class 1              weight: 0.030, IoU: 0.896 
+class 2              weight: 0.061, IoU: 0.824 
+class 3              weight: 0.061, IoU: 0.896 
+class 4              weight: 0.059, IoU: 0.968 
+class 5              weight: 0.080, IoU: 0.726 
+class 6              weight: 0.057, IoU: 0.916 
+class 7              weight: 0.036, IoU: 0.923 
+class 8              weight: 0.189, IoU: 0.986 
+class 9              weight: 0.053, IoU: 1.000 
+class 10             weight: 0.066, IoU: 0.995 
+class 11             weight: 0.050, IoU: 0.997 
+class 12             weight: 0.119, IoU: 0.986 
+class 13             weight: 0.028, IoU: 0.993 
+class 14             weight: 0.039, IoU: 1.000 
+
+2025-06-04 21:47:15,231 - Model - INFO - Eval mean loss: 0.102073
+2025-06-04 21:47:15,231 - Model - INFO - Eval accuracy: 0.967073
+2025-06-04 21:47:15,231 - Model - INFO - Save model...
+2025-06-04 21:47:15,232 - Model - INFO - Saving at log\sem_seg\pointnet_sem_seg\checkpoints/best_model.pth
+2025-06-04 21:47:15,304 - Model - INFO - Saving model....
+2025-06-04 21:47:15,304 - Model - INFO - Best mIoU: 0.936901
+2025-06-04 21:47:15,304 - Model - INFO - **** Epoch 18 (18/96) ****
+2025-06-04 21:47:15,304 - Model - INFO - Learning rate:0.000700
+2025-06-04 21:49:42,536 - Model - INFO - Training mean loss: 0.057685
+2025-06-04 21:49:42,536 - Model - INFO - Training accuracy: 0.983124
+2025-06-04 21:49:42,584 - Model - INFO - ---- EPOCH 018 EVALUATION ----
+2025-06-04 21:49:54,818 - Model - INFO - eval mean loss: 1.193058
+2025-06-04 21:49:54,818 - Model - INFO - eval point avg class IoU: 0.533306
+2025-06-04 21:49:54,818 - Model - INFO - eval point accuracy: 0.718666
+2025-06-04 21:49:54,818 - Model - INFO - eval point avg class acc: 0.737273
+2025-06-04 21:49:54,818 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 0.661 
+class 1              weight: 0.030, IoU: 0.199 
+class 2              weight: 0.061, IoU: 0.192 
+class 3              weight: 0.061, IoU: 0.510 
+class 4              weight: 0.059, IoU: 0.598 
+class 5              weight: 0.080, IoU: 0.272 
+class 6              weight: 0.057, IoU: 0.460 
+class 7              weight: 0.036, IoU: 0.740 
+class 8              weight: 0.189, IoU: 0.588 
+class 9              weight: 0.053, IoU: 0.797 
+class 10             weight: 0.066, IoU: 0.621 
+class 11             weight: 0.050, IoU: 0.685 
+class 12             weight: 0.119, IoU: 0.486 
+class 13             weight: 0.028, IoU: 0.379 
+class 14             weight: 0.039, IoU: 0.813 
+
+2025-06-04 21:49:54,818 - Model - INFO - Eval mean loss: 1.193058
+2025-06-04 21:49:54,818 - Model - INFO - Eval accuracy: 0.718666
+2025-06-04 21:49:54,818 - Model - INFO - Best mIoU: 0.936901
+2025-06-04 21:49:54,822 - Model - INFO - **** Epoch 19 (19/96) ****
+2025-06-04 21:49:54,822 - Model - INFO - Learning rate:0.000700
+2025-06-04 21:52:21,832 - Model - INFO - Training mean loss: 0.058432
+2025-06-04 21:52:21,832 - Model - INFO - Training accuracy: 0.983085
+2025-06-04 21:52:21,869 - Model - INFO - ---- EPOCH 019 EVALUATION ----
+2025-06-04 21:52:33,947 - Model - INFO - eval mean loss: 0.083733
+2025-06-04 21:52:33,947 - Model - INFO - eval point avg class IoU: 0.928996
+2025-06-04 21:52:33,948 - Model - INFO - eval point accuracy: 0.968094
+2025-06-04 21:52:33,948 - Model - INFO - eval point avg class acc: 0.971722
+2025-06-04 21:52:33,948 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 0.953 
+class 1              weight: 0.030, IoU: 0.972 
+class 2              weight: 0.061, IoU: 0.985 
+class 3              weight: 0.061, IoU: 0.988 
+class 4              weight: 0.059, IoU: 0.993 
+class 5              weight: 0.080, IoU: 0.990 
+class 6              weight: 0.057, IoU: 0.923 
+class 7              weight: 0.036, IoU: 0.954 
+class 8              weight: 0.189, IoU: 0.901 
+class 9              weight: 0.053, IoU: 0.985 
+class 10             weight: 0.066, IoU: 0.923 
+class 11             weight: 0.050, IoU: 0.913 
+class 12             weight: 0.119, IoU: 0.786 
+class 13             weight: 0.028, IoU: 0.774 
+class 14             weight: 0.039, IoU: 0.895 
+
+2025-06-04 21:52:33,951 - Model - INFO - Eval mean loss: 0.083733
+2025-06-04 21:52:33,951 - Model - INFO - Eval accuracy: 0.968094
+2025-06-04 21:52:33,951 - Model - INFO - Best mIoU: 0.936901
+2025-06-04 21:52:33,952 - Model - INFO - **** Epoch 20 (20/96) ****
+2025-06-04 21:52:33,952 - Model - INFO - Learning rate:0.000700
+2025-06-04 21:55:01,002 - Model - INFO - Training mean loss: 0.050636
+2025-06-04 21:55:01,002 - Model - INFO - Training accuracy: 0.985693
+2025-06-04 21:55:01,049 - Model - INFO - ---- EPOCH 020 EVALUATION ----
+2025-06-04 21:55:13,318 - Model - INFO - eval mean loss: 0.375715
+2025-06-04 21:55:13,318 - Model - INFO - eval point avg class IoU: 0.748233
+2025-06-04 21:55:13,318 - Model - INFO - eval point accuracy: 0.880566
+2025-06-04 21:55:13,319 - Model - INFO - eval point avg class acc: 0.832060
+2025-06-04 21:55:13,319 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 0.732 
+class 1              weight: 0.030, IoU: 0.691 
+class 2              weight: 0.061, IoU: 0.535 
+class 3              weight: 0.061, IoU: 0.712 
+class 4              weight: 0.059, IoU: 0.956 
+class 5              weight: 0.080, IoU: 0.733 
+class 6              weight: 0.057, IoU: 0.547 
+class 7              weight: 0.036, IoU: 0.927 
+class 8              weight: 0.189, IoU: 0.883 
+class 9              weight: 0.053, IoU: 0.900 
+class 10             weight: 0.066, IoU: 0.954 
+class 11             weight: 0.050, IoU: 0.813 
+class 12             weight: 0.119, IoU: 0.465 
+class 13             weight: 0.028, IoU: 0.577 
+class 14             weight: 0.039, IoU: 0.799 
+
+2025-06-04 21:55:13,321 - Model - INFO - Eval mean loss: 0.375715
+2025-06-04 21:55:13,322 - Model - INFO - Eval accuracy: 0.880566
+2025-06-04 21:55:13,322 - Model - INFO - Best mIoU: 0.936901
+2025-06-04 21:55:13,323 - Model - INFO - **** Epoch 21 (21/96) ****
+2025-06-04 21:55:13,323 - Model - INFO - Learning rate:0.000490
+2025-06-04 21:57:40,407 - Model - INFO - Training mean loss: 0.037692
+2025-06-04 21:57:40,407 - Model - INFO - Training accuracy: 0.989910
+2025-06-04 21:57:40,407 - Model - INFO - Save model...
+2025-06-04 21:57:40,407 - Model - INFO - Saving at log\sem_seg\pointnet_sem_seg\checkpoints/model.pth
+2025-06-04 21:57:40,486 - Model - INFO - Saving model....
+2025-06-04 21:57:40,519 - Model - INFO - ---- EPOCH 021 EVALUATION ----
+2025-06-04 21:57:52,607 - Model - INFO - eval mean loss: 0.030598
+2025-06-04 21:57:52,608 - Model - INFO - eval point avg class IoU: 0.985415
+2025-06-04 21:57:52,608 - Model - INFO - eval point accuracy: 0.993380
+2025-06-04 21:57:52,608 - Model - INFO - eval point avg class acc: 0.990484
+2025-06-04 21:57:52,609 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 0.999 
+class 1              weight: 0.030, IoU: 0.999 
+class 2              weight: 0.061, IoU: 0.999 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 0.991 
+class 5              weight: 0.080, IoU: 0.961 
+class 6              weight: 0.057, IoU: 0.940 
+class 7              weight: 0.036, IoU: 0.986 
+class 8              weight: 0.189, IoU: 0.961 
+class 9              weight: 0.053, IoU: 0.986 
+class 10             weight: 0.066, IoU: 0.992 
+class 11             weight: 0.050, IoU: 0.990 
+class 12             weight: 0.119, IoU: 0.978 
+class 13             weight: 0.028, IoU: 0.999 
+class 14             weight: 0.039, IoU: 1.000 
+
+2025-06-04 21:57:52,611 - Model - INFO - Eval mean loss: 0.030598
+2025-06-04 21:57:52,611 - Model - INFO - Eval accuracy: 0.993380
+2025-06-04 21:57:52,611 - Model - INFO - Save model...
+2025-06-04 21:57:52,612 - Model - INFO - Saving at log\sem_seg\pointnet_sem_seg\checkpoints/best_model.pth
+2025-06-04 21:57:52,690 - Model - INFO - Saving model....
+2025-06-04 21:57:52,690 - Model - INFO - Best mIoU: 0.985415
+2025-06-04 21:57:52,690 - Model - INFO - **** Epoch 22 (22/96) ****
+2025-06-04 21:57:52,690 - Model - INFO - Learning rate:0.000490
+2025-06-04 22:00:20,156 - Model - INFO - Training mean loss: 0.041997
+2025-06-04 22:00:20,156 - Model - INFO - Training accuracy: 0.988721
+2025-06-04 22:00:20,176 - Model - INFO - ---- EPOCH 022 EVALUATION ----
+2025-06-04 22:00:32,327 - Model - INFO - eval mean loss: 0.040443
+2025-06-04 22:00:32,328 - Model - INFO - eval point avg class IoU: 0.971577
+2025-06-04 22:00:32,328 - Model - INFO - eval point accuracy: 0.990483
+2025-06-04 22:00:32,328 - Model - INFO - eval point avg class acc: 0.985050
+2025-06-04 22:00:32,328 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 0.958 
+class 1              weight: 0.030, IoU: 0.978 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 0.990 
+class 5              weight: 0.080, IoU: 0.986 
+class 6              weight: 0.057, IoU: 0.985 
+class 7              weight: 0.036, IoU: 0.994 
+class 8              weight: 0.189, IoU: 0.994 
+class 9              weight: 0.053, IoU: 0.986 
+class 10             weight: 0.066, IoU: 0.996 
+class 11             weight: 0.050, IoU: 0.986 
+class 12             weight: 0.119, IoU: 0.846 
+class 13             weight: 0.028, IoU: 0.877 
+class 14             weight: 0.039, IoU: 0.997 
+
+2025-06-04 22:00:32,330 - Model - INFO - Eval mean loss: 0.040443
+2025-06-04 22:00:32,331 - Model - INFO - Eval accuracy: 0.990483
+2025-06-04 22:00:32,331 - Model - INFO - Best mIoU: 0.985415
+2025-06-04 22:00:32,331 - Model - INFO - **** Epoch 23 (23/96) ****
+2025-06-04 22:00:32,332 - Model - INFO - Learning rate:0.000490
+2025-06-04 22:02:59,014 - Model - INFO - Training mean loss: 0.025613
+2025-06-04 22:02:59,014 - Model - INFO - Training accuracy: 0.993710
+2025-06-04 22:02:59,048 - Model - INFO - ---- EPOCH 023 EVALUATION ----
+2025-06-04 22:03:11,187 - Model - INFO - eval mean loss: 1.257897
+2025-06-04 22:03:11,187 - Model - INFO - eval point avg class IoU: 0.629668
+2025-06-04 22:03:11,187 - Model - INFO - eval point accuracy: 0.778208
+2025-06-04 22:03:11,187 - Model - INFO - eval point avg class acc: 0.735948
+2025-06-04 22:03:11,187 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 0.951 
+class 1              weight: 0.030, IoU: 0.868 
+class 2              weight: 0.061, IoU: 0.808 
+class 3              weight: 0.061, IoU: 0.917 
+class 4              weight: 0.059, IoU: 0.997 
+class 5              weight: 0.080, IoU: 0.941 
+class 6              weight: 0.057, IoU: 0.626 
+class 7              weight: 0.036, IoU: 0.689 
+class 8              weight: 0.189, IoU: 0.155 
+class 9              weight: 0.053, IoU: 0.394 
+class 10             weight: 0.066, IoU: 0.015 
+class 11             weight: 0.050, IoU: 0.606 
+class 12             weight: 0.119, IoU: 0.062 
+class 13             weight: 0.028, IoU: 0.470 
+class 14             weight: 0.039, IoU: 0.947 
+
+2025-06-04 22:03:11,187 - Model - INFO - Eval mean loss: 1.257897
+2025-06-04 22:03:11,202 - Model - INFO - Eval accuracy: 0.778208
+2025-06-04 22:03:11,202 - Model - INFO - Best mIoU: 0.985415
+2025-06-04 22:03:11,202 - Model - INFO - **** Epoch 24 (24/96) ****
+2025-06-04 22:03:11,203 - Model - INFO - Learning rate:0.000490
+2025-06-04 22:05:37,872 - Model - INFO - Training mean loss: 0.032630
+2025-06-04 22:05:37,872 - Model - INFO - Training accuracy: 0.991134
+2025-06-04 22:05:37,894 - Model - INFO - ---- EPOCH 024 EVALUATION ----
+2025-06-04 22:05:50,010 - Model - INFO - eval mean loss: 0.041530
+2025-06-04 22:05:50,011 - Model - INFO - eval point avg class IoU: 0.966878
+2025-06-04 22:05:50,011 - Model - INFO - eval point accuracy: 0.987614
+2025-06-04 22:05:50,011 - Model - INFO - eval point avg class acc: 0.982645
+2025-06-04 22:05:50,012 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 0.949 
+class 1              weight: 0.030, IoU: 0.969 
+class 2              weight: 0.061, IoU: 0.995 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 1.000 
+class 7              weight: 0.036, IoU: 0.995 
+class 8              weight: 0.189, IoU: 0.983 
+class 9              weight: 0.053, IoU: 0.987 
+class 10             weight: 0.066, IoU: 0.980 
+class 11             weight: 0.050, IoU: 0.965 
+class 12             weight: 0.119, IoU: 0.857 
+class 13             weight: 0.028, IoU: 0.867 
+class 14             weight: 0.039, IoU: 0.956 
+
+2025-06-04 22:05:50,014 - Model - INFO - Eval mean loss: 0.041530
+2025-06-04 22:05:50,015 - Model - INFO - Eval accuracy: 0.987614
+2025-06-04 22:05:50,015 - Model - INFO - Best mIoU: 0.985415
+2025-06-04 22:05:50,015 - Model - INFO - **** Epoch 25 (25/96) ****
+2025-06-04 22:05:50,016 - Model - INFO - Learning rate:0.000490
+2025-06-04 22:08:16,543 - Model - INFO - Training mean loss: 0.033503
+2025-06-04 22:08:16,543 - Model - INFO - Training accuracy: 0.991151
+2025-06-04 22:08:16,578 - Model - INFO - ---- EPOCH 025 EVALUATION ----
+2025-06-04 22:08:28,669 - Model - INFO - eval mean loss: 0.674247
+2025-06-04 22:08:28,669 - Model - INFO - eval point avg class IoU: 0.677363
+2025-06-04 22:08:28,669 - Model - INFO - eval point accuracy: 0.820250
+2025-06-04 22:08:28,669 - Model - INFO - eval point avg class acc: 0.822971
+2025-06-04 22:08:28,669 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 0.447 
+class 1              weight: 0.030, IoU: 0.555 
+class 2              weight: 0.061, IoU: 0.444 
+class 3              weight: 0.061, IoU: 0.850 
+class 4              weight: 0.059, IoU: 0.772 
+class 5              weight: 0.080, IoU: 0.843 
+class 6              weight: 0.057, IoU: 0.541 
+class 7              weight: 0.036, IoU: 0.776 
+class 8              weight: 0.189, IoU: 0.599 
+class 9              weight: 0.053, IoU: 0.560 
+class 10             weight: 0.066, IoU: 0.605 
+class 11             weight: 0.050, IoU: 0.808 
+class 12             weight: 0.119, IoU: 0.768 
+class 13             weight: 0.028, IoU: 0.714 
+class 14             weight: 0.039, IoU: 0.878 
+
+2025-06-04 22:08:28,684 - Model - INFO - Eval mean loss: 0.674247
+2025-06-04 22:08:28,684 - Model - INFO - Eval accuracy: 0.820250
+2025-06-04 22:08:28,684 - Model - INFO - Best mIoU: 0.985415
+2025-06-04 22:08:28,686 - Model - INFO - **** Epoch 26 (26/96) ****
+2025-06-04 22:08:28,686 - Model - INFO - Learning rate:0.000490
+2025-06-04 22:10:55,871 - Model - INFO - Training mean loss: 0.019060
+2025-06-04 22:10:55,871 - Model - INFO - Training accuracy: 0.995603
+2025-06-04 22:10:55,871 - Model - INFO - Save model...
+2025-06-04 22:10:55,871 - Model - INFO - Saving at log\sem_seg\pointnet_sem_seg\checkpoints/model.pth
+2025-06-04 22:10:55,950 - Model - INFO - Saving model....
+2025-06-04 22:10:55,983 - Model - INFO - ---- EPOCH 026 EVALUATION ----
+2025-06-04 22:11:08,105 - Model - INFO - eval mean loss: 0.055305
+2025-06-04 22:11:08,105 - Model - INFO - eval point avg class IoU: 0.959567
+2025-06-04 22:11:08,105 - Model - INFO - eval point accuracy: 0.981083
+2025-06-04 22:11:08,105 - Model - INFO - eval point avg class acc: 0.985090
+2025-06-04 22:11:08,105 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 1.000 
+class 1              weight: 0.030, IoU: 1.000 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 1.000 
+class 7              weight: 0.036, IoU: 0.972 
+class 8              weight: 0.189, IoU: 0.911 
+class 9              weight: 0.053, IoU: 0.984 
+class 10             weight: 0.066, IoU: 0.930 
+class 11             weight: 0.050, IoU: 0.927 
+class 12             weight: 0.119, IoU: 0.834 
+class 13             weight: 0.028, IoU: 0.889 
+class 14             weight: 0.039, IoU: 0.947 
+
+2025-06-04 22:11:08,105 - Model - INFO - Eval mean loss: 0.055305
+2025-06-04 22:11:08,105 - Model - INFO - Eval accuracy: 0.981083
+2025-06-04 22:11:08,105 - Model - INFO - Best mIoU: 0.985415
+2025-06-04 22:11:08,115 - Model - INFO - **** Epoch 27 (27/96) ****
+2025-06-04 22:11:08,115 - Model - INFO - Learning rate:0.000490
+2025-06-04 22:13:35,400 - Model - INFO - Training mean loss: 0.024619
+2025-06-04 22:13:35,400 - Model - INFO - Training accuracy: 0.993515
+2025-06-04 22:13:35,443 - Model - INFO - ---- EPOCH 027 EVALUATION ----
+2025-06-04 22:13:47,665 - Model - INFO - eval mean loss: 0.020344
+2025-06-04 22:13:47,666 - Model - INFO - eval point avg class IoU: 0.988908
+2025-06-04 22:13:47,666 - Model - INFO - eval point accuracy: 0.995864
+2025-06-04 22:13:47,666 - Model - INFO - eval point avg class acc: 0.995175
+2025-06-04 22:13:47,667 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 0.940 
+class 1              weight: 0.030, IoU: 0.968 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 0.992 
+class 5              weight: 0.080, IoU: 0.978 
+class 6              weight: 0.057, IoU: 0.993 
+class 7              weight: 0.036, IoU: 0.996 
+class 8              weight: 0.189, IoU: 0.999 
+class 9              weight: 0.053, IoU: 0.997 
+class 10             weight: 0.066, IoU: 1.000 
+class 11             weight: 0.050, IoU: 1.000 
+class 12             weight: 0.119, IoU: 0.991 
+class 13             weight: 0.028, IoU: 0.985 
+class 14             weight: 0.039, IoU: 0.996 
+
+2025-06-04 22:13:47,669 - Model - INFO - Eval mean loss: 0.020344
+2025-06-04 22:13:47,669 - Model - INFO - Eval accuracy: 0.995864
+2025-06-04 22:13:47,669 - Model - INFO - Save model...
+2025-06-04 22:13:47,669 - Model - INFO - Saving at log\sem_seg\pointnet_sem_seg\checkpoints/best_model.pth
+2025-06-04 22:13:47,747 - Model - INFO - Saving model....
+2025-06-04 22:13:47,747 - Model - INFO - Best mIoU: 0.988908
+2025-06-04 22:13:47,747 - Model - INFO - **** Epoch 28 (28/96) ****
+2025-06-04 22:13:47,747 - Model - INFO - Learning rate:0.000490
+2025-06-04 22:16:15,383 - Model - INFO - Training mean loss: 0.024859
+2025-06-04 22:16:15,383 - Model - INFO - Training accuracy: 0.993634
+2025-06-04 22:16:15,417 - Model - INFO - ---- EPOCH 028 EVALUATION ----
+2025-06-04 22:16:27,584 - Model - INFO - eval mean loss: 0.073578
+2025-06-04 22:16:27,584 - Model - INFO - eval point avg class IoU: 0.941566
+2025-06-04 22:16:27,585 - Model - INFO - eval point accuracy: 0.974517
+2025-06-04 22:16:27,585 - Model - INFO - eval point avg class acc: 0.972432
+2025-06-04 22:16:27,585 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 1.000 
+class 1              weight: 0.030, IoU: 1.000 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 0.999 
+class 7              weight: 0.036, IoU: 0.983 
+class 8              weight: 0.189, IoU: 0.954 
+class 9              weight: 0.053, IoU: 0.960 
+class 10             weight: 0.066, IoU: 0.966 
+class 11             weight: 0.050, IoU: 0.910 
+class 12             weight: 0.119, IoU: 0.768 
+class 13             weight: 0.028, IoU: 0.705 
+class 14             weight: 0.039, IoU: 0.878 
+
+2025-06-04 22:16:27,587 - Model - INFO - Eval mean loss: 0.073578
+2025-06-04 22:16:27,587 - Model - INFO - Eval accuracy: 0.974517
+2025-06-04 22:16:27,588 - Model - INFO - Best mIoU: 0.988908
+2025-06-04 22:16:27,588 - Model - INFO - **** Epoch 29 (29/96) ****
+2025-06-04 22:16:27,589 - Model - INFO - Learning rate:0.000490
+2025-06-04 22:18:54,085 - Model - INFO - Training mean loss: 0.014381
+2025-06-04 22:18:54,085 - Model - INFO - Training accuracy: 0.996966
+2025-06-04 22:18:54,126 - Model - INFO - ---- EPOCH 029 EVALUATION ----
+2025-06-04 22:19:06,271 - Model - INFO - eval mean loss: 0.006481
+2025-06-04 22:19:06,272 - Model - INFO - eval point avg class IoU: 0.998732
+2025-06-04 22:19:06,272 - Model - INFO - eval point accuracy: 0.999208
+2025-06-04 22:19:06,272 - Model - INFO - eval point avg class acc: 0.999513
+2025-06-04 22:19:06,273 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 1.000 
+class 1              weight: 0.030, IoU: 1.000 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 1.000 
+class 7              weight: 0.036, IoU: 0.997 
+class 8              weight: 0.189, IoU: 0.991 
+class 9              weight: 0.053, IoU: 0.995 
+class 10             weight: 0.066, IoU: 1.000 
+class 11             weight: 0.050, IoU: 0.997 
+class 12             weight: 0.119, IoU: 1.000 
+class 13             weight: 0.028, IoU: 1.000 
+class 14             weight: 0.039, IoU: 1.000 
+
+2025-06-04 22:19:06,275 - Model - INFO - Eval mean loss: 0.006481
+2025-06-04 22:19:06,275 - Model - INFO - Eval accuracy: 0.999208
+2025-06-04 22:19:06,276 - Model - INFO - Save model...
+2025-06-04 22:19:06,276 - Model - INFO - Saving at log\sem_seg\pointnet_sem_seg\checkpoints/best_model.pth
+2025-06-04 22:19:06,352 - Model - INFO - Saving model....
+2025-06-04 22:19:06,352 - Model - INFO - Best mIoU: 0.998732
+2025-06-04 22:19:06,352 - Model - INFO - **** Epoch 30 (30/96) ****
+2025-06-04 22:19:06,352 - Model - INFO - Learning rate:0.000490
+2025-06-04 22:21:33,553 - Model - INFO - Training mean loss: 0.008464
+2025-06-04 22:21:33,553 - Model - INFO - Training accuracy: 0.998438
+2025-06-04 22:21:33,592 - Model - INFO - ---- EPOCH 030 EVALUATION ----
+2025-06-04 22:21:45,804 - Model - INFO - eval mean loss: 0.009377
+2025-06-04 22:21:45,804 - Model - INFO - eval point avg class IoU: 0.993376
+2025-06-04 22:21:45,804 - Model - INFO - eval point accuracy: 0.997828
+2025-06-04 22:21:45,818 - Model - INFO - eval point avg class acc: 0.997388
+2025-06-04 22:21:45,819 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 1.000 
+class 1              weight: 0.030, IoU: 1.000 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 1.000 
+class 7              weight: 0.036, IoU: 1.000 
+class 8              weight: 0.189, IoU: 1.000 
+class 9              weight: 0.053, IoU: 1.000 
+class 10             weight: 0.066, IoU: 0.996 
+class 11             weight: 0.050, IoU: 0.992 
+class 12             weight: 0.119, IoU: 0.952 
+class 13             weight: 0.028, IoU: 0.969 
+class 14             weight: 0.039, IoU: 0.992 
+
+2025-06-04 22:21:45,820 - Model - INFO - Eval mean loss: 0.009377
+2025-06-04 22:21:45,821 - Model - INFO - Eval accuracy: 0.997828
+2025-06-04 22:21:45,821 - Model - INFO - Best mIoU: 0.998732
+2025-06-04 22:21:45,821 - Model - INFO - **** Epoch 31 (31/96) ****
+2025-06-04 22:21:45,822 - Model - INFO - Learning rate:0.000343
+2025-06-04 22:24:12,802 - Model - INFO - Training mean loss: 0.011343
+2025-06-04 22:24:12,802 - Model - INFO - Training accuracy: 0.997480
+2025-06-04 22:24:12,802 - Model - INFO - Save model...
+2025-06-04 22:24:12,802 - Model - INFO - Saving at log\sem_seg\pointnet_sem_seg\checkpoints/model.pth
+2025-06-04 22:24:12,867 - Model - INFO - Saving model....
+2025-06-04 22:24:12,914 - Model - INFO - ---- EPOCH 031 EVALUATION ----
+2025-06-04 22:24:24,999 - Model - INFO - eval mean loss: 0.017805
+2025-06-04 22:24:24,999 - Model - INFO - eval point avg class IoU: 0.989510
+2025-06-04 22:24:25,000 - Model - INFO - eval point accuracy: 0.994147
+2025-06-04 22:24:25,000 - Model - INFO - eval point avg class acc: 0.995623
+2025-06-04 22:24:25,001 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 1.000 
+class 1              weight: 0.030, IoU: 1.000 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 0.996 
+class 6              weight: 0.057, IoU: 0.999 
+class 7              weight: 0.036, IoU: 0.987 
+class 8              weight: 0.189, IoU: 0.985 
+class 9              weight: 0.053, IoU: 0.951 
+class 10             weight: 0.066, IoU: 0.994 
+class 11             weight: 0.050, IoU: 0.977 
+class 12             weight: 0.119, IoU: 0.993 
+class 13             weight: 0.028, IoU: 0.962 
+class 14             weight: 0.039, IoU: 0.999 
+
+2025-06-04 22:24:25,002 - Model - INFO - Eval mean loss: 0.017805
+2025-06-04 22:24:25,003 - Model - INFO - Eval accuracy: 0.994147
+2025-06-04 22:24:25,003 - Model - INFO - Best mIoU: 0.998732
+2025-06-04 22:24:25,003 - Model - INFO - **** Epoch 32 (32/96) ****
+2025-06-04 22:24:25,004 - Model - INFO - Learning rate:0.000343
+2025-06-04 22:26:51,707 - Model - INFO - Training mean loss: 0.011812
+2025-06-04 22:26:51,707 - Model - INFO - Training accuracy: 0.997147
+2025-06-04 22:26:51,740 - Model - INFO - ---- EPOCH 032 EVALUATION ----
+2025-06-04 22:27:03,896 - Model - INFO - eval mean loss: 1.223242
+2025-06-04 22:27:03,896 - Model - INFO - eval point avg class IoU: 0.672632
+2025-06-04 22:27:03,896 - Model - INFO - eval point accuracy: 0.815951
+2025-06-04 22:27:03,896 - Model - INFO - eval point avg class acc: 0.783033
+2025-06-04 22:27:03,911 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 0.905 
+class 1              weight: 0.030, IoU: 0.871 
+class 2              weight: 0.061, IoU: 0.906 
+class 3              weight: 0.061, IoU: 0.976 
+class 4              weight: 0.059, IoU: 0.870 
+class 5              weight: 0.080, IoU: 0.649 
+class 6              weight: 0.057, IoU: 0.761 
+class 7              weight: 0.036, IoU: 0.811 
+class 8              weight: 0.189, IoU: 0.648 
+class 9              weight: 0.053, IoU: 0.611 
+class 10             weight: 0.066, IoU: 0.269 
+class 11             weight: 0.050, IoU: 0.562 
+class 12             weight: 0.119, IoU: 0.014 
+class 13             weight: 0.028, IoU: 0.363 
+class 14             weight: 0.039, IoU: 0.875 
+
+2025-06-04 22:27:03,912 - Model - INFO - Eval mean loss: 1.223242
+2025-06-04 22:27:03,913 - Model - INFO - Eval accuracy: 0.815951
+2025-06-04 22:27:03,913 - Model - INFO - Best mIoU: 0.998732
+2025-06-04 22:27:03,913 - Model - INFO - **** Epoch 33 (33/96) ****
+2025-06-04 22:27:03,914 - Model - INFO - Learning rate:0.000343
+2025-06-04 22:29:30,642 - Model - INFO - Training mean loss: 0.007852
+2025-06-04 22:29:30,642 - Model - INFO - Training accuracy: 0.998656
+2025-06-04 22:29:30,669 - Model - INFO - ---- EPOCH 033 EVALUATION ----
+2025-06-04 22:29:42,804 - Model - INFO - eval mean loss: 1.963308
+2025-06-04 22:29:42,804 - Model - INFO - eval point avg class IoU: 0.552645
+2025-06-04 22:29:42,805 - Model - INFO - eval point accuracy: 0.718047
+2025-06-04 22:29:42,805 - Model - INFO - eval point avg class acc: 0.728932
+2025-06-04 22:29:42,805 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 0.525 
+class 1              weight: 0.030, IoU: 0.547 
+class 2              weight: 0.061, IoU: 0.404 
+class 3              weight: 0.061, IoU: 0.640 
+class 4              weight: 0.059, IoU: 0.681 
+class 5              weight: 0.080, IoU: 0.598 
+class 6              weight: 0.057, IoU: 0.566 
+class 7              weight: 0.036, IoU: 0.606 
+class 8              weight: 0.189, IoU: 0.463 
+class 9              weight: 0.053, IoU: 0.505 
+class 10             weight: 0.066, IoU: 0.410 
+class 11             weight: 0.050, IoU: 0.614 
+class 12             weight: 0.119, IoU: 0.392 
+class 13             weight: 0.028, IoU: 0.487 
+class 14             weight: 0.039, IoU: 0.852 
+
+2025-06-04 22:29:42,807 - Model - INFO - Eval mean loss: 1.963308
+2025-06-04 22:29:42,808 - Model - INFO - Eval accuracy: 0.718047
+2025-06-04 22:29:42,808 - Model - INFO - Best mIoU: 0.998732
+2025-06-04 22:29:42,808 - Model - INFO - **** Epoch 34 (34/96) ****
+2025-06-04 22:29:42,810 - Model - INFO - Learning rate:0.000343
+2025-06-04 22:32:08,968 - Model - INFO - Training mean loss: 0.026140
+2025-06-04 22:32:08,968 - Model - INFO - Training accuracy: 0.992948
+2025-06-04 22:32:09,005 - Model - INFO - ---- EPOCH 034 EVALUATION ----
+2025-06-04 22:32:21,064 - Model - INFO - eval mean loss: 0.016569
+2025-06-04 22:32:21,065 - Model - INFO - eval point avg class IoU: 0.992894
+2025-06-04 22:32:21,065 - Model - INFO - eval point accuracy: 0.996517
+2025-06-04 22:32:21,065 - Model - INFO - eval point avg class acc: 0.994971
+2025-06-04 22:32:21,065 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 1.000 
+class 1              weight: 0.030, IoU: 1.000 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 0.996 
+class 7              weight: 0.036, IoU: 0.992 
+class 8              weight: 0.189, IoU: 0.979 
+class 9              weight: 0.053, IoU: 0.989 
+class 10             weight: 0.066, IoU: 0.978 
+class 11             weight: 0.050, IoU: 0.987 
+class 12             weight: 0.119, IoU: 0.976 
+class 13             weight: 0.028, IoU: 0.997 
+class 14             weight: 0.039, IoU: 0.999 
+
+2025-06-04 22:32:21,067 - Model - INFO - Eval mean loss: 0.016569
+2025-06-04 22:32:21,068 - Model - INFO - Eval accuracy: 0.996517
+2025-06-04 22:32:21,068 - Model - INFO - Best mIoU: 0.998732
+2025-06-04 22:32:21,068 - Model - INFO - **** Epoch 35 (35/96) ****
+2025-06-04 22:32:21,069 - Model - INFO - Learning rate:0.000343
+2025-06-04 22:34:47,966 - Model - INFO - Training mean loss: 0.006536
+2025-06-04 22:34:47,966 - Model - INFO - Training accuracy: 0.998900
+2025-06-04 22:34:48,011 - Model - INFO - ---- EPOCH 035 EVALUATION ----
+2025-06-04 22:35:00,112 - Model - INFO - eval mean loss: 0.018979
+2025-06-04 22:35:00,112 - Model - INFO - eval point avg class IoU: 0.987277
+2025-06-04 22:35:00,113 - Model - INFO - eval point accuracy: 0.994400
+2025-06-04 22:35:00,113 - Model - INFO - eval point avg class acc: 0.992819
+2025-06-04 22:35:00,113 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 1.000 
+class 1              weight: 0.030, IoU: 1.000 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 1.000 
+class 7              weight: 0.036, IoU: 0.989 
+class 8              weight: 0.189, IoU: 0.999 
+class 9              weight: 0.053, IoU: 0.969 
+class 10             weight: 0.066, IoU: 0.971 
+class 11             weight: 0.050, IoU: 0.983 
+class 12             weight: 0.119, IoU: 0.939 
+class 13             weight: 0.028, IoU: 0.965 
+class 14             weight: 0.039, IoU: 0.995 
+
+2025-06-04 22:35:00,115 - Model - INFO - Eval mean loss: 0.018979
+2025-06-04 22:35:00,115 - Model - INFO - Eval accuracy: 0.994400
+2025-06-04 22:35:00,116 - Model - INFO - Best mIoU: 0.998732
+2025-06-04 22:35:00,116 - Model - INFO - **** Epoch 36 (36/96) ****
+2025-06-04 22:35:00,116 - Model - INFO - Learning rate:0.000343
+2025-06-04 22:37:26,964 - Model - INFO - Training mean loss: 0.004850
+2025-06-04 22:37:26,964 - Model - INFO - Training accuracy: 0.999333
+2025-06-04 22:37:26,964 - Model - INFO - Save model...
+2025-06-04 22:37:26,964 - Model - INFO - Saving at log\sem_seg\pointnet_sem_seg\checkpoints/model.pth
+2025-06-04 22:37:27,043 - Model - INFO - Saving model....
+2025-06-04 22:37:27,093 - Model - INFO - ---- EPOCH 036 EVALUATION ----
+2025-06-04 22:37:39,314 - Model - INFO - eval mean loss: 0.009524
+2025-06-04 22:37:39,315 - Model - INFO - eval point avg class IoU: 0.992313
+2025-06-04 22:37:39,315 - Model - INFO - eval point accuracy: 0.997154
+2025-06-04 22:37:39,315 - Model - INFO - eval point avg class acc: 0.996252
+2025-06-04 22:37:39,316 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 1.000 
+class 1              weight: 0.030, IoU: 1.000 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 1.000 
+class 7              weight: 0.036, IoU: 1.000 
+class 8              weight: 0.189, IoU: 1.000 
+class 9              weight: 0.053, IoU: 1.000 
+class 10             weight: 0.066, IoU: 1.000 
+class 11             weight: 0.050, IoU: 0.992 
+class 12             weight: 0.119, IoU: 0.967 
+class 13             weight: 0.028, IoU: 0.952 
+class 14             weight: 0.039, IoU: 0.975 
+
+2025-06-04 22:37:39,318 - Model - INFO - Eval mean loss: 0.009524
+2025-06-04 22:37:39,318 - Model - INFO - Eval accuracy: 0.997154
+2025-06-04 22:37:39,319 - Model - INFO - Best mIoU: 0.998732
+2025-06-04 22:37:39,319 - Model - INFO - **** Epoch 37 (37/96) ****
+2025-06-04 22:37:39,319 - Model - INFO - Learning rate:0.000343
+2025-06-04 22:41:13,754 - Model - INFO - Training mean loss: 0.020064
+2025-06-04 22:41:13,754 - Model - INFO - Training accuracy: 0.994664
+2025-06-04 22:41:13,792 - Model - INFO - ---- EPOCH 037 EVALUATION ----
+2025-06-04 22:41:30,727 - Model - INFO - eval mean loss: 1.081639
+2025-06-04 22:41:30,727 - Model - INFO - eval point avg class IoU: 0.682212
+2025-06-04 22:41:30,727 - Model - INFO - eval point accuracy: 0.812006
+2025-06-04 22:41:30,727 - Model - INFO - eval point avg class acc: 0.838100
+2025-06-04 22:41:30,727 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 0.919 
+class 1              weight: 0.030, IoU: 0.784 
+class 2              weight: 0.061, IoU: 0.706 
+class 3              weight: 0.061, IoU: 0.848 
+class 4              weight: 0.059, IoU: 0.951 
+class 5              weight: 0.080, IoU: 0.782 
+class 6              weight: 0.057, IoU: 0.670 
+class 7              weight: 0.036, IoU: 0.810 
+class 8              weight: 0.189, IoU: 0.483 
+class 9              weight: 0.053, IoU: 0.408 
+class 10             weight: 0.066, IoU: 0.573 
+class 11             weight: 0.050, IoU: 0.526 
+class 12             weight: 0.119, IoU: 0.395 
+class 13             weight: 0.028, IoU: 0.430 
+class 14             weight: 0.039, IoU: 0.946 
+
+2025-06-04 22:41:30,735 - Model - INFO - Eval mean loss: 1.081639
+2025-06-04 22:41:30,735 - Model - INFO - Eval accuracy: 0.812006
+2025-06-04 22:41:30,736 - Model - INFO - Best mIoU: 0.998732
+2025-06-04 22:41:30,736 - Model - INFO - **** Epoch 38 (38/96) ****
+2025-06-04 22:41:30,736 - Model - INFO - Learning rate:0.000343
+2025-06-04 22:45:11,699 - Model - INFO - Training mean loss: 0.016175
+2025-06-04 22:45:11,699 - Model - INFO - Training accuracy: 0.996008
+2025-06-04 22:45:11,746 - Model - INFO - ---- EPOCH 038 EVALUATION ----
+2025-06-04 22:45:28,658 - Model - INFO - eval mean loss: 3.426956
+2025-06-04 22:45:28,673 - Model - INFO - eval point avg class IoU: 0.430946
+2025-06-04 22:45:28,673 - Model - INFO - eval point accuracy: 0.551501
+2025-06-04 22:45:28,673 - Model - INFO - eval point avg class acc: 0.562401
+2025-06-04 22:45:28,673 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 0.895 
+class 1              weight: 0.030, IoU: 0.549 
+class 2              weight: 0.061, IoU: 0.517 
+class 3              weight: 0.061, IoU: 0.776 
+class 4              weight: 0.059, IoU: 0.954 
+class 5              weight: 0.080, IoU: 0.574 
+class 6              weight: 0.057, IoU: 0.622 
+class 7              weight: 0.036, IoU: 0.512 
+class 8              weight: 0.189, IoU: 0.152 
+class 9              weight: 0.053, IoU: 0.085 
+class 10             weight: 0.066, IoU: 0.137 
+class 11             weight: 0.050, IoU: 0.116 
+class 12             weight: 0.119, IoU: 0.000 
+class 13             weight: 0.028, IoU: 0.067 
+class 14             weight: 0.039, IoU: 0.509 
+
+2025-06-04 22:45:28,673 - Model - INFO - Eval mean loss: 3.426956
+2025-06-04 22:45:28,673 - Model - INFO - Eval accuracy: 0.551501
+2025-06-04 22:45:28,673 - Model - INFO - Best mIoU: 0.998732
+2025-06-04 22:45:28,673 - Model - INFO - **** Epoch 39 (39/96) ****
+2025-06-04 22:45:28,678 - Model - INFO - Learning rate:0.000343
+2025-06-04 22:49:09,214 - Model - INFO - Training mean loss: 0.011662
+2025-06-04 22:49:09,214 - Model - INFO - Training accuracy: 0.997258
+2025-06-04 22:49:09,244 - Model - INFO - ---- EPOCH 039 EVALUATION ----
+2025-06-04 22:49:26,218 - Model - INFO - eval mean loss: 0.014646
+2025-06-04 22:49:26,218 - Model - INFO - eval point avg class IoU: 0.986914
+2025-06-04 22:49:26,234 - Model - INFO - eval point accuracy: 0.995314
+2025-06-04 22:49:26,234 - Model - INFO - eval point avg class acc: 0.994155
+2025-06-04 22:49:26,234 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 1.000 
+class 1              weight: 0.030, IoU: 1.000 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 1.000 
+class 7              weight: 0.036, IoU: 0.997 
+class 8              weight: 0.189, IoU: 0.995 
+class 9              weight: 0.053, IoU: 0.995 
+class 10             weight: 0.066, IoU: 0.997 
+class 11             weight: 0.050, IoU: 0.987 
+class 12             weight: 0.119, IoU: 0.930 
+class 13             weight: 0.028, IoU: 0.917 
+class 14             weight: 0.039, IoU: 0.988 
+
+2025-06-04 22:49:26,234 - Model - INFO - Eval mean loss: 0.014646
+2025-06-04 22:49:26,237 - Model - INFO - Eval accuracy: 0.995314
+2025-06-04 22:49:26,237 - Model - INFO - Best mIoU: 0.998732
+2025-06-04 22:49:26,237 - Model - INFO - **** Epoch 40 (40/96) ****
+2025-06-04 22:49:26,238 - Model - INFO - Learning rate:0.000343
+2025-06-04 22:53:07,164 - Model - INFO - Training mean loss: 0.005123
+2025-06-04 22:53:07,164 - Model - INFO - Training accuracy: 0.999205
+2025-06-04 22:53:07,206 - Model - INFO - ---- EPOCH 040 EVALUATION ----
+2025-06-04 22:53:24,184 - Model - INFO - eval mean loss: 0.028433
+2025-06-04 22:53:24,184 - Model - INFO - eval point avg class IoU: 0.973630
+2025-06-04 22:53:24,184 - Model - INFO - eval point accuracy: 0.988270
+2025-06-04 22:53:24,184 - Model - INFO - eval point avg class acc: 0.990335
+2025-06-04 22:53:24,184 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 0.906 
+class 1              weight: 0.030, IoU: 0.949 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 0.999 
+class 5              weight: 0.080, IoU: 0.998 
+class 6              weight: 0.057, IoU: 1.000 
+class 7              weight: 0.036, IoU: 0.992 
+class 8              weight: 0.189, IoU: 0.997 
+class 9              weight: 0.053, IoU: 0.949 
+class 10             weight: 0.066, IoU: 1.000 
+class 11             weight: 0.050, IoU: 0.946 
+class 12             weight: 0.119, IoU: 0.975 
+class 13             weight: 0.028, IoU: 0.896 
+class 14             weight: 0.039, IoU: 0.997 
+
+2025-06-04 22:53:24,184 - Model - INFO - Eval mean loss: 0.028433
+2025-06-04 22:53:24,184 - Model - INFO - Eval accuracy: 0.988270
+2025-06-04 22:53:24,184 - Model - INFO - Best mIoU: 0.998732
+2025-06-04 22:53:24,184 - Model - INFO - **** Epoch 41 (41/96) ****
+2025-06-04 22:53:24,184 - Model - INFO - Learning rate:0.000240
+2025-06-04 22:57:05,032 - Model - INFO - Training mean loss: 0.004049
+2025-06-04 22:57:05,032 - Model - INFO - Training accuracy: 0.999390
+2025-06-04 22:57:05,032 - Model - INFO - Save model...
+2025-06-04 22:57:05,032 - Model - INFO - Saving at log\sem_seg\pointnet_sem_seg\checkpoints/model.pth
+2025-06-04 22:57:05,107 - Model - INFO - Saving model....
+2025-06-04 22:57:05,147 - Model - INFO - ---- EPOCH 041 EVALUATION ----
+2025-06-04 22:57:22,142 - Model - INFO - eval mean loss: 0.001812
+2025-06-04 22:57:22,142 - Model - INFO - eval point avg class IoU: 0.999989
+2025-06-04 22:57:22,142 - Model - INFO - eval point accuracy: 0.999994
+2025-06-04 22:57:22,142 - Model - INFO - eval point avg class acc: 0.999997
+2025-06-04 22:57:22,142 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 1.000 
+class 1              weight: 0.030, IoU: 1.000 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 1.000 
+class 7              weight: 0.036, IoU: 1.000 
+class 8              weight: 0.189, IoU: 1.000 
+class 9              weight: 0.053, IoU: 1.000 
+class 10             weight: 0.066, IoU: 1.000 
+class 11             weight: 0.050, IoU: 1.000 
+class 12             weight: 0.119, IoU: 1.000 
+class 13             weight: 0.028, IoU: 1.000 
+class 14             weight: 0.039, IoU: 1.000 
+
+2025-06-04 22:57:22,142 - Model - INFO - Eval mean loss: 0.001812
+2025-06-04 22:57:22,142 - Model - INFO - Eval accuracy: 0.999994
+2025-06-04 22:57:22,142 - Model - INFO - Save model...
+2025-06-04 22:57:22,152 - Model - INFO - Saving at log\sem_seg\pointnet_sem_seg\checkpoints/best_model.pth
+2025-06-04 22:57:22,232 - Model - INFO - Saving model....
+2025-06-04 22:57:22,232 - Model - INFO - Best mIoU: 0.999989
+2025-06-04 22:57:22,233 - Model - INFO - **** Epoch 42 (42/96) ****
+2025-06-04 22:57:22,233 - Model - INFO - Learning rate:0.000240
+2025-06-04 23:01:03,010 - Model - INFO - Training mean loss: 0.003364
+2025-06-04 23:01:03,010 - Model - INFO - Training accuracy: 0.999566
+2025-06-04 23:01:03,042 - Model - INFO - ---- EPOCH 042 EVALUATION ----
+2025-06-04 23:01:20,003 - Model - INFO - eval mean loss: 0.139464
+2025-06-04 23:01:20,003 - Model - INFO - eval point avg class IoU: 0.906431
+2025-06-04 23:01:20,003 - Model - INFO - eval point accuracy: 0.956097
+2025-06-04 23:01:20,003 - Model - INFO - eval point avg class acc: 0.957721
+2025-06-04 23:01:20,003 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 0.995 
+class 1              weight: 0.030, IoU: 0.998 
+class 2              weight: 0.061, IoU: 0.995 
+class 3              weight: 0.061, IoU: 0.995 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 0.998 
+class 6              weight: 0.057, IoU: 1.000 
+class 7              weight: 0.036, IoU: 0.995 
+class 8              weight: 0.189, IoU: 0.985 
+class 9              weight: 0.053, IoU: 0.996 
+class 10             weight: 0.066, IoU: 0.764 
+class 11             weight: 0.050, IoU: 0.771 
+class 12             weight: 0.119, IoU: 0.577 
+class 13             weight: 0.028, IoU: 0.615 
+class 14             weight: 0.039, IoU: 0.913 
+
+2025-06-04 23:01:20,018 - Model - INFO - Eval mean loss: 0.139464
+2025-06-04 23:01:20,018 - Model - INFO - Eval accuracy: 0.956097
+2025-06-04 23:01:20,018 - Model - INFO - Best mIoU: 0.999989
+2025-06-04 23:01:20,020 - Model - INFO - **** Epoch 43 (43/96) ****
+2025-06-04 23:01:20,020 - Model - INFO - Learning rate:0.000240
+2025-06-04 23:05:00,725 - Model - INFO - Training mean loss: 0.004747
+2025-06-04 23:05:00,725 - Model - INFO - Training accuracy: 0.999048
+2025-06-04 23:05:00,777 - Model - INFO - ---- EPOCH 043 EVALUATION ----
+2025-06-04 23:05:17,668 - Model - INFO - eval mean loss: 0.001964
+2025-06-04 23:05:17,668 - Model - INFO - eval point avg class IoU: 0.999870
+2025-06-04 23:05:17,668 - Model - INFO - eval point accuracy: 0.999907
+2025-06-04 23:05:17,668 - Model - INFO - eval point avg class acc: 0.999965
+2025-06-04 23:05:17,668 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 1.000 
+class 1              weight: 0.030, IoU: 1.000 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 1.000 
+class 7              weight: 0.036, IoU: 1.000 
+class 8              weight: 0.189, IoU: 1.000 
+class 9              weight: 0.053, IoU: 0.999 
+class 10             weight: 0.066, IoU: 1.000 
+class 11             weight: 0.050, IoU: 1.000 
+class 12             weight: 0.119, IoU: 1.000 
+class 13             weight: 0.028, IoU: 1.000 
+class 14             weight: 0.039, IoU: 1.000 
+
+2025-06-04 23:05:17,668 - Model - INFO - Eval mean loss: 0.001964
+2025-06-04 23:05:17,668 - Model - INFO - Eval accuracy: 0.999907
+2025-06-04 23:05:17,668 - Model - INFO - Best mIoU: 0.999989
+2025-06-04 23:05:17,668 - Model - INFO - **** Epoch 44 (44/96) ****
+2025-06-04 23:05:17,676 - Model - INFO - Learning rate:0.000240
+2025-06-04 23:08:57,847 - Model - INFO - Training mean loss: 0.008232
+2025-06-04 23:08:57,847 - Model - INFO - Training accuracy: 0.998012
+2025-06-04 23:08:57,885 - Model - INFO - ---- EPOCH 044 EVALUATION ----
+2025-06-04 23:09:14,805 - Model - INFO - eval mean loss: 0.045235
+2025-06-04 23:09:14,805 - Model - INFO - eval point avg class IoU: 0.960596
+2025-06-04 23:09:14,805 - Model - INFO - eval point accuracy: 0.986523
+2025-06-04 23:09:14,805 - Model - INFO - eval point avg class acc: 0.980586
+2025-06-04 23:09:14,805 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 0.998 
+class 1              weight: 0.030, IoU: 0.999 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 1.000 
+class 7              weight: 0.036, IoU: 0.999 
+class 8              weight: 0.189, IoU: 0.997 
+class 9              weight: 0.053, IoU: 0.999 
+class 10             weight: 0.066, IoU: 0.996 
+class 11             weight: 0.050, IoU: 0.975 
+class 12             weight: 0.119, IoU: 0.774 
+class 13             weight: 0.028, IoU: 0.736 
+class 14             weight: 0.039, IoU: 0.936 
+
+2025-06-04 23:09:14,805 - Model - INFO - Eval mean loss: 0.045235
+2025-06-04 23:09:14,805 - Model - INFO - Eval accuracy: 0.986523
+2025-06-04 23:09:14,805 - Model - INFO - Best mIoU: 0.999989
+2025-06-04 23:09:14,811 - Model - INFO - **** Epoch 45 (45/96) ****
+2025-06-04 23:09:14,811 - Model - INFO - Learning rate:0.000240
+2025-06-04 23:12:55,723 - Model - INFO - Training mean loss: 0.003251
+2025-06-04 23:12:55,723 - Model - INFO - Training accuracy: 0.999556
+2025-06-04 23:12:55,760 - Model - INFO - ---- EPOCH 045 EVALUATION ----
+2025-06-04 23:13:12,658 - Model - INFO - eval mean loss: 0.003170
+2025-06-04 23:13:12,658 - Model - INFO - eval point avg class IoU: 0.999263
+2025-06-04 23:13:12,658 - Model - INFO - eval point accuracy: 0.999531
+2025-06-04 23:13:12,658 - Model - INFO - eval point avg class acc: 0.999545
+2025-06-04 23:13:12,658 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 1.000 
+class 1              weight: 0.030, IoU: 1.000 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 1.000 
+class 7              weight: 0.036, IoU: 1.000 
+class 8              weight: 0.189, IoU: 1.000 
+class 9              weight: 0.053, IoU: 0.993 
+class 10             weight: 0.066, IoU: 1.000 
+class 11             weight: 0.050, IoU: 0.996 
+class 12             weight: 0.119, IoU: 1.000 
+class 13             weight: 0.028, IoU: 1.000 
+class 14             weight: 0.039, IoU: 1.000 
+
+2025-06-04 23:13:12,658 - Model - INFO - Eval mean loss: 0.003170
+2025-06-04 23:13:12,669 - Model - INFO - Eval accuracy: 0.999531
+2025-06-04 23:13:12,669 - Model - INFO - Best mIoU: 0.999989
+2025-06-04 23:13:12,669 - Model - INFO - **** Epoch 46 (46/96) ****
+2025-06-04 23:13:12,670 - Model - INFO - Learning rate:0.000240
+2025-06-04 23:16:52,639 - Model - INFO - Training mean loss: 0.010225
+2025-06-04 23:16:52,639 - Model - INFO - Training accuracy: 0.997419
+2025-06-04 23:16:52,639 - Model - INFO - Save model...
+2025-06-04 23:16:52,639 - Model - INFO - Saving at log\sem_seg\pointnet_sem_seg\checkpoints/model.pth
+2025-06-04 23:16:52,729 - Model - INFO - Saving model....
+2025-06-04 23:16:52,758 - Model - INFO - ---- EPOCH 046 EVALUATION ----
+2025-06-04 23:17:09,684 - Model - INFO - eval mean loss: 0.002208
+2025-06-04 23:17:09,684 - Model - INFO - eval point avg class IoU: 0.999975
+2025-06-04 23:17:09,684 - Model - INFO - eval point accuracy: 0.999987
+2025-06-04 23:17:09,684 - Model - INFO - eval point avg class acc: 0.999991
+2025-06-04 23:17:09,684 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 1.000 
+class 1              weight: 0.030, IoU: 1.000 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 1.000 
+class 7              weight: 0.036, IoU: 1.000 
+class 8              weight: 0.189, IoU: 1.000 
+class 9              weight: 0.053, IoU: 1.000 
+class 10             weight: 0.066, IoU: 1.000 
+class 11             weight: 0.050, IoU: 1.000 
+class 12             weight: 0.119, IoU: 1.000 
+class 13             weight: 0.028, IoU: 1.000 
+class 14             weight: 0.039, IoU: 1.000 
+
+2025-06-04 23:17:09,684 - Model - INFO - Eval mean loss: 0.002208
+2025-06-04 23:17:09,684 - Model - INFO - Eval accuracy: 0.999987
+2025-06-04 23:17:09,684 - Model - INFO - Best mIoU: 0.999989
+2025-06-04 23:17:09,684 - Model - INFO - **** Epoch 47 (47/96) ****
+2025-06-04 23:17:09,684 - Model - INFO - Learning rate:0.000240
+2025-06-04 23:20:50,893 - Model - INFO - Training mean loss: 0.011623
+2025-06-04 23:20:50,893 - Model - INFO - Training accuracy: 0.997198
+2025-06-04 23:20:50,941 - Model - INFO - ---- EPOCH 047 EVALUATION ----
+2025-06-04 23:21:07,932 - Model - INFO - eval mean loss: 0.152409
+2025-06-04 23:21:07,932 - Model - INFO - eval point avg class IoU: 0.884196
+2025-06-04 23:21:07,932 - Model - INFO - eval point accuracy: 0.944074
+2025-06-04 23:21:07,932 - Model - INFO - eval point avg class acc: 0.933159
+2025-06-04 23:21:07,932 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 0.967 
+class 1              weight: 0.030, IoU: 0.758 
+class 2              weight: 0.061, IoU: 0.589 
+class 3              weight: 0.061, IoU: 0.810 
+class 4              weight: 0.059, IoU: 0.959 
+class 5              weight: 0.080, IoU: 0.868 
+class 6              weight: 0.057, IoU: 0.859 
+class 7              weight: 0.036, IoU: 0.960 
+class 8              weight: 0.189, IoU: 0.963 
+class 9              weight: 0.053, IoU: 0.928 
+class 10             weight: 0.066, IoU: 0.933 
+class 11             weight: 0.050, IoU: 0.975 
+class 12             weight: 0.119, IoU: 0.883 
+class 13             weight: 0.028, IoU: 0.843 
+class 14             weight: 0.039, IoU: 0.968 
+
+2025-06-04 23:21:07,937 - Model - INFO - Eval mean loss: 0.152409
+2025-06-04 23:21:07,937 - Model - INFO - Eval accuracy: 0.944074
+2025-06-04 23:21:07,937 - Model - INFO - Best mIoU: 0.999989
+2025-06-04 23:21:07,938 - Model - INFO - **** Epoch 48 (48/96) ****
+2025-06-04 23:21:07,938 - Model - INFO - Learning rate:0.000240
+2025-06-04 23:24:48,530 - Model - INFO - Training mean loss: 0.004820
+2025-06-04 23:24:48,530 - Model - INFO - Training accuracy: 0.999120
+2025-06-04 23:24:48,557 - Model - INFO - ---- EPOCH 048 EVALUATION ----
+2025-06-04 23:25:05,471 - Model - INFO - eval mean loss: 0.007941
+2025-06-04 23:25:05,471 - Model - INFO - eval point avg class IoU: 0.994030
+2025-06-04 23:25:05,471 - Model - INFO - eval point accuracy: 0.996859
+2025-06-04 23:25:05,471 - Model - INFO - eval point avg class acc: 0.998414
+2025-06-04 23:25:05,471 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 1.000 
+class 1              weight: 0.030, IoU: 1.000 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 0.999 
+class 6              weight: 0.057, IoU: 0.985 
+class 7              weight: 0.036, IoU: 0.990 
+class 8              weight: 0.189, IoU: 0.978 
+class 9              weight: 0.053, IoU: 0.993 
+class 10             weight: 0.066, IoU: 0.996 
+class 11             weight: 0.050, IoU: 0.990 
+class 12             weight: 0.119, IoU: 0.996 
+class 13             weight: 0.028, IoU: 0.983 
+class 14             weight: 0.039, IoU: 1.000 
+
+2025-06-04 23:25:05,471 - Model - INFO - Eval mean loss: 0.007941
+2025-06-04 23:25:05,471 - Model - INFO - Eval accuracy: 0.996859
+2025-06-04 23:25:05,471 - Model - INFO - Best mIoU: 0.999989
+2025-06-04 23:25:05,487 - Model - INFO - **** Epoch 49 (49/96) ****
+2025-06-04 23:25:05,487 - Model - INFO - Learning rate:0.000240
+2025-06-04 23:28:46,346 - Model - INFO - Training mean loss: 0.002825
+2025-06-04 23:28:46,346 - Model - INFO - Training accuracy: 0.999670
+2025-06-04 23:28:46,388 - Model - INFO - ---- EPOCH 049 EVALUATION ----
+2025-06-04 23:29:03,351 - Model - INFO - eval mean loss: 0.072593
+2025-06-04 23:29:03,351 - Model - INFO - eval point avg class IoU: 0.944820
+2025-06-04 23:29:03,351 - Model - INFO - eval point accuracy: 0.976366
+2025-06-04 23:29:03,351 - Model - INFO - eval point avg class acc: 0.973532
+2025-06-04 23:29:03,351 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 0.997 
+class 1              weight: 0.030, IoU: 0.998 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 0.988 
+class 7              weight: 0.036, IoU: 0.981 
+class 8              weight: 0.189, IoU: 0.944 
+class 9              weight: 0.053, IoU: 0.991 
+class 10             weight: 0.066, IoU: 0.954 
+class 11             weight: 0.050, IoU: 0.932 
+class 12             weight: 0.119, IoU: 0.792 
+class 13             weight: 0.028, IoU: 0.732 
+class 14             weight: 0.039, IoU: 0.864 
+
+2025-06-04 23:29:03,351 - Model - INFO - Eval mean loss: 0.072593
+2025-06-04 23:29:03,351 - Model - INFO - Eval accuracy: 0.976366
+2025-06-04 23:29:03,351 - Model - INFO - Best mIoU: 0.999989
+2025-06-04 23:29:03,364 - Model - INFO - **** Epoch 50 (50/96) ****
+2025-06-04 23:29:03,364 - Model - INFO - Learning rate:0.000240
+2025-06-04 23:32:43,930 - Model - INFO - Training mean loss: 0.008198
+2025-06-04 23:32:43,930 - Model - INFO - Training accuracy: 0.997986
+2025-06-04 23:32:43,968 - Model - INFO - ---- EPOCH 050 EVALUATION ----
+2025-06-04 23:33:00,941 - Model - INFO - eval mean loss: 0.014898
+2025-06-04 23:33:00,941 - Model - INFO - eval point avg class IoU: 0.986618
+2025-06-04 23:33:00,941 - Model - INFO - eval point accuracy: 0.995404
+2025-06-04 23:33:00,941 - Model - INFO - eval point avg class acc: 0.993784
+2025-06-04 23:33:00,941 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 0.999 
+class 1              weight: 0.030, IoU: 1.000 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 1.000 
+class 7              weight: 0.036, IoU: 0.999 
+class 8              weight: 0.189, IoU: 1.000 
+class 9              weight: 0.053, IoU: 0.996 
+class 10             weight: 0.066, IoU: 0.982 
+class 11             weight: 0.050, IoU: 0.989 
+class 12             weight: 0.119, IoU: 0.931 
+class 13             weight: 0.028, IoU: 0.922 
+class 14             weight: 0.039, IoU: 0.981 
+
+2025-06-04 23:33:00,941 - Model - INFO - Eval mean loss: 0.014898
+2025-06-04 23:33:00,948 - Model - INFO - Eval accuracy: 0.995404
+2025-06-04 23:33:00,948 - Model - INFO - Best mIoU: 0.999989
+2025-06-04 23:33:00,948 - Model - INFO - **** Epoch 51 (51/96) ****
+2025-06-04 23:33:00,949 - Model - INFO - Learning rate:0.000168
+2025-06-04 23:36:41,942 - Model - INFO - Training mean loss: 0.003176
+2025-06-04 23:36:41,942 - Model - INFO - Training accuracy: 0.999578
+2025-06-04 23:36:41,942 - Model - INFO - Save model...
+2025-06-04 23:36:41,942 - Model - INFO - Saving at log\sem_seg\pointnet_sem_seg\checkpoints/model.pth
+2025-06-04 23:36:42,030 - Model - INFO - Saving model....
+2025-06-04 23:36:42,065 - Model - INFO - ---- EPOCH 051 EVALUATION ----
+2025-06-04 23:36:59,037 - Model - INFO - eval mean loss: 0.002079
+2025-06-04 23:36:59,037 - Model - INFO - eval point avg class IoU: 0.999772
+2025-06-04 23:36:59,037 - Model - INFO - eval point accuracy: 0.999902
+2025-06-04 23:36:59,037 - Model - INFO - eval point avg class acc: 0.999851
+2025-06-04 23:36:59,037 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 1.000 
+class 1              weight: 0.030, IoU: 1.000 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 1.000 
+class 7              weight: 0.036, IoU: 1.000 
+class 8              weight: 0.189, IoU: 1.000 
+class 9              weight: 0.053, IoU: 1.000 
+class 10             weight: 0.066, IoU: 1.000 
+class 11             weight: 0.050, IoU: 1.000 
+class 12             weight: 0.119, IoU: 1.000 
+class 13             weight: 0.028, IoU: 0.998 
+class 14             weight: 0.039, IoU: 0.999 
+
+2025-06-04 23:36:59,037 - Model - INFO - Eval mean loss: 0.002079
+2025-06-04 23:36:59,044 - Model - INFO - Eval accuracy: 0.999902
+2025-06-04 23:36:59,044 - Model - INFO - Best mIoU: 0.999989
+2025-06-04 23:36:59,044 - Model - INFO - **** Epoch 52 (52/96) ****
+2025-06-04 23:36:59,045 - Model - INFO - Learning rate:0.000168
+2025-06-04 23:40:39,656 - Model - INFO - Training mean loss: 0.002421
+2025-06-04 23:40:39,656 - Model - INFO - Training accuracy: 0.999736
+2025-06-04 23:40:39,691 - Model - INFO - ---- EPOCH 052 EVALUATION ----
+2025-06-04 23:40:56,667 - Model - INFO - eval mean loss: 0.000920
+2025-06-04 23:40:56,667 - Model - INFO - eval point avg class IoU: 0.999981
+2025-06-04 23:40:56,667 - Model - INFO - eval point accuracy: 0.999989
+2025-06-04 23:40:56,667 - Model - INFO - eval point avg class acc: 0.999991
+2025-06-04 23:40:56,667 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 1.000 
+class 1              weight: 0.030, IoU: 1.000 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 1.000 
+class 7              weight: 0.036, IoU: 1.000 
+class 8              weight: 0.189, IoU: 1.000 
+class 9              weight: 0.053, IoU: 1.000 
+class 10             weight: 0.066, IoU: 1.000 
+class 11             weight: 0.050, IoU: 1.000 
+class 12             weight: 0.119, IoU: 1.000 
+class 13             weight: 0.028, IoU: 1.000 
+class 14             weight: 0.039, IoU: 1.000 
+
+2025-06-04 23:40:56,667 - Model - INFO - Eval mean loss: 0.000920
+2025-06-04 23:40:56,667 - Model - INFO - Eval accuracy: 0.999989
+2025-06-04 23:40:56,667 - Model - INFO - Best mIoU: 0.999989
+2025-06-04 23:40:56,680 - Model - INFO - **** Epoch 53 (53/96) ****
+2025-06-04 23:40:56,680 - Model - INFO - Learning rate:0.000168
+2025-06-04 23:44:37,374 - Model - INFO - Training mean loss: 0.003898
+2025-06-04 23:44:37,374 - Model - INFO - Training accuracy: 0.999297
+2025-06-04 23:44:37,428 - Model - INFO - ---- EPOCH 053 EVALUATION ----
+2025-06-04 23:44:54,322 - Model - INFO - eval mean loss: 0.007677
+2025-06-04 23:44:54,322 - Model - INFO - eval point avg class IoU: 0.994662
+2025-06-04 23:44:54,322 - Model - INFO - eval point accuracy: 0.997770
+2025-06-04 23:44:54,322 - Model - INFO - eval point avg class acc: 0.997536
+2025-06-04 23:44:54,322 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 1.000 
+class 1              weight: 0.030, IoU: 1.000 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 0.999 
+class 6              weight: 0.057, IoU: 1.000 
+class 7              weight: 0.036, IoU: 0.997 
+class 8              weight: 0.189, IoU: 0.990 
+class 9              weight: 0.053, IoU: 0.999 
+class 10             weight: 0.066, IoU: 1.000 
+class 11             weight: 0.050, IoU: 0.995 
+class 12             weight: 0.119, IoU: 0.983 
+class 13             weight: 0.028, IoU: 0.972 
+class 14             weight: 0.039, IoU: 0.985 
+
+2025-06-04 23:44:54,331 - Model - INFO - Eval mean loss: 0.007677
+2025-06-04 23:44:54,331 - Model - INFO - Eval accuracy: 0.997770
+2025-06-04 23:44:54,332 - Model - INFO - Best mIoU: 0.999989
+2025-06-04 23:44:54,332 - Model - INFO - **** Epoch 54 (54/96) ****
+2025-06-04 23:44:54,332 - Model - INFO - Learning rate:0.000168
+2025-06-04 23:48:34,529 - Model - INFO - Training mean loss: 0.007104
+2025-06-04 23:48:34,529 - Model - INFO - Training accuracy: 0.998394
+2025-06-04 23:48:34,562 - Model - INFO - ---- EPOCH 054 EVALUATION ----
+2025-06-04 23:48:51,433 - Model - INFO - eval mean loss: 0.032896
+2025-06-04 23:48:51,433 - Model - INFO - eval point avg class IoU: 0.970574
+2025-06-04 23:48:51,433 - Model - INFO - eval point accuracy: 0.988824
+2025-06-04 23:48:51,433 - Model - INFO - eval point avg class acc: 0.984865
+2025-06-04 23:48:51,433 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 0.999 
+class 1              weight: 0.030, IoU: 0.958 
+class 2              weight: 0.061, IoU: 0.943 
+class 3              weight: 0.061, IoU: 0.982 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 0.992 
+class 6              weight: 0.057, IoU: 0.997 
+class 7              weight: 0.036, IoU: 0.997 
+class 8              weight: 0.189, IoU: 0.998 
+class 9              weight: 0.053, IoU: 1.000 
+class 10             weight: 0.066, IoU: 0.998 
+class 11             weight: 0.050, IoU: 0.982 
+class 12             weight: 0.119, IoU: 0.866 
+class 13             weight: 0.028, IoU: 0.884 
+class 14             weight: 0.039, IoU: 0.963 
+
+2025-06-04 23:48:51,433 - Model - INFO - Eval mean loss: 0.032896
+2025-06-04 23:48:51,433 - Model - INFO - Eval accuracy: 0.988824
+2025-06-04 23:48:51,433 - Model - INFO - Best mIoU: 0.999989
+2025-06-04 23:48:51,438 - Model - INFO - **** Epoch 55 (55/96) ****
+2025-06-04 23:48:51,438 - Model - INFO - Learning rate:0.000168
+2025-06-04 23:52:32,477 - Model - INFO - Training mean loss: 0.008200
+2025-06-04 23:52:32,477 - Model - INFO - Training accuracy: 0.998345
+2025-06-04 23:52:32,512 - Model - INFO - ---- EPOCH 055 EVALUATION ----
+2025-06-04 23:52:49,422 - Model - INFO - eval mean loss: 1.602426
+2025-06-04 23:52:49,422 - Model - INFO - eval point avg class IoU: 0.600045
+2025-06-04 23:52:49,422 - Model - INFO - eval point accuracy: 0.753077
+2025-06-04 23:52:49,422 - Model - INFO - eval point avg class acc: 0.741393
+2025-06-04 23:52:49,422 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 0.944 
+class 1              weight: 0.030, IoU: 0.713 
+class 2              weight: 0.061, IoU: 0.624 
+class 3              weight: 0.061, IoU: 0.832 
+class 4              weight: 0.059, IoU: 0.932 
+class 5              weight: 0.080, IoU: 0.578 
+class 6              weight: 0.057, IoU: 0.605 
+class 7              weight: 0.036, IoU: 0.506 
+class 8              weight: 0.189, IoU: 0.000 
+class 9              weight: 0.053, IoU: 0.000 
+class 10             weight: 0.066, IoU: 0.211 
+class 11             weight: 0.050, IoU: 0.821 
+class 12             weight: 0.119, IoU: 0.570 
+class 13             weight: 0.028, IoU: 0.708 
+class 14             weight: 0.039, IoU: 0.958 
+
+2025-06-04 23:52:49,422 - Model - INFO - Eval mean loss: 1.602426
+2025-06-04 23:52:49,434 - Model - INFO - Eval accuracy: 0.753077
+2025-06-04 23:52:49,434 - Model - INFO - Best mIoU: 0.999989
+2025-06-04 23:52:49,434 - Model - INFO - **** Epoch 56 (56/96) ****
+2025-06-04 23:52:49,435 - Model - INFO - Learning rate:0.000168
+2025-06-04 23:56:30,559 - Model - INFO - Training mean loss: 0.006905
+2025-06-04 23:56:30,559 - Model - INFO - Training accuracy: 0.998601
+2025-06-04 23:56:30,559 - Model - INFO - Save model...
+2025-06-04 23:56:30,559 - Model - INFO - Saving at log\sem_seg\pointnet_sem_seg\checkpoints/model.pth
+2025-06-04 23:56:30,647 - Model - INFO - Saving model....
+2025-06-04 23:56:30,675 - Model - INFO - ---- EPOCH 056 EVALUATION ----
+2025-06-04 23:56:47,710 - Model - INFO - eval mean loss: 0.001219
+2025-06-04 23:56:47,710 - Model - INFO - eval point avg class IoU: 1.000000
+2025-06-04 23:56:47,710 - Model - INFO - eval point accuracy: 1.000000
+2025-06-04 23:56:47,710 - Model - INFO - eval point avg class acc: 1.000000
+2025-06-04 23:56:47,710 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 1.000 
+class 1              weight: 0.030, IoU: 1.000 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 1.000 
+class 7              weight: 0.036, IoU: 1.000 
+class 8              weight: 0.189, IoU: 1.000 
+class 9              weight: 0.053, IoU: 1.000 
+class 10             weight: 0.066, IoU: 1.000 
+class 11             weight: 0.050, IoU: 1.000 
+class 12             weight: 0.119, IoU: 1.000 
+class 13             weight: 0.028, IoU: 1.000 
+class 14             weight: 0.039, IoU: 1.000 
+
+2025-06-04 23:56:47,722 - Model - INFO - Eval mean loss: 0.001219
+2025-06-04 23:56:47,722 - Model - INFO - Eval accuracy: 1.000000
+2025-06-04 23:56:47,722 - Model - INFO - Save model...
+2025-06-04 23:56:47,723 - Model - INFO - Saving at log\sem_seg\pointnet_sem_seg\checkpoints/best_model.pth
+2025-06-04 23:56:47,798 - Model - INFO - Saving model....
+2025-06-04 23:56:47,799 - Model - INFO - Best mIoU: 1.000000
+2025-06-04 23:56:47,799 - Model - INFO - **** Epoch 57 (57/96) ****
+2025-06-04 23:56:47,799 - Model - INFO - Learning rate:0.000168
+2025-06-05 00:00:28,688 - Model - INFO - Training mean loss: 0.004305
+2025-06-05 00:00:28,688 - Model - INFO - Training accuracy: 0.999190
+2025-06-05 00:00:28,727 - Model - INFO - ---- EPOCH 057 EVALUATION ----
+2025-06-05 00:00:45,666 - Model - INFO - eval mean loss: 0.025576
+2025-06-05 00:00:45,666 - Model - INFO - eval point avg class IoU: 0.978163
+2025-06-05 00:00:45,681 - Model - INFO - eval point accuracy: 0.989289
+2025-06-05 00:00:45,681 - Model - INFO - eval point avg class acc: 0.992834
+2025-06-05 00:00:45,681 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 1.000 
+class 1              weight: 0.030, IoU: 1.000 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 0.985 
+class 5              weight: 0.080, IoU: 0.971 
+class 6              weight: 0.057, IoU: 0.933 
+class 7              weight: 0.036, IoU: 0.978 
+class 8              weight: 0.189, IoU: 0.968 
+class 9              weight: 0.053, IoU: 0.985 
+class 10             weight: 0.066, IoU: 1.000 
+class 11             weight: 0.050, IoU: 0.967 
+class 12             weight: 0.119, IoU: 0.992 
+class 13             weight: 0.028, IoU: 0.904 
+class 14             weight: 0.039, IoU: 0.990 
+
+2025-06-05 00:00:45,681 - Model - INFO - Eval mean loss: 0.025576
+2025-06-05 00:00:45,681 - Model - INFO - Eval accuracy: 0.989289
+2025-06-05 00:00:45,681 - Model - INFO - Best mIoU: 1.000000
+2025-06-05 00:00:45,681 - Model - INFO - **** Epoch 58 (58/96) ****
+2025-06-05 00:00:45,690 - Model - INFO - Learning rate:0.000168
+2025-06-05 00:04:26,581 - Model - INFO - Training mean loss: 0.002618
+2025-06-05 00:04:26,581 - Model - INFO - Training accuracy: 0.999665
+2025-06-05 00:04:26,623 - Model - INFO - ---- EPOCH 058 EVALUATION ----
+2025-06-05 00:04:43,532 - Model - INFO - eval mean loss: 0.003712
+2025-06-05 00:04:43,548 - Model - INFO - eval point avg class IoU: 0.999187
+2025-06-05 00:04:43,548 - Model - INFO - eval point accuracy: 0.999495
+2025-06-05 00:04:43,548 - Model - INFO - eval point avg class acc: 0.999594
+2025-06-05 00:04:43,548 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 1.000 
+class 1              weight: 0.030, IoU: 1.000 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 1.000 
+class 7              weight: 0.036, IoU: 0.999 
+class 8              weight: 0.189, IoU: 0.997 
+class 9              weight: 0.053, IoU: 0.995 
+class 10             weight: 0.066, IoU: 1.000 
+class 11             weight: 0.050, IoU: 0.997 
+class 12             weight: 0.119, IoU: 1.000 
+class 13             weight: 0.028, IoU: 1.000 
+class 14             weight: 0.039, IoU: 1.000 
+
+2025-06-05 00:04:43,551 - Model - INFO - Eval mean loss: 0.003712
+2025-06-05 00:04:43,552 - Model - INFO - Eval accuracy: 0.999495
+2025-06-05 00:04:43,552 - Model - INFO - Best mIoU: 1.000000
+2025-06-05 00:04:43,552 - Model - INFO - **** Epoch 59 (59/96) ****
+2025-06-05 00:04:43,552 - Model - INFO - Learning rate:0.000168
+2025-06-05 00:08:24,474 - Model - INFO - Training mean loss: 0.002649
+2025-06-05 00:08:24,474 - Model - INFO - Training accuracy: 0.999621
+2025-06-05 00:08:24,516 - Model - INFO - ---- EPOCH 059 EVALUATION ----
+2025-06-05 00:08:41,455 - Model - INFO - eval mean loss: 0.015087
+2025-06-05 00:08:41,455 - Model - INFO - eval point avg class IoU: 0.989876
+2025-06-05 00:08:41,455 - Model - INFO - eval point accuracy: 0.994363
+2025-06-05 00:08:41,455 - Model - INFO - eval point avg class acc: 0.996489
+2025-06-05 00:08:41,455 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 0.995 
+class 1              weight: 0.030, IoU: 0.997 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 0.983 
+class 6              weight: 0.057, IoU: 1.000 
+class 7              weight: 0.036, IoU: 0.982 
+class 8              weight: 0.189, IoU: 0.983 
+class 9              weight: 0.053, IoU: 0.975 
+class 10             weight: 0.066, IoU: 1.000 
+class 11             weight: 0.050, IoU: 0.984 
+class 12             weight: 0.119, IoU: 0.993 
+class 13             weight: 0.028, IoU: 0.958 
+class 14             weight: 0.039, IoU: 1.000 
+
+2025-06-05 00:08:41,455 - Model - INFO - Eval mean loss: 0.015087
+2025-06-05 00:08:41,455 - Model - INFO - Eval accuracy: 0.994363
+2025-06-05 00:08:41,455 - Model - INFO - Best mIoU: 1.000000
+2025-06-05 00:08:41,462 - Model - INFO - **** Epoch 60 (60/96) ****
+2025-06-05 00:08:41,462 - Model - INFO - Learning rate:0.000168
+2025-06-05 00:12:22,349 - Model - INFO - Training mean loss: 0.003373
+2025-06-05 00:12:22,349 - Model - INFO - Training accuracy: 0.999382
+2025-06-05 00:12:22,387 - Model - INFO - ---- EPOCH 060 EVALUATION ----
+2025-06-05 00:12:39,341 - Model - INFO - eval mean loss: 0.000896
+2025-06-05 00:12:39,341 - Model - INFO - eval point avg class IoU: 0.999985
+2025-06-05 00:12:39,341 - Model - INFO - eval point accuracy: 0.999995
+2025-06-05 00:12:39,341 - Model - INFO - eval point avg class acc: 0.999987
+2025-06-05 00:12:39,341 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 1.000 
+class 1              weight: 0.030, IoU: 1.000 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 1.000 
+class 7              weight: 0.036, IoU: 1.000 
+class 8              weight: 0.189, IoU: 1.000 
+class 9              weight: 0.053, IoU: 1.000 
+class 10             weight: 0.066, IoU: 1.000 
+class 11             weight: 0.050, IoU: 1.000 
+class 12             weight: 0.119, IoU: 1.000 
+class 13             weight: 0.028, IoU: 1.000 
+class 14             weight: 0.039, IoU: 1.000 
+
+2025-06-05 00:12:39,341 - Model - INFO - Eval mean loss: 0.000896
+2025-06-05 00:12:39,348 - Model - INFO - Eval accuracy: 0.999995
+2025-06-05 00:12:39,348 - Model - INFO - Best mIoU: 1.000000
+2025-06-05 00:12:39,349 - Model - INFO - **** Epoch 61 (61/96) ****
+2025-06-05 00:12:39,349 - Model - INFO - Learning rate:0.000118
+2025-06-05 00:16:19,868 - Model - INFO - Training mean loss: 0.003113
+2025-06-05 00:16:19,868 - Model - INFO - Training accuracy: 0.999463
+2025-06-05 00:16:19,868 - Model - INFO - Save model...
+2025-06-05 00:16:19,868 - Model - INFO - Saving at log\sem_seg\pointnet_sem_seg\checkpoints/model.pth
+2025-06-05 00:16:19,952 - Model - INFO - Saving model....
+2025-06-05 00:16:19,986 - Model - INFO - ---- EPOCH 061 EVALUATION ----
+2025-06-05 00:16:36,947 - Model - INFO - eval mean loss: 0.015762
+2025-06-05 00:16:36,947 - Model - INFO - eval point avg class IoU: 0.988920
+2025-06-05 00:16:36,947 - Model - INFO - eval point accuracy: 0.995643
+2025-06-05 00:16:36,947 - Model - INFO - eval point avg class acc: 0.994291
+2025-06-05 00:16:36,963 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 1.000 
+class 1              weight: 0.030, IoU: 1.000 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 1.000 
+class 7              weight: 0.036, IoU: 0.998 
+class 8              weight: 0.189, IoU: 0.993 
+class 9              weight: 0.053, IoU: 1.000 
+class 10             weight: 0.066, IoU: 0.998 
+class 11             weight: 0.050, IoU: 0.991 
+class 12             weight: 0.119, IoU: 0.963 
+class 13             weight: 0.028, IoU: 0.931 
+class 14             weight: 0.039, IoU: 0.960 
+
+2025-06-05 00:16:36,963 - Model - INFO - Eval mean loss: 0.015762
+2025-06-05 00:16:36,966 - Model - INFO - Eval accuracy: 0.995643
+2025-06-05 00:16:36,966 - Model - INFO - Best mIoU: 1.000000
+2025-06-05 00:16:36,966 - Model - INFO - **** Epoch 62 (62/96) ****
+2025-06-05 00:16:36,967 - Model - INFO - Learning rate:0.000118
+2025-06-05 00:20:17,806 - Model - INFO - Training mean loss: 0.004501
+2025-06-05 00:20:17,806 - Model - INFO - Training accuracy: 0.999124
+2025-06-05 00:20:17,836 - Model - INFO - ---- EPOCH 062 EVALUATION ----
+2025-06-05 00:20:34,813 - Model - INFO - eval mean loss: 0.001263
+2025-06-05 00:20:34,813 - Model - INFO - eval point avg class IoU: 0.999965
+2025-06-05 00:20:34,813 - Model - INFO - eval point accuracy: 0.999974
+2025-06-05 00:20:34,813 - Model - INFO - eval point avg class acc: 0.999991
+2025-06-05 00:20:34,813 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 1.000 
+class 1              weight: 0.030, IoU: 1.000 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 1.000 
+class 7              weight: 0.036, IoU: 1.000 
+class 8              weight: 0.189, IoU: 1.000 
+class 9              weight: 0.053, IoU: 1.000 
+class 10             weight: 0.066, IoU: 1.000 
+class 11             weight: 0.050, IoU: 1.000 
+class 12             weight: 0.119, IoU: 1.000 
+class 13             weight: 0.028, IoU: 1.000 
+class 14             weight: 0.039, IoU: 1.000 
+
+2025-06-05 00:20:34,813 - Model - INFO - Eval mean loss: 0.001263
+2025-06-05 00:20:34,813 - Model - INFO - Eval accuracy: 0.999974
+2025-06-05 00:20:34,813 - Model - INFO - Best mIoU: 1.000000
+2025-06-05 00:20:34,828 - Model - INFO - **** Epoch 63 (63/96) ****
+2025-06-05 00:20:34,828 - Model - INFO - Learning rate:0.000118
+2025-06-05 00:24:15,367 - Model - INFO - Training mean loss: 0.001970
+2025-06-05 00:24:15,367 - Model - INFO - Training accuracy: 0.999779
+2025-06-05 00:24:15,406 - Model - INFO - ---- EPOCH 063 EVALUATION ----
+2025-06-05 00:24:32,417 - Model - INFO - eval mean loss: 0.000903
+2025-06-05 00:24:32,417 - Model - INFO - eval point avg class IoU: 0.999989
+2025-06-05 00:24:32,417 - Model - INFO - eval point accuracy: 0.999992
+2025-06-05 00:24:32,417 - Model - INFO - eval point avg class acc: 0.999992
+2025-06-05 00:24:32,417 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 1.000 
+class 1              weight: 0.030, IoU: 1.000 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 1.000 
+class 7              weight: 0.036, IoU: 1.000 
+class 8              weight: 0.189, IoU: 1.000 
+class 9              weight: 0.053, IoU: 1.000 
+class 10             weight: 0.066, IoU: 1.000 
+class 11             weight: 0.050, IoU: 1.000 
+class 12             weight: 0.119, IoU: 1.000 
+class 13             weight: 0.028, IoU: 1.000 
+class 14             weight: 0.039, IoU: 1.000 
+
+2025-06-05 00:24:32,429 - Model - INFO - Eval mean loss: 0.000903
+2025-06-05 00:24:32,430 - Model - INFO - Eval accuracy: 0.999992
+2025-06-05 00:24:32,430 - Model - INFO - Best mIoU: 1.000000
+2025-06-05 00:24:32,430 - Model - INFO - **** Epoch 64 (64/96) ****
+2025-06-05 00:24:32,431 - Model - INFO - Learning rate:0.000118
+2025-06-05 00:28:12,976 - Model - INFO - Training mean loss: 0.006100
+2025-06-05 00:28:12,976 - Model - INFO - Training accuracy: 0.998774
+2025-06-05 00:28:13,015 - Model - INFO - ---- EPOCH 064 EVALUATION ----
+2025-06-05 00:28:29,953 - Model - INFO - eval mean loss: 0.235412
+2025-06-05 00:28:29,953 - Model - INFO - eval point avg class IoU: 0.866006
+2025-06-05 00:28:29,953 - Model - INFO - eval point accuracy: 0.938287
+2025-06-05 00:28:29,953 - Model - INFO - eval point avg class acc: 0.933002
+2025-06-05 00:28:29,953 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 0.948 
+class 1              weight: 0.030, IoU: 0.836 
+class 2              weight: 0.061, IoU: 0.786 
+class 3              weight: 0.061, IoU: 0.901 
+class 4              weight: 0.059, IoU: 0.993 
+class 5              weight: 0.080, IoU: 0.903 
+class 6              weight: 0.057, IoU: 0.857 
+class 7              weight: 0.036, IoU: 0.923 
+class 8              weight: 0.189, IoU: 0.991 
+class 9              weight: 0.053, IoU: 0.874 
+class 10             weight: 0.066, IoU: 0.896 
+class 11             weight: 0.050, IoU: 0.895 
+class 12             weight: 0.119, IoU: 0.615 
+class 13             weight: 0.028, IoU: 0.616 
+class 14             weight: 0.039, IoU: 0.956 
+
+2025-06-05 00:28:29,953 - Model - INFO - Eval mean loss: 0.235412
+2025-06-05 00:28:29,953 - Model - INFO - Eval accuracy: 0.938287
+2025-06-05 00:28:29,953 - Model - INFO - Best mIoU: 1.000000
+2025-06-05 00:28:29,966 - Model - INFO - **** Epoch 65 (65/96) ****
+2025-06-05 00:28:29,966 - Model - INFO - Learning rate:0.000118
+2025-06-05 00:32:10,591 - Model - INFO - Training mean loss: 0.005465
+2025-06-05 00:32:10,591 - Model - INFO - Training accuracy: 0.998877
+2025-06-05 00:32:10,635 - Model - INFO - ---- EPOCH 065 EVALUATION ----
+2025-06-05 00:32:27,525 - Model - INFO - eval mean loss: 0.008215
+2025-06-05 00:32:27,525 - Model - INFO - eval point avg class IoU: 0.994835
+2025-06-05 00:32:27,525 - Model - INFO - eval point accuracy: 0.998190
+2025-06-05 00:32:27,525 - Model - INFO - eval point avg class acc: 0.997132
+2025-06-05 00:32:27,525 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 1.000 
+class 1              weight: 0.030, IoU: 1.000 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 1.000 
+class 7              weight: 0.036, IoU: 0.999 
+class 8              weight: 0.189, IoU: 0.999 
+class 9              weight: 0.053, IoU: 0.991 
+class 10             weight: 0.066, IoU: 0.999 
+class 11             weight: 0.050, IoU: 0.994 
+class 12             weight: 0.119, IoU: 0.968 
+class 13             weight: 0.028, IoU: 0.973 
+class 14             weight: 0.039, IoU: 0.999 
+
+2025-06-05 00:32:27,525 - Model - INFO - Eval mean loss: 0.008215
+2025-06-05 00:32:27,525 - Model - INFO - Eval accuracy: 0.998190
+2025-06-05 00:32:27,525 - Model - INFO - Best mIoU: 1.000000
+2025-06-05 00:32:27,535 - Model - INFO - **** Epoch 66 (66/96) ****
+2025-06-05 00:32:27,535 - Model - INFO - Learning rate:0.000118
+2025-06-05 00:36:06,933 - Model - INFO - Training mean loss: 0.002296
+2025-06-05 00:36:06,933 - Model - INFO - Training accuracy: 0.999754
+2025-06-05 00:36:06,933 - Model - INFO - Save model...
+2025-06-05 00:36:06,933 - Model - INFO - Saving at log\sem_seg\pointnet_sem_seg\checkpoints/model.pth
+2025-06-05 00:36:07,015 - Model - INFO - Saving model....
+2025-06-05 00:36:07,050 - Model - INFO - ---- EPOCH 066 EVALUATION ----
+2025-06-05 00:36:23,951 - Model - INFO - eval mean loss: 0.000904
+2025-06-05 00:36:23,951 - Model - INFO - eval point avg class IoU: 1.000000
+2025-06-05 00:36:23,951 - Model - INFO - eval point accuracy: 1.000000
+2025-06-05 00:36:23,951 - Model - INFO - eval point avg class acc: 1.000000
+2025-06-05 00:36:23,951 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 1.000 
+class 1              weight: 0.030, IoU: 1.000 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 1.000 
+class 7              weight: 0.036, IoU: 1.000 
+class 8              weight: 0.189, IoU: 1.000 
+class 9              weight: 0.053, IoU: 1.000 
+class 10             weight: 0.066, IoU: 1.000 
+class 11             weight: 0.050, IoU: 1.000 
+class 12             weight: 0.119, IoU: 1.000 
+class 13             weight: 0.028, IoU: 1.000 
+class 14             weight: 0.039, IoU: 1.000 
+
+2025-06-05 00:36:23,967 - Model - INFO - Eval mean loss: 0.000904
+2025-06-05 00:36:23,967 - Model - INFO - Eval accuracy: 1.000000
+2025-06-05 00:36:23,967 - Model - INFO - Save model...
+2025-06-05 00:36:23,968 - Model - INFO - Saving at log\sem_seg\pointnet_sem_seg\checkpoints/best_model.pth
+2025-06-05 00:36:24,042 - Model - INFO - Saving model....
+2025-06-05 00:36:24,043 - Model - INFO - Best mIoU: 1.000000
+2025-06-05 00:36:24,043 - Model - INFO - **** Epoch 67 (67/96) ****
+2025-06-05 00:36:24,043 - Model - INFO - Learning rate:0.000118
+2025-06-05 00:40:04,590 - Model - INFO - Training mean loss: 0.001781
+2025-06-05 00:40:04,590 - Model - INFO - Training accuracy: 0.999858
+2025-06-05 00:40:04,626 - Model - INFO - ---- EPOCH 067 EVALUATION ----
+2025-06-05 00:40:21,585 - Model - INFO - eval mean loss: 0.000685
+2025-06-05 00:40:21,585 - Model - INFO - eval point avg class IoU: 1.000000
+2025-06-05 00:40:21,585 - Model - INFO - eval point accuracy: 1.000000
+2025-06-05 00:40:21,585 - Model - INFO - eval point avg class acc: 1.000000
+2025-06-05 00:40:21,585 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 1.000 
+class 1              weight: 0.030, IoU: 1.000 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 1.000 
+class 7              weight: 0.036, IoU: 1.000 
+class 8              weight: 0.189, IoU: 1.000 
+class 9              weight: 0.053, IoU: 1.000 
+class 10             weight: 0.066, IoU: 1.000 
+class 11             weight: 0.050, IoU: 1.000 
+class 12             weight: 0.119, IoU: 1.000 
+class 13             weight: 0.028, IoU: 1.000 
+class 14             weight: 0.039, IoU: 1.000 
+
+2025-06-05 00:40:21,597 - Model - INFO - Eval mean loss: 0.000685
+2025-06-05 00:40:21,597 - Model - INFO - Eval accuracy: 1.000000
+2025-06-05 00:40:21,597 - Model - INFO - Save model...
+2025-06-05 00:40:21,597 - Model - INFO - Saving at log\sem_seg\pointnet_sem_seg\checkpoints/best_model.pth
+2025-06-05 00:40:21,674 - Model - INFO - Saving model....
+2025-06-05 00:40:21,674 - Model - INFO - Best mIoU: 1.000000
+2025-06-05 00:40:21,674 - Model - INFO - **** Epoch 68 (68/96) ****
+2025-06-05 00:40:21,675 - Model - INFO - Learning rate:0.000118
+2025-06-05 00:44:02,544 - Model - INFO - Training mean loss: 0.002038
+2025-06-05 00:44:02,544 - Model - INFO - Training accuracy: 0.999788
+2025-06-05 00:44:02,593 - Model - INFO - ---- EPOCH 068 EVALUATION ----
+2025-06-05 00:44:19,471 - Model - INFO - eval mean loss: 0.004509
+2025-06-05 00:44:19,471 - Model - INFO - eval point avg class IoU: 0.998664
+2025-06-05 00:44:19,471 - Model - INFO - eval point accuracy: 0.999514
+2025-06-05 00:44:19,471 - Model - INFO - eval point avg class acc: 0.999730
+2025-06-05 00:44:19,471 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 0.999 
+class 1              weight: 0.030, IoU: 0.999 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 0.997 
+class 7              weight: 0.036, IoU: 0.999 
+class 8              weight: 0.189, IoU: 1.000 
+class 9              weight: 0.053, IoU: 1.000 
+class 10             weight: 0.066, IoU: 1.000 
+class 11             weight: 0.050, IoU: 0.997 
+class 12             weight: 0.119, IoU: 0.989 
+class 13             weight: 0.028, IoU: 1.000 
+class 14             weight: 0.039, IoU: 1.000 
+
+2025-06-05 00:44:19,486 - Model - INFO - Eval mean loss: 0.004509
+2025-06-05 00:44:19,486 - Model - INFO - Eval accuracy: 0.999514
+2025-06-05 00:44:19,486 - Model - INFO - Best mIoU: 1.000000
+2025-06-05 00:44:19,486 - Model - INFO - **** Epoch 69 (69/96) ****
+2025-06-05 00:44:19,489 - Model - INFO - Learning rate:0.000118
+2025-06-05 00:48:00,180 - Model - INFO - Training mean loss: 0.001929
+2025-06-05 00:48:00,180 - Model - INFO - Training accuracy: 0.999786
+2025-06-05 00:48:00,218 - Model - INFO - ---- EPOCH 069 EVALUATION ----
+2025-06-05 00:48:17,226 - Model - INFO - eval mean loss: 0.000777
+2025-06-05 00:48:17,226 - Model - INFO - eval point avg class IoU: 1.000000
+2025-06-05 00:48:17,226 - Model - INFO - eval point accuracy: 1.000000
+2025-06-05 00:48:17,226 - Model - INFO - eval point avg class acc: 1.000000
+2025-06-05 00:48:17,226 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 1.000 
+class 1              weight: 0.030, IoU: 1.000 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 1.000 
+class 7              weight: 0.036, IoU: 1.000 
+class 8              weight: 0.189, IoU: 1.000 
+class 9              weight: 0.053, IoU: 1.000 
+class 10             weight: 0.066, IoU: 1.000 
+class 11             weight: 0.050, IoU: 1.000 
+class 12             weight: 0.119, IoU: 1.000 
+class 13             weight: 0.028, IoU: 1.000 
+class 14             weight: 0.039, IoU: 1.000 
+
+2025-06-05 00:48:17,231 - Model - INFO - Eval mean loss: 0.000777
+2025-06-05 00:48:17,231 - Model - INFO - Eval accuracy: 1.000000
+2025-06-05 00:48:17,231 - Model - INFO - Save model...
+2025-06-05 00:48:17,232 - Model - INFO - Saving at log\sem_seg\pointnet_sem_seg\checkpoints/best_model.pth
+2025-06-05 00:48:17,308 - Model - INFO - Saving model....
+2025-06-05 00:48:17,308 - Model - INFO - Best mIoU: 1.000000
+2025-06-05 00:48:17,308 - Model - INFO - **** Epoch 70 (70/96) ****
+2025-06-05 00:48:17,309 - Model - INFO - Learning rate:0.000118
+2025-06-05 00:51:58,406 - Model - INFO - Training mean loss: 0.002799
+2025-06-05 00:51:58,406 - Model - INFO - Training accuracy: 0.999556
+2025-06-05 00:51:58,450 - Model - INFO - ---- EPOCH 070 EVALUATION ----
+2025-06-05 00:52:15,424 - Model - INFO - eval mean loss: 0.066339
+2025-06-05 00:52:15,424 - Model - INFO - eval point avg class IoU: 0.939842
+2025-06-05 00:52:15,424 - Model - INFO - eval point accuracy: 0.976000
+2025-06-05 00:52:15,424 - Model - INFO - eval point avg class acc: 0.969854
+2025-06-05 00:52:15,424 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 0.987 
+class 1              weight: 0.030, IoU: 0.988 
+class 2              weight: 0.061, IoU: 0.994 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 0.982 
+class 7              weight: 0.036, IoU: 0.982 
+class 8              weight: 0.189, IoU: 0.952 
+class 9              weight: 0.053, IoU: 0.974 
+class 10             weight: 0.066, IoU: 0.996 
+class 11             weight: 0.050, IoU: 0.961 
+class 12             weight: 0.119, IoU: 0.651 
+class 13             weight: 0.028, IoU: 0.750 
+class 14             weight: 0.039, IoU: 0.881 
+
+2025-06-05 00:52:15,424 - Model - INFO - Eval mean loss: 0.066339
+2025-06-05 00:52:15,424 - Model - INFO - Eval accuracy: 0.976000
+2025-06-05 00:52:15,424 - Model - INFO - Best mIoU: 1.000000
+2025-06-05 00:52:15,424 - Model - INFO - **** Epoch 71 (71/96) ****
+2025-06-05 00:52:15,424 - Model - INFO - Learning rate:0.000082
+2025-06-05 00:55:56,286 - Model - INFO - Training mean loss: 0.002383
+2025-06-05 00:55:56,286 - Model - INFO - Training accuracy: 0.999681
+2025-06-05 00:55:56,286 - Model - INFO - Save model...
+2025-06-05 00:55:56,286 - Model - INFO - Saving at log\sem_seg\pointnet_sem_seg\checkpoints/model.pth
+2025-06-05 00:55:56,365 - Model - INFO - Saving model....
+2025-06-05 00:55:56,399 - Model - INFO - ---- EPOCH 071 EVALUATION ----
+2025-06-05 00:56:13,366 - Model - INFO - eval mean loss: 0.001175
+2025-06-05 00:56:13,366 - Model - INFO - eval point avg class IoU: 1.000000
+2025-06-05 00:56:13,366 - Model - INFO - eval point accuracy: 1.000000
+2025-06-05 00:56:13,366 - Model - INFO - eval point avg class acc: 1.000000
+2025-06-05 00:56:13,366 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 1.000 
+class 1              weight: 0.030, IoU: 1.000 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 1.000 
+class 7              weight: 0.036, IoU: 1.000 
+class 8              weight: 0.189, IoU: 1.000 
+class 9              weight: 0.053, IoU: 1.000 
+class 10             weight: 0.066, IoU: 1.000 
+class 11             weight: 0.050, IoU: 1.000 
+class 12             weight: 0.119, IoU: 1.000 
+class 13             weight: 0.028, IoU: 1.000 
+class 14             weight: 0.039, IoU: 1.000 
+
+2025-06-05 00:56:13,366 - Model - INFO - Eval mean loss: 0.001175
+2025-06-05 00:56:13,382 - Model - INFO - Eval accuracy: 1.000000
+2025-06-05 00:56:13,382 - Model - INFO - Save model...
+2025-06-05 00:56:13,382 - Model - INFO - Saving at log\sem_seg\pointnet_sem_seg\checkpoints/best_model.pth
+2025-06-05 00:56:13,459 - Model - INFO - Saving model....
+2025-06-05 00:56:13,459 - Model - INFO - Best mIoU: 1.000000
+2025-06-05 00:56:13,459 - Model - INFO - **** Epoch 72 (72/96) ****
+2025-06-05 00:56:13,460 - Model - INFO - Learning rate:0.000082
+2025-06-05 00:59:54,465 - Model - INFO - Training mean loss: 0.002503
+2025-06-05 00:59:54,465 - Model - INFO - Training accuracy: 0.999638
+2025-06-05 00:59:54,497 - Model - INFO - ---- EPOCH 072 EVALUATION ----
+2025-06-05 01:00:11,422 - Model - INFO - eval mean loss: 0.001217
+2025-06-05 01:00:11,422 - Model - INFO - eval point avg class IoU: 0.999632
+2025-06-05 01:00:11,422 - Model - INFO - eval point accuracy: 0.999876
+2025-06-05 01:00:11,422 - Model - INFO - eval point avg class acc: 0.999928
+2025-06-05 01:00:11,422 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 1.000 
+class 1              weight: 0.030, IoU: 1.000 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 1.000 
+class 7              weight: 0.036, IoU: 1.000 
+class 8              weight: 0.189, IoU: 1.000 
+class 9              weight: 0.053, IoU: 1.000 
+class 10             weight: 0.066, IoU: 1.000 
+class 11             weight: 0.050, IoU: 0.999 
+class 12             weight: 0.119, IoU: 0.996 
+class 13             weight: 0.028, IoU: 1.000 
+class 14             weight: 0.039, IoU: 1.000 
+
+2025-06-05 01:00:11,426 - Model - INFO - Eval mean loss: 0.001217
+2025-06-05 01:00:11,426 - Model - INFO - Eval accuracy: 0.999876
+2025-06-05 01:00:11,426 - Model - INFO - Best mIoU: 1.000000
+2025-06-05 01:00:11,427 - Model - INFO - **** Epoch 73 (73/96) ****
+2025-06-05 01:00:11,427 - Model - INFO - Learning rate:0.000082
+2025-06-05 01:03:52,150 - Model - INFO - Training mean loss: 0.004199
+2025-06-05 01:03:52,150 - Model - INFO - Training accuracy: 0.999285
+2025-06-05 01:03:52,177 - Model - INFO - ---- EPOCH 073 EVALUATION ----
+2025-06-05 01:04:09,197 - Model - INFO - eval mean loss: 0.002626
+2025-06-05 01:04:09,197 - Model - INFO - eval point avg class IoU: 0.999516
+2025-06-05 01:04:09,197 - Model - INFO - eval point accuracy: 0.999782
+2025-06-05 01:04:09,197 - Model - INFO - eval point avg class acc: 0.999843
+2025-06-05 01:04:09,197 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 0.999 
+class 1              weight: 0.030, IoU: 1.000 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 1.000 
+class 7              weight: 0.036, IoU: 1.000 
+class 8              weight: 0.189, IoU: 1.000 
+class 9              weight: 0.053, IoU: 0.999 
+class 10             weight: 0.066, IoU: 1.000 
+class 11             weight: 0.050, IoU: 0.999 
+class 12             weight: 0.119, IoU: 0.999 
+class 13             weight: 0.028, IoU: 0.997 
+class 14             weight: 0.039, IoU: 1.000 
+
+2025-06-05 01:04:09,202 - Model - INFO - Eval mean loss: 0.002626
+2025-06-05 01:04:09,203 - Model - INFO - Eval accuracy: 0.999782
+2025-06-05 01:04:09,203 - Model - INFO - Best mIoU: 1.000000
+2025-06-05 01:04:09,203 - Model - INFO - **** Epoch 74 (74/96) ****
+2025-06-05 01:04:09,204 - Model - INFO - Learning rate:0.000082
+2025-06-05 01:07:49,771 - Model - INFO - Training mean loss: 0.001929
+2025-06-05 01:07:49,771 - Model - INFO - Training accuracy: 0.999785
+2025-06-05 01:07:49,815 - Model - INFO - ---- EPOCH 074 EVALUATION ----
+2025-06-05 01:08:06,661 - Model - INFO - eval mean loss: 0.002619
+2025-06-05 01:08:06,661 - Model - INFO - eval point avg class IoU: 0.999034
+2025-06-05 01:08:06,661 - Model - INFO - eval point accuracy: 0.999578
+2025-06-05 01:08:06,661 - Model - INFO - eval point avg class acc: 0.999501
+2025-06-05 01:08:06,661 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 1.000 
+class 1              weight: 0.030, IoU: 1.000 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 1.000 
+class 7              weight: 0.036, IoU: 1.000 
+class 8              weight: 0.189, IoU: 1.000 
+class 9              weight: 0.053, IoU: 0.999 
+class 10             weight: 0.066, IoU: 1.000 
+class 11             weight: 0.050, IoU: 0.999 
+class 12             weight: 0.119, IoU: 1.000 
+class 13             weight: 0.028, IoU: 0.991 
+class 14             weight: 0.039, IoU: 0.997 
+
+2025-06-05 01:08:06,674 - Model - INFO - Eval mean loss: 0.002619
+2025-06-05 01:08:06,674 - Model - INFO - Eval accuracy: 0.999578
+2025-06-05 01:08:06,674 - Model - INFO - Best mIoU: 1.000000
+2025-06-05 01:08:06,675 - Model - INFO - **** Epoch 75 (75/96) ****
+2025-06-05 01:08:06,675 - Model - INFO - Learning rate:0.000082
+2025-06-05 01:11:47,227 - Model - INFO - Training mean loss: 0.001858
+2025-06-05 01:11:47,227 - Model - INFO - Training accuracy: 0.999782
+2025-06-05 01:11:47,274 - Model - INFO - ---- EPOCH 075 EVALUATION ----
+2025-06-05 01:12:04,204 - Model - INFO - eval mean loss: 0.001504
+2025-06-05 01:12:04,204 - Model - INFO - eval point avg class IoU: 0.999779
+2025-06-05 01:12:04,204 - Model - INFO - eval point accuracy: 0.999915
+2025-06-05 01:12:04,204 - Model - INFO - eval point avg class acc: 0.999943
+2025-06-05 01:12:04,204 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 1.000 
+class 1              weight: 0.030, IoU: 1.000 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 1.000 
+class 7              weight: 0.036, IoU: 1.000 
+class 8              weight: 0.189, IoU: 1.000 
+class 9              weight: 0.053, IoU: 1.000 
+class 10             weight: 0.066, IoU: 1.000 
+class 11             weight: 0.050, IoU: 0.999 
+class 12             weight: 0.119, IoU: 0.998 
+class 13             weight: 0.028, IoU: 1.000 
+class 14             weight: 0.039, IoU: 1.000 
+
+2025-06-05 01:12:04,204 - Model - INFO - Eval mean loss: 0.001504
+2025-06-05 01:12:04,204 - Model - INFO - Eval accuracy: 0.999915
+2025-06-05 01:12:04,220 - Model - INFO - Best mIoU: 1.000000
+2025-06-05 01:12:04,220 - Model - INFO - **** Epoch 76 (76/96) ****
+2025-06-05 01:12:04,220 - Model - INFO - Learning rate:0.000082
+2025-06-05 01:15:44,846 - Model - INFO - Training mean loss: 0.002500
+2025-06-05 01:15:44,846 - Model - INFO - Training accuracy: 0.999616
+2025-06-05 01:15:44,846 - Model - INFO - Save model...
+2025-06-05 01:15:44,846 - Model - INFO - Saving at log\sem_seg\pointnet_sem_seg\checkpoints/model.pth
+2025-06-05 01:15:44,940 - Model - INFO - Saving model....
+2025-06-05 01:15:44,973 - Model - INFO - ---- EPOCH 076 EVALUATION ----
+2025-06-05 01:16:01,920 - Model - INFO - eval mean loss: 0.027224
+2025-06-05 01:16:01,920 - Model - INFO - eval point avg class IoU: 0.989980
+2025-06-05 01:16:01,920 - Model - INFO - eval point accuracy: 0.992606
+2025-06-05 01:16:01,920 - Model - INFO - eval point avg class acc: 0.992500
+2025-06-05 01:16:01,920 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 1.000 
+class 1              weight: 0.030, IoU: 1.000 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 1.000 
+class 7              weight: 0.036, IoU: 0.962 
+class 8              weight: 0.189, IoU: 1.000 
+class 9              weight: 0.053, IoU: 0.888 
+class 10             weight: 0.066, IoU: 1.000 
+class 11             weight: 0.050, IoU: 1.000 
+class 12             weight: 0.119, IoU: 1.000 
+class 13             weight: 0.028, IoU: 1.000 
+class 14             weight: 0.039, IoU: 1.000 
+
+2025-06-05 01:16:01,936 - Model - INFO - Eval mean loss: 0.027224
+2025-06-05 01:16:01,936 - Model - INFO - Eval accuracy: 0.992606
+2025-06-05 01:16:01,936 - Model - INFO - Best mIoU: 1.000000
+2025-06-05 01:16:01,938 - Model - INFO - **** Epoch 77 (77/96) ****
+2025-06-05 01:16:01,938 - Model - INFO - Learning rate:0.000082
+2025-06-05 01:19:42,104 - Model - INFO - Training mean loss: 0.001751
+2025-06-05 01:19:42,104 - Model - INFO - Training accuracy: 0.999825
+2025-06-05 01:19:42,147 - Model - INFO - ---- EPOCH 077 EVALUATION ----
+2025-06-05 01:19:59,034 - Model - INFO - eval mean loss: 0.002735
+2025-06-05 01:19:59,034 - Model - INFO - eval point avg class IoU: 0.999067
+2025-06-05 01:19:59,034 - Model - INFO - eval point accuracy: 0.999645
+2025-06-05 01:19:59,034 - Model - INFO - eval point avg class acc: 0.999638
+2025-06-05 01:19:59,034 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 0.999 
+class 1              weight: 0.030, IoU: 1.000 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 1.000 
+class 7              weight: 0.036, IoU: 1.000 
+class 8              weight: 0.189, IoU: 1.000 
+class 9              weight: 0.053, IoU: 1.000 
+class 10             weight: 0.066, IoU: 1.000 
+class 11             weight: 0.050, IoU: 1.000 
+class 12             weight: 0.119, IoU: 1.000 
+class 13             weight: 0.028, IoU: 0.992 
+class 14             weight: 0.039, IoU: 0.996 
+
+2025-06-05 01:19:59,049 - Model - INFO - Eval mean loss: 0.002735
+2025-06-05 01:19:59,051 - Model - INFO - Eval accuracy: 0.999645
+2025-06-05 01:19:59,051 - Model - INFO - Best mIoU: 1.000000
+2025-06-05 01:19:59,051 - Model - INFO - **** Epoch 78 (78/96) ****
+2025-06-05 01:19:59,052 - Model - INFO - Learning rate:0.000082
+2025-06-05 01:23:39,430 - Model - INFO - Training mean loss: 0.003002
+2025-06-05 01:23:39,430 - Model - INFO - Training accuracy: 0.999526
+2025-06-05 01:23:39,470 - Model - INFO - ---- EPOCH 078 EVALUATION ----
+2025-06-05 01:23:56,512 - Model - INFO - eval mean loss: 0.001205
+2025-06-05 01:23:56,512 - Model - INFO - eval point avg class IoU: 1.000000
+2025-06-05 01:23:56,512 - Model - INFO - eval point accuracy: 1.000000
+2025-06-05 01:23:56,512 - Model - INFO - eval point avg class acc: 1.000000
+2025-06-05 01:23:56,512 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 1.000 
+class 1              weight: 0.030, IoU: 1.000 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 1.000 
+class 7              weight: 0.036, IoU: 1.000 
+class 8              weight: 0.189, IoU: 1.000 
+class 9              weight: 0.053, IoU: 1.000 
+class 10             weight: 0.066, IoU: 1.000 
+class 11             weight: 0.050, IoU: 1.000 
+class 12             weight: 0.119, IoU: 1.000 
+class 13             weight: 0.028, IoU: 1.000 
+class 14             weight: 0.039, IoU: 1.000 
+
+2025-06-05 01:23:56,512 - Model - INFO - Eval mean loss: 0.001205
+2025-06-05 01:23:56,521 - Model - INFO - Eval accuracy: 1.000000
+2025-06-05 01:23:56,521 - Model - INFO - Save model...
+2025-06-05 01:23:56,521 - Model - INFO - Saving at log\sem_seg\pointnet_sem_seg\checkpoints/best_model.pth
+2025-06-05 01:23:56,599 - Model - INFO - Saving model....
+2025-06-05 01:23:56,600 - Model - INFO - Best mIoU: 1.000000
+2025-06-05 01:23:56,600 - Model - INFO - **** Epoch 79 (79/96) ****
+2025-06-05 01:23:56,600 - Model - INFO - Learning rate:0.000082
+2025-06-05 01:27:37,233 - Model - INFO - Training mean loss: 0.001893
+2025-06-05 01:27:37,233 - Model - INFO - Training accuracy: 0.999774
+2025-06-05 01:27:37,276 - Model - INFO - ---- EPOCH 079 EVALUATION ----
+2025-06-05 01:27:54,209 - Model - INFO - eval mean loss: 0.000654
+2025-06-05 01:27:54,209 - Model - INFO - eval point avg class IoU: 0.999995
+2025-06-05 01:27:54,209 - Model - INFO - eval point accuracy: 0.999998
+2025-06-05 01:27:54,209 - Model - INFO - eval point avg class acc: 0.999997
+2025-06-05 01:27:54,209 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 1.000 
+class 1              weight: 0.030, IoU: 1.000 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 1.000 
+class 7              weight: 0.036, IoU: 1.000 
+class 8              weight: 0.189, IoU: 1.000 
+class 9              weight: 0.053, IoU: 1.000 
+class 10             weight: 0.066, IoU: 1.000 
+class 11             weight: 0.050, IoU: 1.000 
+class 12             weight: 0.119, IoU: 1.000 
+class 13             weight: 0.028, IoU: 1.000 
+class 14             weight: 0.039, IoU: 1.000 
+
+2025-06-05 01:27:54,209 - Model - INFO - Eval mean loss: 0.000654
+2025-06-05 01:27:54,209 - Model - INFO - Eval accuracy: 0.999998
+2025-06-05 01:27:54,209 - Model - INFO - Best mIoU: 1.000000
+2025-06-05 01:27:54,209 - Model - INFO - **** Epoch 80 (80/96) ****
+2025-06-05 01:27:54,214 - Model - INFO - Learning rate:0.000082
+2025-06-05 01:31:34,709 - Model - INFO - Training mean loss: 0.002064
+2025-06-05 01:31:34,709 - Model - INFO - Training accuracy: 0.999691
+2025-06-05 01:31:34,744 - Model - INFO - ---- EPOCH 080 EVALUATION ----
+2025-06-05 01:31:51,592 - Model - INFO - eval mean loss: 0.019822
+2025-06-05 01:31:51,592 - Model - INFO - eval point avg class IoU: 0.983386
+2025-06-05 01:31:51,592 - Model - INFO - eval point accuracy: 0.993085
+2025-06-05 01:31:51,592 - Model - INFO - eval point avg class acc: 0.992951
+2025-06-05 01:31:51,592 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 0.999 
+class 1              weight: 0.030, IoU: 0.999 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 1.000 
+class 7              weight: 0.036, IoU: 0.995 
+class 8              weight: 0.189, IoU: 0.994 
+class 9              weight: 0.053, IoU: 0.989 
+class 10             weight: 0.066, IoU: 0.999 
+class 11             weight: 0.050, IoU: 0.965 
+class 12             weight: 0.119, IoU: 0.941 
+class 13             weight: 0.028, IoU: 0.870 
+class 14             weight: 0.039, IoU: 1.000 
+
+2025-06-05 01:31:51,592 - Model - INFO - Eval mean loss: 0.019822
+2025-06-05 01:31:51,592 - Model - INFO - Eval accuracy: 0.993085
+2025-06-05 01:31:51,592 - Model - INFO - Best mIoU: 1.000000
+2025-06-05 01:31:51,605 - Model - INFO - **** Epoch 81 (81/96) ****
+2025-06-05 01:31:51,605 - Model - INFO - Learning rate:0.000058
+2025-06-05 01:35:32,578 - Model - INFO - Training mean loss: 0.001461
+2025-06-05 01:35:32,578 - Model - INFO - Training accuracy: 0.999899
+2025-06-05 01:35:32,578 - Model - INFO - Save model...
+2025-06-05 01:35:32,578 - Model - INFO - Saving at log\sem_seg\pointnet_sem_seg\checkpoints/model.pth
+2025-06-05 01:35:32,666 - Model - INFO - Saving model....
+2025-06-05 01:35:32,699 - Model - INFO - ---- EPOCH 081 EVALUATION ----
+2025-06-05 01:35:49,574 - Model - INFO - eval mean loss: 0.000660
+2025-06-05 01:35:49,574 - Model - INFO - eval point avg class IoU: 0.999999
+2025-06-05 01:35:49,574 - Model - INFO - eval point accuracy: 0.999999
+2025-06-05 01:35:49,574 - Model - INFO - eval point avg class acc: 0.999999
+2025-06-05 01:35:49,574 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 1.000 
+class 1              weight: 0.030, IoU: 1.000 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 1.000 
+class 7              weight: 0.036, IoU: 1.000 
+class 8              weight: 0.189, IoU: 1.000 
+class 9              weight: 0.053, IoU: 1.000 
+class 10             weight: 0.066, IoU: 1.000 
+class 11             weight: 0.050, IoU: 1.000 
+class 12             weight: 0.119, IoU: 1.000 
+class 13             weight: 0.028, IoU: 1.000 
+class 14             weight: 0.039, IoU: 1.000 
+
+2025-06-05 01:35:49,574 - Model - INFO - Eval mean loss: 0.000660
+2025-06-05 01:35:49,574 - Model - INFO - Eval accuracy: 0.999999
+2025-06-05 01:35:49,574 - Model - INFO - Best mIoU: 1.000000
+2025-06-05 01:35:49,590 - Model - INFO - **** Epoch 82 (82/96) ****
+2025-06-05 01:35:49,590 - Model - INFO - Learning rate:0.000058
+2025-06-05 01:39:30,455 - Model - INFO - Training mean loss: 0.001350
+2025-06-05 01:39:30,455 - Model - INFO - Training accuracy: 0.999906
+2025-06-05 01:39:30,500 - Model - INFO - ---- EPOCH 082 EVALUATION ----
+2025-06-05 01:39:47,411 - Model - INFO - eval mean loss: 0.300652
+2025-06-05 01:39:47,411 - Model - INFO - eval point avg class IoU: 0.874718
+2025-06-05 01:39:47,411 - Model - INFO - eval point accuracy: 0.939257
+2025-06-05 01:39:47,411 - Model - INFO - eval point avg class acc: 0.919561
+2025-06-05 01:39:47,411 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 1.000 
+class 1              weight: 0.030, IoU: 0.992 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 0.994 
+class 5              weight: 0.080, IoU: 0.985 
+class 6              weight: 0.057, IoU: 0.967 
+class 7              weight: 0.036, IoU: 0.932 
+class 8              weight: 0.189, IoU: 0.839 
+class 9              weight: 0.053, IoU: 0.958 
+class 10             weight: 0.066, IoU: 0.760 
+class 11             weight: 0.050, IoU: 0.861 
+class 12             weight: 0.119, IoU: 0.509 
+class 13             weight: 0.028, IoU: 0.519 
+class 14             weight: 0.039, IoU: 0.804 
+
+2025-06-05 01:39:47,411 - Model - INFO - Eval mean loss: 0.300652
+2025-06-05 01:39:47,411 - Model - INFO - Eval accuracy: 0.939257
+2025-06-05 01:39:47,411 - Model - INFO - Best mIoU: 1.000000
+2025-06-05 01:39:47,411 - Model - INFO - **** Epoch 83 (83/96) ****
+2025-06-05 01:39:47,417 - Model - INFO - Learning rate:0.000058
+2025-06-05 01:43:28,001 - Model - INFO - Training mean loss: 0.001297
+2025-06-05 01:43:28,001 - Model - INFO - Training accuracy: 0.999926
+2025-06-05 01:43:28,033 - Model - INFO - ---- EPOCH 083 EVALUATION ----
+2025-06-05 01:43:44,871 - Model - INFO - eval mean loss: 0.000655
+2025-06-05 01:43:44,871 - Model - INFO - eval point avg class IoU: 1.000000
+2025-06-05 01:43:44,871 - Model - INFO - eval point accuracy: 1.000000
+2025-06-05 01:43:44,871 - Model - INFO - eval point avg class acc: 1.000000
+2025-06-05 01:43:44,871 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 1.000 
+class 1              weight: 0.030, IoU: 1.000 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 1.000 
+class 7              weight: 0.036, IoU: 1.000 
+class 8              weight: 0.189, IoU: 1.000 
+class 9              weight: 0.053, IoU: 1.000 
+class 10             weight: 0.066, IoU: 1.000 
+class 11             weight: 0.050, IoU: 1.000 
+class 12             weight: 0.119, IoU: 1.000 
+class 13             weight: 0.028, IoU: 1.000 
+class 14             weight: 0.039, IoU: 1.000 
+
+2025-06-05 01:43:44,887 - Model - INFO - Eval mean loss: 0.000655
+2025-06-05 01:43:44,887 - Model - INFO - Eval accuracy: 1.000000
+2025-06-05 01:43:44,887 - Model - INFO - Save model...
+2025-06-05 01:43:44,887 - Model - INFO - Saving at log\sem_seg\pointnet_sem_seg\checkpoints/best_model.pth
+2025-06-05 01:43:44,972 - Model - INFO - Saving model....
+2025-06-05 01:43:44,972 - Model - INFO - Best mIoU: 1.000000
+2025-06-05 01:43:44,972 - Model - INFO - **** Epoch 84 (84/96) ****
+2025-06-05 01:43:44,973 - Model - INFO - Learning rate:0.000058
+2025-06-05 01:47:25,911 - Model - INFO - Training mean loss: 0.002157
+2025-06-05 01:47:25,911 - Model - INFO - Training accuracy: 0.999711
+2025-06-05 01:47:25,953 - Model - INFO - ---- EPOCH 084 EVALUATION ----
+2025-06-05 01:47:42,988 - Model - INFO - eval mean loss: 0.079742
+2025-06-05 01:47:42,988 - Model - INFO - eval point avg class IoU: 0.955933
+2025-06-05 01:47:42,988 - Model - INFO - eval point accuracy: 0.971017
+2025-06-05 01:47:42,988 - Model - INFO - eval point avg class acc: 0.975673
+2025-06-05 01:47:42,988 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 0.987 
+class 1              weight: 0.030, IoU: 1.000 
+class 2              weight: 0.061, IoU: 0.994 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 0.996 
+class 5              weight: 0.080, IoU: 0.903 
+class 6              weight: 0.057, IoU: 0.924 
+class 7              weight: 0.036, IoU: 0.871 
+class 8              weight: 0.189, IoU: 0.986 
+class 9              weight: 0.053, IoU: 0.740 
+class 10             weight: 0.066, IoU: 0.997 
+class 11             weight: 0.050, IoU: 0.990 
+class 12             weight: 0.119, IoU: 0.993 
+class 13             weight: 0.028, IoU: 0.962 
+class 14             weight: 0.039, IoU: 0.997 
+
+2025-06-05 01:47:42,988 - Model - INFO - Eval mean loss: 0.079742
+2025-06-05 01:47:42,988 - Model - INFO - Eval accuracy: 0.971017
+2025-06-05 01:47:42,988 - Model - INFO - Best mIoU: 1.000000
+2025-06-05 01:47:43,000 - Model - INFO - **** Epoch 85 (85/96) ****
+2025-06-05 01:47:43,000 - Model - INFO - Learning rate:0.000058
+2025-06-05 01:51:23,682 - Model - INFO - Training mean loss: 0.001749
+2025-06-05 01:51:23,682 - Model - INFO - Training accuracy: 0.999825
+2025-06-05 01:51:23,730 - Model - INFO - ---- EPOCH 085 EVALUATION ----
+2025-06-05 01:51:40,613 - Model - INFO - eval mean loss: 0.000895
+2025-06-05 01:51:40,613 - Model - INFO - eval point avg class IoU: 0.999998
+2025-06-05 01:51:40,613 - Model - INFO - eval point accuracy: 0.999999
+2025-06-05 01:51:40,613 - Model - INFO - eval point avg class acc: 0.999999
+2025-06-05 01:51:40,613 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 1.000 
+class 1              weight: 0.030, IoU: 1.000 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 1.000 
+class 7              weight: 0.036, IoU: 1.000 
+class 8              weight: 0.189, IoU: 1.000 
+class 9              weight: 0.053, IoU: 1.000 
+class 10             weight: 0.066, IoU: 1.000 
+class 11             weight: 0.050, IoU: 1.000 
+class 12             weight: 0.119, IoU: 1.000 
+class 13             weight: 0.028, IoU: 1.000 
+class 14             weight: 0.039, IoU: 1.000 
+
+2025-06-05 01:51:40,621 - Model - INFO - Eval mean loss: 0.000895
+2025-06-05 01:51:40,622 - Model - INFO - Eval accuracy: 0.999999
+2025-06-05 01:51:40,622 - Model - INFO - Best mIoU: 1.000000
+2025-06-05 01:51:40,622 - Model - INFO - **** Epoch 86 (86/96) ****
+2025-06-05 01:51:40,622 - Model - INFO - Learning rate:0.000058
+2025-06-05 01:55:21,177 - Model - INFO - Training mean loss: 0.002325
+2025-06-05 01:55:21,177 - Model - INFO - Training accuracy: 0.999657
+2025-06-05 01:55:21,177 - Model - INFO - Save model...
+2025-06-05 01:55:21,177 - Model - INFO - Saving at log\sem_seg\pointnet_sem_seg\checkpoints/model.pth
+2025-06-05 01:55:21,264 - Model - INFO - Saving model....
+2025-06-05 01:55:21,295 - Model - INFO - ---- EPOCH 086 EVALUATION ----
+2025-06-05 01:55:38,222 - Model - INFO - eval mean loss: 0.000539
+2025-06-05 01:55:38,222 - Model - INFO - eval point avg class IoU: 0.999989
+2025-06-05 01:55:38,222 - Model - INFO - eval point accuracy: 0.999994
+2025-06-05 01:55:38,222 - Model - INFO - eval point avg class acc: 0.999997
+2025-06-05 01:55:38,222 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 1.000 
+class 1              weight: 0.030, IoU: 1.000 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 1.000 
+class 7              weight: 0.036, IoU: 1.000 
+class 8              weight: 0.189, IoU: 1.000 
+class 9              weight: 0.053, IoU: 1.000 
+class 10             weight: 0.066, IoU: 1.000 
+class 11             weight: 0.050, IoU: 1.000 
+class 12             weight: 0.119, IoU: 1.000 
+class 13             weight: 0.028, IoU: 1.000 
+class 14             weight: 0.039, IoU: 1.000 
+
+2025-06-05 01:55:38,222 - Model - INFO - Eval mean loss: 0.000539
+2025-06-05 01:55:38,222 - Model - INFO - Eval accuracy: 0.999994
+2025-06-05 01:55:38,222 - Model - INFO - Best mIoU: 1.000000
+2025-06-05 01:55:38,228 - Model - INFO - **** Epoch 87 (87/96) ****
+2025-06-05 01:55:38,228 - Model - INFO - Learning rate:0.000058
+2025-06-05 01:59:19,007 - Model - INFO - Training mean loss: 0.001754
+2025-06-05 01:59:19,007 - Model - INFO - Training accuracy: 0.999822
+2025-06-05 01:59:19,047 - Model - INFO - ---- EPOCH 087 EVALUATION ----
+2025-06-05 01:59:35,959 - Model - INFO - eval mean loss: 0.000472
+2025-06-05 01:59:35,959 - Model - INFO - eval point avg class IoU: 1.000000
+2025-06-05 01:59:35,959 - Model - INFO - eval point accuracy: 1.000000
+2025-06-05 01:59:35,959 - Model - INFO - eval point avg class acc: 1.000000
+2025-06-05 01:59:35,959 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 1.000 
+class 1              weight: 0.030, IoU: 1.000 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 1.000 
+class 7              weight: 0.036, IoU: 1.000 
+class 8              weight: 0.189, IoU: 1.000 
+class 9              weight: 0.053, IoU: 1.000 
+class 10             weight: 0.066, IoU: 1.000 
+class 11             weight: 0.050, IoU: 1.000 
+class 12             weight: 0.119, IoU: 1.000 
+class 13             weight: 0.028, IoU: 1.000 
+class 14             weight: 0.039, IoU: 1.000 
+
+2025-06-05 01:59:35,974 - Model - INFO - Eval mean loss: 0.000472
+2025-06-05 01:59:35,974 - Model - INFO - Eval accuracy: 1.000000
+2025-06-05 01:59:35,974 - Model - INFO - Save model...
+2025-06-05 01:59:35,974 - Model - INFO - Saving at log\sem_seg\pointnet_sem_seg\checkpoints/best_model.pth
+2025-06-05 01:59:36,057 - Model - INFO - Saving model....
+2025-06-05 01:59:36,057 - Model - INFO - Best mIoU: 1.000000
+2025-06-05 01:59:36,057 - Model - INFO - **** Epoch 88 (88/96) ****
+2025-06-05 01:59:36,058 - Model - INFO - Learning rate:0.000058
+2025-06-05 02:03:17,887 - Model - INFO - Training mean loss: 0.001439
+2025-06-05 02:03:17,887 - Model - INFO - Training accuracy: 0.999875
+2025-06-05 02:03:17,931 - Model - INFO - ---- EPOCH 088 EVALUATION ----
+2025-06-05 02:03:35,262 - Model - INFO - eval mean loss: 0.000745
+2025-06-05 02:03:35,262 - Model - INFO - eval point avg class IoU: 1.000000
+2025-06-05 02:03:35,262 - Model - INFO - eval point accuracy: 1.000000
+2025-06-05 02:03:35,262 - Model - INFO - eval point avg class acc: 1.000000
+2025-06-05 02:03:35,262 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 1.000 
+class 1              weight: 0.030, IoU: 1.000 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 1.000 
+class 7              weight: 0.036, IoU: 1.000 
+class 8              weight: 0.189, IoU: 1.000 
+class 9              weight: 0.053, IoU: 1.000 
+class 10             weight: 0.066, IoU: 1.000 
+class 11             weight: 0.050, IoU: 1.000 
+class 12             weight: 0.119, IoU: 1.000 
+class 13             weight: 0.028, IoU: 1.000 
+class 14             weight: 0.039, IoU: 1.000 
+
+2025-06-05 02:03:35,262 - Model - INFO - Eval mean loss: 0.000745
+2025-06-05 02:03:35,262 - Model - INFO - Eval accuracy: 1.000000
+2025-06-05 02:03:35,262 - Model - INFO - Save model...
+2025-06-05 02:03:35,275 - Model - INFO - Saving at log\sem_seg\pointnet_sem_seg\checkpoints/best_model.pth
+2025-06-05 02:03:35,358 - Model - INFO - Saving model....
+2025-06-05 02:03:35,358 - Model - INFO - Best mIoU: 1.000000
+2025-06-05 02:03:35,359 - Model - INFO - **** Epoch 89 (89/96) ****
+2025-06-05 02:03:35,359 - Model - INFO - Learning rate:0.000058
+2025-06-05 02:07:16,189 - Model - INFO - Training mean loss: 0.001272
+2025-06-05 02:07:16,189 - Model - INFO - Training accuracy: 0.999916
+2025-06-05 02:07:16,232 - Model - INFO - ---- EPOCH 089 EVALUATION ----
+2025-06-05 02:07:33,175 - Model - INFO - eval mean loss: 0.001661
+2025-06-05 02:07:33,175 - Model - INFO - eval point avg class IoU: 0.999643
+2025-06-05 02:07:33,175 - Model - INFO - eval point accuracy: 0.999891
+2025-06-05 02:07:33,175 - Model - INFO - eval point avg class acc: 0.999761
+2025-06-05 02:07:33,175 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 0.996 
+class 1              weight: 0.030, IoU: 0.998 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 1.000 
+class 7              weight: 0.036, IoU: 1.000 
+class 8              weight: 0.189, IoU: 1.000 
+class 9              weight: 0.053, IoU: 1.000 
+class 10             weight: 0.066, IoU: 1.000 
+class 11             weight: 0.050, IoU: 1.000 
+class 12             weight: 0.119, IoU: 1.000 
+class 13             weight: 0.028, IoU: 1.000 
+class 14             weight: 0.039, IoU: 1.000 
+
+2025-06-05 02:07:33,175 - Model - INFO - Eval mean loss: 0.001661
+2025-06-05 02:07:33,175 - Model - INFO - Eval accuracy: 0.999891
+2025-06-05 02:07:33,175 - Model - INFO - Best mIoU: 1.000000
+2025-06-05 02:07:33,182 - Model - INFO - **** Epoch 90 (90/96) ****
+2025-06-05 02:07:33,182 - Model - INFO - Learning rate:0.000058
+2025-06-05 02:11:13,934 - Model - INFO - Training mean loss: 0.001475
+2025-06-05 02:11:13,934 - Model - INFO - Training accuracy: 0.999869
+2025-06-05 02:11:13,964 - Model - INFO - ---- EPOCH 090 EVALUATION ----
+2025-06-05 02:11:30,994 - Model - INFO - eval mean loss: 0.032982
+2025-06-05 02:11:30,994 - Model - INFO - eval point avg class IoU: 0.966221
+2025-06-05 02:11:30,994 - Model - INFO - eval point accuracy: 0.988217
+2025-06-05 02:11:30,994 - Model - INFO - eval point avg class acc: 0.985416
+2025-06-05 02:11:30,994 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 1.000 
+class 1              weight: 0.030, IoU: 1.000 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 1.000 
+class 7              weight: 0.036, IoU: 0.999 
+class 8              weight: 0.189, IoU: 0.998 
+class 9              weight: 0.053, IoU: 0.999 
+class 10             weight: 0.066, IoU: 0.972 
+class 11             weight: 0.050, IoU: 0.961 
+class 12             weight: 0.119, IoU: 0.765 
+class 13             weight: 0.028, IoU: 0.822 
+class 14             weight: 0.039, IoU: 0.977 
+
+2025-06-05 02:11:30,994 - Model - INFO - Eval mean loss: 0.032982
+2025-06-05 02:11:30,994 - Model - INFO - Eval accuracy: 0.988217
+2025-06-05 02:11:30,994 - Model - INFO - Best mIoU: 1.000000
+2025-06-05 02:11:31,009 - Model - INFO - **** Epoch 91 (91/96) ****
+2025-06-05 02:11:31,009 - Model - INFO - Learning rate:0.000040
+2025-06-05 02:15:11,803 - Model - INFO - Training mean loss: 0.002031
+2025-06-05 02:15:11,803 - Model - INFO - Training accuracy: 0.999741
+2025-06-05 02:15:11,803 - Model - INFO - Save model...
+2025-06-05 02:15:11,803 - Model - INFO - Saving at log\sem_seg\pointnet_sem_seg\checkpoints/model.pth
+2025-06-05 02:15:11,883 - Model - INFO - Saving model....
+2025-06-05 02:15:11,913 - Model - INFO - ---- EPOCH 091 EVALUATION ----
+2025-06-05 02:15:28,881 - Model - INFO - eval mean loss: 0.000688
+2025-06-05 02:15:28,881 - Model - INFO - eval point avg class IoU: 0.999980
+2025-06-05 02:15:28,881 - Model - INFO - eval point accuracy: 0.999988
+2025-06-05 02:15:28,881 - Model - INFO - eval point avg class acc: 0.999990
+2025-06-05 02:15:28,881 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 1.000 
+class 1              weight: 0.030, IoU: 1.000 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 1.000 
+class 7              weight: 0.036, IoU: 1.000 
+class 8              weight: 0.189, IoU: 1.000 
+class 9              weight: 0.053, IoU: 1.000 
+class 10             weight: 0.066, IoU: 1.000 
+class 11             weight: 0.050, IoU: 1.000 
+class 12             weight: 0.119, IoU: 1.000 
+class 13             weight: 0.028, IoU: 1.000 
+class 14             weight: 0.039, IoU: 1.000 
+
+2025-06-05 02:15:28,881 - Model - INFO - Eval mean loss: 0.000688
+2025-06-05 02:15:28,892 - Model - INFO - Eval accuracy: 0.999988
+2025-06-05 02:15:28,892 - Model - INFO - Best mIoU: 1.000000
+2025-06-05 02:15:28,892 - Model - INFO - **** Epoch 92 (92/96) ****
+2025-06-05 02:15:28,893 - Model - INFO - Learning rate:0.000040
+2025-06-05 02:19:08,649 - Model - INFO - Training mean loss: 0.001906
+2025-06-05 02:19:08,649 - Model - INFO - Training accuracy: 0.999779
+2025-06-05 02:19:08,685 - Model - INFO - ---- EPOCH 092 EVALUATION ----
+2025-06-05 02:19:25,591 - Model - INFO - eval mean loss: 0.000527
+2025-06-05 02:19:25,591 - Model - INFO - eval point avg class IoU: 0.999989
+2025-06-05 02:19:25,591 - Model - INFO - eval point accuracy: 0.999994
+2025-06-05 02:19:25,591 - Model - INFO - eval point avg class acc: 0.999997
+2025-06-05 02:19:25,591 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 1.000 
+class 1              weight: 0.030, IoU: 1.000 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 1.000 
+class 7              weight: 0.036, IoU: 1.000 
+class 8              weight: 0.189, IoU: 1.000 
+class 9              weight: 0.053, IoU: 1.000 
+class 10             weight: 0.066, IoU: 1.000 
+class 11             weight: 0.050, IoU: 1.000 
+class 12             weight: 0.119, IoU: 1.000 
+class 13             weight: 0.028, IoU: 1.000 
+class 14             weight: 0.039, IoU: 1.000 
+
+2025-06-05 02:19:25,591 - Model - INFO - Eval mean loss: 0.000527
+2025-06-05 02:19:25,591 - Model - INFO - Eval accuracy: 0.999994
+2025-06-05 02:19:25,591 - Model - INFO - Best mIoU: 1.000000
+2025-06-05 02:19:25,597 - Model - INFO - **** Epoch 93 (93/96) ****
+2025-06-05 02:19:25,597 - Model - INFO - Learning rate:0.000040
+2025-06-05 02:23:06,222 - Model - INFO - Training mean loss: 0.001370
+2025-06-05 02:23:06,238 - Model - INFO - Training accuracy: 0.999893
+2025-06-05 02:23:06,280 - Model - INFO - ---- EPOCH 093 EVALUATION ----
+2025-06-05 02:23:23,244 - Model - INFO - eval mean loss: 0.000442
+2025-06-05 02:23:23,244 - Model - INFO - eval point avg class IoU: 1.000000
+2025-06-05 02:23:23,244 - Model - INFO - eval point accuracy: 1.000000
+2025-06-05 02:23:23,244 - Model - INFO - eval point avg class acc: 1.000000
+2025-06-05 02:23:23,244 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 1.000 
+class 1              weight: 0.030, IoU: 1.000 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 1.000 
+class 7              weight: 0.036, IoU: 1.000 
+class 8              weight: 0.189, IoU: 1.000 
+class 9              weight: 0.053, IoU: 1.000 
+class 10             weight: 0.066, IoU: 1.000 
+class 11             weight: 0.050, IoU: 1.000 
+class 12             weight: 0.119, IoU: 1.000 
+class 13             weight: 0.028, IoU: 1.000 
+class 14             weight: 0.039, IoU: 1.000 
+
+2025-06-05 02:23:23,251 - Model - INFO - Eval mean loss: 0.000442
+2025-06-05 02:23:23,251 - Model - INFO - Eval accuracy: 1.000000
+2025-06-05 02:23:23,251 - Model - INFO - Save model...
+2025-06-05 02:23:23,251 - Model - INFO - Saving at log\sem_seg\pointnet_sem_seg\checkpoints/best_model.pth
+2025-06-05 02:23:23,336 - Model - INFO - Saving model....
+2025-06-05 02:23:23,337 - Model - INFO - Best mIoU: 1.000000
+2025-06-05 02:23:23,337 - Model - INFO - **** Epoch 94 (94/96) ****
+2025-06-05 02:23:23,337 - Model - INFO - Learning rate:0.000040
+2025-06-05 02:27:04,197 - Model - INFO - Training mean loss: 0.001266
+2025-06-05 02:27:04,197 - Model - INFO - Training accuracy: 0.999922
+2025-06-05 02:27:04,234 - Model - INFO - ---- EPOCH 094 EVALUATION ----
+2025-06-05 02:27:21,129 - Model - INFO - eval mean loss: 0.000574
+2025-06-05 02:27:21,129 - Model - INFO - eval point avg class IoU: 0.999989
+2025-06-05 02:27:21,129 - Model - INFO - eval point accuracy: 0.999994
+2025-06-05 02:27:21,145 - Model - INFO - eval point avg class acc: 0.999997
+2025-06-05 02:27:21,145 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 1.000 
+class 1              weight: 0.030, IoU: 1.000 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 1.000 
+class 7              weight: 0.036, IoU: 1.000 
+class 8              weight: 0.189, IoU: 1.000 
+class 9              weight: 0.053, IoU: 1.000 
+class 10             weight: 0.066, IoU: 1.000 
+class 11             weight: 0.050, IoU: 1.000 
+class 12             weight: 0.119, IoU: 1.000 
+class 13             weight: 0.028, IoU: 1.000 
+class 14             weight: 0.039, IoU: 1.000 
+
+2025-06-05 02:27:21,147 - Model - INFO - Eval mean loss: 0.000574
+2025-06-05 02:27:21,147 - Model - INFO - Eval accuracy: 0.999994
+2025-06-05 02:27:21,148 - Model - INFO - Best mIoU: 1.000000
+2025-06-05 02:27:21,148 - Model - INFO - **** Epoch 95 (95/96) ****
+2025-06-05 02:27:21,148 - Model - INFO - Learning rate:0.000040
+2025-06-05 02:31:01,229 - Model - INFO - Training mean loss: 0.001673
+2025-06-05 02:31:01,229 - Model - INFO - Training accuracy: 0.999831
+2025-06-05 02:31:01,273 - Model - INFO - ---- EPOCH 095 EVALUATION ----
+2025-06-05 02:31:18,187 - Model - INFO - eval mean loss: 0.000532
+2025-06-05 02:31:18,187 - Model - INFO - eval point avg class IoU: 1.000000
+2025-06-05 02:31:18,187 - Model - INFO - eval point accuracy: 1.000000
+2025-06-05 02:31:18,203 - Model - INFO - eval point avg class acc: 1.000000
+2025-06-05 02:31:18,203 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 1.000 
+class 1              weight: 0.030, IoU: 1.000 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 1.000 
+class 7              weight: 0.036, IoU: 1.000 
+class 8              weight: 0.189, IoU: 1.000 
+class 9              weight: 0.053, IoU: 1.000 
+class 10             weight: 0.066, IoU: 1.000 
+class 11             weight: 0.050, IoU: 1.000 
+class 12             weight: 0.119, IoU: 1.000 
+class 13             weight: 0.028, IoU: 1.000 
+class 14             weight: 0.039, IoU: 1.000 
+
+2025-06-05 02:31:18,203 - Model - INFO - Eval mean loss: 0.000532
+2025-06-05 02:31:18,203 - Model - INFO - Eval accuracy: 1.000000
+2025-06-05 02:31:18,203 - Model - INFO - Save model...
+2025-06-05 02:31:18,207 - Model - INFO - Saving at log\sem_seg\pointnet_sem_seg\checkpoints/best_model.pth
+2025-06-05 02:31:18,283 - Model - INFO - Saving model....
+2025-06-05 02:31:18,284 - Model - INFO - Best mIoU: 1.000000
+2025-06-05 02:31:18,284 - Model - INFO - **** Epoch 96 (96/96) ****
+2025-06-05 02:31:18,284 - Model - INFO - Learning rate:0.000040
+2025-06-05 02:34:58,856 - Model - INFO - Training mean loss: 0.001590
+2025-06-05 02:34:58,856 - Model - INFO - Training accuracy: 0.999839
+2025-06-05 02:34:58,856 - Model - INFO - Save model...
+2025-06-05 02:34:58,856 - Model - INFO - Saving at log\sem_seg\pointnet_sem_seg\checkpoints/model.pth
+2025-06-05 02:34:58,947 - Model - INFO - Saving model....
+2025-06-05 02:34:58,982 - Model - INFO - ---- EPOCH 096 EVALUATION ----
+2025-06-05 02:35:15,930 - Model - INFO - eval mean loss: 0.002375
+2025-06-05 02:35:15,930 - Model - INFO - eval point avg class IoU: 0.999754
+2025-06-05 02:35:15,930 - Model - INFO - eval point accuracy: 0.999920
+2025-06-05 02:35:15,930 - Model - INFO - eval point avg class acc: 0.999916
+2025-06-05 02:35:15,930 - Model - INFO - ------- IoU --------
+class 0              weight: 0.072, IoU: 0.998 
+class 1              weight: 0.030, IoU: 0.999 
+class 2              weight: 0.061, IoU: 1.000 
+class 3              weight: 0.061, IoU: 1.000 
+class 4              weight: 0.059, IoU: 1.000 
+class 5              weight: 0.080, IoU: 1.000 
+class 6              weight: 0.057, IoU: 1.000 
+class 7              weight: 0.036, IoU: 1.000 
+class 8              weight: 0.189, IoU: 1.000 
+class 9              weight: 0.053, IoU: 1.000 
+class 10             weight: 0.066, IoU: 1.000 
+class 11             weight: 0.050, IoU: 1.000 
+class 12             weight: 0.119, IoU: 1.000 
+class 13             weight: 0.028, IoU: 1.000 
+class 14             weight: 0.039, IoU: 1.000 
+
+2025-06-05 02:35:15,940 - Model - INFO - Eval mean loss: 0.002375
+2025-06-05 02:35:15,940 - Model - INFO - Eval accuracy: 0.999920
+2025-06-05 02:35:15,940 - Model - INFO - Best mIoU: 1.000000
