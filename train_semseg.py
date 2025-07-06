@@ -14,26 +14,33 @@ import torch
 
 from data_utils.S3DISDataLoader import S3DISDataset
 
-sys.path.append("D:/Git/smpp-3D-model-comparator/src/nn")
-from data_preparation import Compose, ShufflePoints, JitterPoints, RotationPoints, ScalePoints
-
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT_DIR = BASE_DIR
 
 sys.path.append(os.path.join(ROOT_DIR, 'models'))
 
-transforms = Compose([
-                ShufflePoints(),
-                JitterPoints(sigma=0.01, clip=0.02),
-                RotationPoints(angle_range=(0, 90)),
-                ScalePoints(scale_range=(0.8, 1.2))])
+def import_from_path(module_name, file_path):
+    spec = importlib.util.spec_from_file_location(module_name, file_path)
+    module = importlib.util.module_from_spec(spec)
+    sys.modules[module_name] = module
+    spec.loader.exec_module(module)
+    return module
 
-classes = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14']
-class2label = {cls: i for i, cls in enumerate(classes)} # -> {class_name: index}
-seg_classes = class2label
-seg_label_to_cat = {}
-for i, cat in enumerate(seg_classes.keys()):
-    seg_label_to_cat[i] = cat # -> {index: class_name}
+data_preparation = import_from_path(
+    "data_preparation", "D:/Git/smpp-3D-model-comparator/src/nn/data_preparation.py")
+
+transforms = data_preparation.Compose([
+                data_preparation.ShufflePoints(),
+                data_preparation.JitterPoints(sigma=0.01, clip=0.02),
+                data_preparation.RotationPoints(angle_range=(0, 90)),
+                data_preparation.ScalePoints(scale_range=(0.8, 1.2))])
+
+# classes = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14']
+# class2label = {cls: i for i, cls in enumerate(classes)} # -> {class_name: index}
+# seg_classes = class2label
+# seg_label_to_cat = {}
+# for i, cat in enumerate(seg_classes.keys()):
+#     seg_label_to_cat[i] = cat # -> {index: class_name}
 
 # --- ??? ---
 def inplace_relu(m):
@@ -63,6 +70,8 @@ def parse_args():
     parser = argparse.ArgumentParser('Model')
     parser.add_argument('--model', type=str, default='pointnet_sem_seg',
         help='model name [default: pointnet_sem_seg]')
+    parser.add_argument('--num_classes', type=int, default=3,
+        help='number of classes [default: 15]')
     parser.add_argument('--batch_size', type=int, default=8,
         help='Batch Size during training [default: 16]')
     parser.add_argument('--epoch', default=1, type=int,
@@ -83,20 +92,26 @@ def parse_args():
         help='Decay step for lr decay [default: every 10 epochs]')
     parser.add_argument('--lr_decay', type=float, default=0.7,
         help='Decay rate for lr decay [default: 0.7]')
-    parser.add_argument('--test_area', type=int, default=5, 
-        help='Which area to use for test, option: 1-6 [default: 5]')
     return parser.parse_args()
 
 
 def main(args):
 
-    NUM_CLASSES = 15
+    NUM_CLASSES = args.num_classes
     NUM_POINT = args.npoint
     BATCH_SIZE = args.batch_size
     LEARNING_RATE_CLIP = 1e-5
     MOMENTUM_ORIGINAL = 0.1
     MOMENTUM_DECCAY = 0.5
     MOMENTUM_DECCAY_STEP = args.step_size
+    
+    '''CLASSES'''
+    classes = list(map(str, range(NUM_CLASSES)))
+    class2label = {cls: i for i, cls in enumerate(classes)} # -> {class_name: index}
+    seg_classes = class2label
+    seg_label_to_cat = {}
+    for i, cat in enumerate(seg_classes.keys()):
+        seg_label_to_cat[i] = cat # -> {index: class_name}
 
     '''HYPER PARAMETER'''
     os.environ["CUDA_VISIBLE_DEVICES"] = args.gpu
@@ -112,8 +127,10 @@ def main(args):
     else:
         experiment_dir = experiment_dir.joinpath(args.log_dir)
     experiment_dir.mkdir(exist_ok=True)
+    
     checkpoints_dir = experiment_dir.joinpath('checkpoints/')
     checkpoints_dir.mkdir(exist_ok=True)
+    
     log_dir = experiment_dir.joinpath('logs/')
     log_dir.mkdir(exist_ok=True)
 
@@ -136,15 +153,13 @@ def main(args):
     log_string(args)
 
     train_root = 'data/stanford_indoor3d/train'
-    # valid_root = 'data/stanford_indoor3d/valid'
+    valid_root = 'data/stanford_indoor3d/valid'
 
     print("start loading training data ...")
     TRAIN_DATASET = S3DISDataset(
-                        split='train',
                         data_root=train_root,
+                        num_classes=NUM_CLASSES,
                         num_point=NUM_POINT,
-                        test_area=args.test_area,
-                        block_size=0.01,
                         sample_rate=1.0,
                         transform=transforms)
     trainDataLoader = torch.utils.data.DataLoader(
@@ -158,11 +173,9 @@ def main(args):
 
     print("start loading test data ...")
     TEST_DATASET = S3DISDataset(
-                        split='test',
-                        data_root=train_root,
+                        data_root=valid_root,
+                        num_classes=NUM_CLASSES,
                         num_point=NUM_POINT,
-                        test_area=args.test_area,
-                        block_size=0.01,
                         sample_rate=1.0,
                         transform=None)
     testDataLoader = torch.utils.data.DataLoader(
@@ -330,9 +343,11 @@ def main(args):
 
             # print("seg_pred: ", type(seg_pred), seg_pred.shape)
             # print("trans_feat: ", type(trans_feat), trans_feat.shape)
-            # print("batch_label: ", type(batch_label), batch_label.shape)
+            # print("batch_label: ", type(batch_label), batch_label.shape, np.unique(batch_label))
             # print("target: ", type(target), target.shape)
-            # print("pred_choice: ", type(pred_choice), pred_choice.shape)
+            # print("pred_choice: ", type(pred_choice), pred_choice.shape, np.unique(pred_choice))
+            # print("total_correct_class: ", total_correct_class)
+            # print("total_iou_deno_class: ", total_iou_deno_class)
 
             labelweights = labelweights.astype(np.float32) / np.sum(labelweights.astype(np.float32))
 
@@ -351,9 +366,9 @@ def main(args):
             iou_per_class_str = '------- IoU --------\n'
             for l in range(NUM_CLASSES):
                 iou_per_class_str += 'class %s weight: %.3f, IoU: %.3f \n' % (
-                    seg_label_to_cat[l] + ' ' * (14 - len(seg_label_to_cat[l])), # Имя класса,
-                    labelweights[l - 1],                                         # Вес класса,
-                    total_correct_class[l] / float(total_iou_deno_class[l])      # IoU класса.
+                    seg_label_to_cat[l] + ' ' * (14 - len(seg_label_to_cat[l])),   # Имя класса,
+                    labelweights[l], # labelweights[l - 1]                     # Вес класса,
+                    total_correct_class[l] / float(total_iou_deno_class[l] + 1e-6) # IoU класса.
                     )
             log_string(iou_per_class_str)
 
